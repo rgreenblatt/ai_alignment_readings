@@ -1,8 +1,8 @@
 # ai_alignment_readings
 
 ## Meta sources:
-
-[https://www.eacambridge.org/agi-safety-fundamentals](https://www.eacambridge.org/agi-safety-fundamentals)
+ - [https://www.eacambridge.org/agi-safety-fundamentals](https://www.eacambridge.org/agi-safety-fundamentals)
+ - [key papers in deep rl](https://spinningup.openai.com/en/latest/spinningup/keypapers.html)
 
 ## General background I found non obvious and useful
 
@@ -17,9 +17,9 @@ such as in Superintelligence by Bostrom.
    a bit old. Reflects Paul's thoughts on likely time lines and scenarios (not 'brain in a box', slower takeoff). 
  - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
     [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/) (TODO for me)
+    See also [this blog post on reproduction deep rl papers](http://amid.fish/reproducing-deep-rl)
  - maybe various models of intelligence/superintelligence (I currently don't think this is very important)
    - e.g.: [https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as](https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as)
-
 
 ## Subscriptions
 
