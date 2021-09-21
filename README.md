@@ -16,9 +16,19 @@ such as in Superintelligence by Bostrom.
  - [80000 hours with Paul Christiano](https://80000hours.org/podcast/episodes/paul-christiano-ai-alignment-solutions/): 
    a bit old. Reflects Paul's thoughts on likely time lines and scenarios (not 'brain in a box', slower takeoff). 
  - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
-    [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/)
+    [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/) (TODO for me)
  - maybe various models of intelligence/superintelligence (I currently don't think this is very important)
    - e.g.: [https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as](https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as)
+
+
+## Subscriptions
+
+All of this is available via RSS
+
+ - [alignment forum](https://www.alignmentforum.org/)
+ - [less wrong](https://www.lesswrong.com/) This is less directly relevant. But there is a decent amount here which isn't also cross posted
+   to alignment forum (alignment forum and less wrong have a very similar cohort).
+ - [alignment newsletter](https://rohinshah.com/alignment-newsletter/)
 
 ## Concepts you should know about
  - POMDPs (and other agent models?)
