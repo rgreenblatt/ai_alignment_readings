@@ -15,6 +15,8 @@ such as in Superintelligence by Bostrom.
    that scaling up current DL (particularly language models) could result in AGI
  - [80000 hours with Paul Christiano](https://80000hours.org/podcast/episodes/paul-christiano-ai-alignment-solutions/): 
    a bit old. Reflects Paul's thoughts on likely time lines and scenarios (not 'brain in a box', slower takeoff). 
+ - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
+    [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/)
  - maybe various models of intelligence/superintelligence (I currently don't think this is very important)
    - e.g.: [https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as](https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as)
 
@@ -26,7 +28,9 @@ such as in Superintelligence by Bostrom.
    - deceptiveness (particularly language models)
    - alignment strategies
      - summary of [iterated amplification](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
-       maybe [see also](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
+     - [11 proposals](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai)
+     - [multi agent safety](https://www.alignmentforum.org/posts/BXMCgpktdiawT3K5v/multi-agent-safety)
+     - [reward modeling (paper on outer alignment techniques)](https://arxiv.org/pdf/1811.07871)
      - week [4 (how to learn from humans?)](https://www.eacambridge.org/agi-week-4) 
      + [5 (Decomposing tasks for outer alignment)](https://www.eacambridge.org/agi-week-5) of EA Cambridge course (TODO: pick subset)
    - general theory (MIRI stuff, etc.)
