@@ -18,9 +18,8 @@ such as in Superintelligence by Bostrom.
  - maybe various models of intelligence/superintelligence (I currently don't think this is very important)
    - e.g.: [https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as](https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as)
  - [most important century series](https://www.cold-takes.com/roadmap-for-the-most-important-century-series/#our-wildly-important-era) 
- consider also the less wrong version: [most important century sequence](https://www.lesswrong.com/s/yYxggfHYRrqnJXuRx)
-
- (most of this is standard case for AI alignment + some ideas from [age of em](https://en.wikipedia.org/wiki/The_Age_of_Em))
+ consider also the less wrong version: [most important century sequence](https://www.lesswrong.com/s/yYxggfHYRrqnJXuRx) 
+   (most of this is standard case for AI alignment + some ideas from [age of em](https://en.wikipedia.org/wiki/The_Age_of_Em))
 
 ## Subscriptions
 
