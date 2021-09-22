@@ -15,9 +15,6 @@ such as in Superintelligence by Bostrom.
    that scaling up current DL (particularly language models) could result in AGI
  - [80000 hours with Paul Christiano](https://80000hours.org/podcast/episodes/paul-christiano-ai-alignment-solutions/): 
    a bit old. Reflects Paul's thoughts on likely time lines and scenarios (not 'brain in a box', slower takeoff). 
- - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
-    [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/) (TODO for me)
-    See also [this blog post on reproduction deep rl papers](http://amid.fish/reproducing-deep-rl)
  - maybe various models of intelligence/superintelligence (I currently don't think this is very important)
    - e.g.: [https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as](https://www.alignmentforum.org/posts/x3fNwSe5aWZb5yXEG/reframing-superintelligence-comprehensive-ai-services-as)
  - [most important century series](https://www.cold-takes.com/roadmap-for-the-most-important-century-series/#our-wildly-important-era) 
@@ -41,7 +38,10 @@ All of this is available via RSS
    - interpretability
    - deceptiveness (particularly language models)
    - alignment strategies
-     - summary of [iterated amplification](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
+     - iterated amplification [original paper](https://arxiv.org/abs/1810.08575) and 
+       [summary](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
+
+       See Iterated Amplification subsection in the papers section for notes/questions
      - [11 proposals](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai)
      - [multi agent safety](https://www.alignmentforum.org/posts/BXMCgpktdiawT3K5v/multi-agent-safety)
      - [reward modeling (paper on outer alignment techniques)](https://arxiv.org/pdf/1811.07871)
@@ -61,5 +61,34 @@ All of this is available via RSS
    - [week 7](https://www.eacambridge.org/agi-week-7) of EA Cambridge course (TODO: subset)
    - TODO more stuff here
  - 
+
 ## Career advice
  - [via Rohin Shah](https://rohinshah.com/faq-career-advice-for-ai-alignment-researchers/)
+ - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
+    [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/)
+ - [reproducing deep rl papers](http://amid.fish/reproducing-deep-rl)
+
+## Papers
+
+### Iterated amplification
+ - [original paper](https://arxiv.org/abs/1810.08575)
+ - Claim is this allows for creating an agent which "approximates the behavior
+   of an exponentially large team of copies of [the human expert]". 
+
+   Is this sufficient for having high capabilities? Are there behaviors which
+   can't be reached simply via this large team?  In other words, are there
+   behaviors the human won't recognize as good which we want?
+
+ - Note that the paper uses this technique on a variety of toy problems and
+   compares to pure supervised learning (which is possible for those problems).
+
+### Learning to summarize from human feedback
+ - [https://arxiv.org/abs/2009.01325](https://arxiv.org/abs/2009.01325)
+ - Human feedback with reinforcement learning beats predication/imitation. Uses
+   reward model (to reduce quantity of feedback needed)
+ - Allows for producing superhuman summaries (predication/imitation are worse
+   than human and can only get as good, not better)
+ - trained via reddit tldr
+ - fine tuned gpt-3 style model (fewer params, ~2 Billion and ~7 Billion param models tested)
+ - reward model generalizes better than the summary model itself
+
