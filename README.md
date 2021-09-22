@@ -31,8 +31,13 @@ All of this is available via RSS
  - [alignment newsletter](https://rohinshah.com/alignment-newsletter/)
 
 ## Concepts you should know about
- - POMDPs (and other agent models?)
- - Scaling laws
+ - timelines: [decent guide](https://www.cold-takes.com/where-ai-forecasting-stands-today/)
+ - [orthogonality thesis and instrumental convergence](https://www.nickbostrom.com/superintelligentwill.pdf)
+ - concerns/issues with current approaches (deep learning, etc.)
+   - [specification gaming/reward hacking](https://deepmindsafetyresearch.medium.com/specification-gaming-the-flip-side-of-ai-ingenuity-c85bdb0deeb4)
+   - [risks from learned optimization](https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB)
+     - mesa optimization
+     - [gradient hacking](https://www.lesswrong.com/posts/uXH4r6MmKPedk8rMA/gradient-hacking)
  - Various current research avenues
    - interpretability
    - deceptiveness (particularly language models)
@@ -46,15 +51,10 @@ All of this is available via RSS
      - [reward modeling (paper on outer alignment techniques)](https://arxiv.org/pdf/1811.07871)
      - week [4 (how to learn from humans?)](https://www.eacambridge.org/agi-week-4) and [5 (Decomposing tasks for outer alignment)](https://www.eacambridge.org/agi-week-5) of EA Cambridge course (TODO: pick subset)
    - general theory (MIRI stuff, etc.)
- - timelines: [decent guide](https://www.cold-takes.com/where-ai-forecasting-stands-today/)
- - [orthogonality thesis and instrumental convergence](https://www.nickbostrom.com/superintelligentwill.pdf)
- - concerns/issues with current approaches (deep learning, etc.)
-   - [specification gaming/reward hacking](https://deepmindsafetyresearch.medium.com/specification-gaming-the-flip-side-of-ai-ingenuity-c85bdb0deeb4)
-   - [risks from learned optimization](https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB)
-     - mesa optimization
-     - [gradient hacking](https://www.lesswrong.com/posts/uXH4r6MmKPedk8rMA/gradient-hacking)
  - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
  - [week 6 (other paradigms for safety work)](https://www.eacambridge.org/agi-week-6) of EA Cambridge course (TODO: subset)
+ - Scaling laws
+ - POMDPs (and other agent models?)
  - AI governance
    - [week 7](https://www.eacambridge.org/agi-week-7) of EA Cambridge course (TODO: subset)
    - TODO more stuff here
