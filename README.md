@@ -68,8 +68,11 @@ All of this is available via RSS
 
 ## Papers
 
+My thoughts on some papers.
+
 ### Iterated amplification
- - [original paper](https://arxiv.org/abs/1810.08575)
+ - [https://arxiv.org/abs/1810.08575](https://arxiv.org/abs/1810.08575)
+ - Summaries may also be helpful
  - Claim is this allows for creating an agent which "approximates the behavior
    of an exponentially large team of copies of [the human expert]". 
 
