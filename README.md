@@ -38,6 +38,7 @@ All of this is available via RSS
    - [risks from learned optimization](https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB)
      - mesa optimization
      - [gradient hacking](https://www.lesswrong.com/posts/uXH4r6MmKPedk8rMA/gradient-hacking)
+ - [alignment landscape](https://ai-alignment.com/ai-alignment-landscape-d3773c37ae38) (diagram on components of making AI go well)
  - Various current research avenues
    - interpretability
    - deceptiveness (particularly language models)
