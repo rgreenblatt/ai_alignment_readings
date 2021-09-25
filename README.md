@@ -38,7 +38,11 @@ All of this is available via RSS
    - [risks from learned optimization](https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB)
      - mesa optimization
      - [gradient hacking](https://www.lesswrong.com/posts/uXH4r6MmKPedk8rMA/gradient-hacking)
+<<<<<<< HEAD
  - [alignment landscape](https://ai-alignment.com/ai-alignment-landscape-d3773c37ae38) (diagram on components of making AI go well)
+=======
+   - corrigibility in general is hard
+>>>>>>> b818ea6 (updates)
  - Various current research avenues
    - interpretability
    - deceptiveness (particularly language models)
@@ -47,10 +51,27 @@ All of this is available via RSS
        [summary](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
 
        See Iterated Amplification subsection in papers.md for notes/questions
+     - reward modeling more generally
+     - [deep rl from human preferences](https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/). Otherwise known as backflip paper.
      - [11 proposals](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai)
      - [multi agent safety](https://www.alignmentforum.org/posts/BXMCgpktdiawT3K5v/multi-agent-safety)
      - [reward modeling (paper on outer alignment techniques)](https://arxiv.org/pdf/1811.07871)
-     - week [4 (how to learn from humans?)](https://www.eacambridge.org/agi-week-4) and [5 (Decomposing tasks for outer alignment)](https://www.eacambridge.org/agi-week-5) of EA Cambridge course (TODO: pick subset)
+     - [assistance games](https://www.alignmentforum.org/posts/qPoaA5ZSedivA4xJa/our-take-on-chai-s-research-agenda-in-under-1500-words)
+       when optimization task is human desire fufillment and multiple feedback rounds exist
+         - requires optimization algorithm to take into account uncertainty: objective not known (related is corrigibility)
+         - Example: [cooperative inverse reinforcement learning (CIRL)](https://arxiv.org/abs/1606.03137)
+         - relaxes fully specificed objective (we don't know how to specify)
+         - see also [benefits of assistance games](https://drive.google.com/file/d/1Xp9p6RLNjZrgsdEbGIJK61FnV_drDTQf/view)
+     - [cooperative inverse reinforcement learning (CIRL)](https://arxiv.org/abs/1606.03137)
+         - model/approach in which ai learns human preferences and human investiages their own preferences in cooperative game
+         - reduces to POMDP
+     - [ambitious vs narrow value learning](https://ai-alignment.com/ambitious-vs-narrow-value-learning-99bd0c59847e)
+       Related, consider idea that we should avoid AIs which need to model human preferences (for example 
+       [microscope ai](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai#5__Microscope_AI)
+       or [stem ai](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai#6__STEM_AI))
+     - [AI safety via debate](https://openai.com/blog/debate/)
+       - agents debate with human judge
+       - theory is that this may converge to correct/aligned actions. this requires that debate favors correct arguments in some sense.
    - general theory (MIRI stuff, etc.)
  - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
  - [week 6 (other paradigms for safety work)](https://www.eacambridge.org/agi-week-6) of EA Cambridge course (TODO: subset)
