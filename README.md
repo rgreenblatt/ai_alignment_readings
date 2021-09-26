@@ -41,9 +41,8 @@ All of this is available via RSS
  - [alignment landscape](https://ai-alignment.com/ai-alignment-landscape-d3773c37ae38) (diagram on components of making AI go well)
    - corrigibility in general is hard
  - Various current research avenues
-   - interpretability
    - deceptiveness (particularly language models)
-   - alignment strategies
+   - alignment strategies (prosaic)
      - iterated amplification [original paper](https://arxiv.org/abs/1810.08575) and 
        [summary](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
 
@@ -51,6 +50,10 @@ All of this is available via RSS
      - reward modeling more generally
      - [deep rl from human preferences](https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/). Otherwise known as backflip paper.
      - [11 proposals](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai)
+     - tool vs agent concerns
+      - [microscope ai](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety#Building_microscopes_not_agents) IMO this 
+        seems like a very uncompetive and narrow strategy (in terms of capabilities) (Chris Olah likely agrees)
+      - [Why tool AIs want to be Agent AIs](https://www.gwern.net/Tool-AI)
      - [multi agent safety](https://www.alignmentforum.org/posts/BXMCgpktdiawT3K5v/multi-agent-safety)
      - [reward modeling (paper on outer alignment techniques)](https://arxiv.org/pdf/1811.07871)
      - [assistance games](https://www.alignmentforum.org/posts/qPoaA5ZSedivA4xJa/our-take-on-chai-s-research-agenda-in-under-1500-words)
@@ -69,7 +72,49 @@ All of this is available via RSS
      - [AI safety via debate](https://openai.com/blog/debate/)
        - agents debate with human judge
        - theory is that this may converge to correct/aligned actions. this requires that debate favors correct arguments in some sense.
+   - interpretability and transparency
+     - [Chris Olah's views on AGI safety](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety)
+       - benefits of interpretability/transparency (done well) 
+         - could catch problems early (probably not with very clever deceptive
+           alignment)
+         - test how well interpretability/transparency work with adversarial
+           games (between humans)
+         - could improve design process and understanding
+         - use as part of the objective to ensure reasoning is done 'how we want'
+           (this seems likely to run into Goodhart type issues).  In other words,
+           make 'showing your work' part of the process.
+         - model diffing: how do high level representations differ over
+           training/between models
+       - microscope AI (see tool vs agent concerns above)
+       - does interpretability break down?
+         - Chris thinks strong interpretability is possible (it's possible to
+           turn neural net into large amount of human understandable 'code')
+         - currently seems to get easier as models get more powerful (better
+           abstractions)
+         - plausible it will get harder again as models become superhuman
+       - Chris thinks it's possible to direct the ML field more toward deliberate
+         design via interpretability (this seems doubtful to me).
    - general theory (MIRI stuff, etc.)
+     - [embedded agents](https://intelligence.org/2018/10/29/embedded-agents/)
+       - This is very worth reading. I don't know why I didn't read this
+         earlier, this nicely clarifies why we should care about decision
+         theory and some other things
+       - How do we model/understand agents which are part of the environment (like us)
+       - Particularly in the case where accurate predication, simulation, and similar are possible
+       - Leads to subproblems:
+         - decision theory 
+           - many open mathematical problems
+           - generally focused on [updateless decision theory](https://www.lesswrong.com/posts/de3xjFaACCAk6imzv/towards-a-new-decision-theory) 
+         - embedded world model: how to model the world as an entity which is smaller than (inside of) the world
+           - breaks Bayesian assumptions
+           - logical uncertainty, we may know all the details of something, but
+             be unable to compute the results (not clear to me why this is a
+             theoretical problem in practice, haven't read much about it)
+         - robust delegation: making well aligned successor without being able to predict actions of successor
+           - applies to aligning initial agent to human preference and further iterations
+           - corrigibility maybe important
+         - subsystem alignment: parts of agent just obey physical laws, so they must also be aligned
+
  - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
  - [week 6 (other paradigms for safety work)](https://www.eacambridge.org/agi-week-6) of EA Cambridge course (TODO: subset)
  - Scaling laws
