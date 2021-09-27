@@ -117,6 +117,19 @@ My thoughts on some papers.
    (maybe less likely to exist in bigger/more over-parameterized neural nets?)
  - article doesn't make a strong case for universality, but the claim seem plausible to me
 
+## Open problems is cooperative AI
+ - [https://arxiv.org/abs/2012.08630](https://arxiv.org/abs/2012.08630)
+ - example problem: autonomous cars, may have many agents interacting
+ - Is this concerned with AI in the colloquial sense (decently advanced ML systems) or with transformative AI/AGI?
+ - Needed capabilities:
+   - Understanding other agents
+   - Communication
+   - Commitments: eliminating/reducing incentives to renege on agreements (e.g. iterated prisoners dilemma)
+   - institutions (seems somewhat orthogonal to the above which are basically agent capabilities)
+ - the little drawing they use for people are kind of absurd...
+ - individual vs planner prospective (from AGI point of view, seems clear to me
+   that we converge to planner regardless)
+ - 
 
 
 ## TODO
