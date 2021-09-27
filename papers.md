@@ -68,6 +68,57 @@ My thoughts on some papers.
    - modify inductive bias to avoid poor behavior
    - I skipped section on other approaches and verifying alignment (maybe better covered elsewhere)
 
+## Open Questions in Creating Safe Open-ended AI
+ - [https://arxiv.org/abs/2006.07495](https://arxiv.org/abs/2006.07495)
+ - goes through idea of open ended search for agents (or non-agents)
+ - How sensitive is search to initial conditions?
+ - How can we control end result of search? Unexpected and hard to predict
+   results occur in physical living systems, e.g. ecosystem tampering
+ - Can we interpret agents which may have architecture which have been
+   searched and aren't human designed? (plausibly much harder than deep NN
+   interpretability)
+ - How can/should human interact with search (via feedback or similar) to improve results?
+ - Simulation reality generalization
+
+## Chris Olah's views on AGI safety
+ - benefits of interpretability/transparency (done well) 
+   - could catch problems early (probably not with very clever deceptive
+     alignment)
+   - test how well interpretability/transparency work with adversarial
+     games (between humans)
+   - could improve design process and understanding
+   - use as part of the objective to ensure reasoning is done 'how we want'
+     (this seems likely to run into Goodhart type issues).  In other words,
+     make 'showing your work' part of the process.
+   - model diffing: how do high level representations differ over
+     training/between models
+ - microscope AI (see tool vs agent concerns above)
+ - does interpretability break down?
+   - Chris thinks strong interpretability is possible (it's possible to
+     turn neural net into large amount of human understandable 'code')
+   - currently seems to get easier as models get more powerful (better
+     abstractions)
+   - plausible it will get harder again as models become superhuman
+ - Chris thinks it's possible to direct the ML field more toward deliberate
+   design via interpretability (this seems doubtful to me).
+
+## Introduction to circuits
+ - [https://distill.pub/2020/circuits/zoom-in/](https://distill.pub/2020/circuits/zoom-in/)
+ - focus purely on CNN (do results generalize?)
+ - key claim is 'universality': analogous features and circuits form across
+   models and tasks
+ - thought: if features + circuits model is true, it shouldn't be that hard to
+   trim down/modify neural net to make it more computationally efficient
+   (probably needing to retrain for a bit afterword).  It also shouldn't be too
+   hard to modify how recognition is done (avoid correlations we don't want for
+   example, like arm with dumbbell example)
+ - features involve union of many poses/orientations with some fuzziness 
+ - polysemantic neurons can correspond to many things making interpretability harder
+   (maybe less likely to exist in bigger/more over-parameterized neural nets?)
+ - article doesn't make a strong case for universality, but the claim seem plausible to me
+
+
+
 ## TODO
  - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of single neural net)
  - [understanding RL vision](https://distill.pub/2020/understanding-rl-vision/) (maybe some good projects along these lines...)

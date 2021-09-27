@@ -73,27 +73,13 @@ All of this is available via RSS
        - agents debate with human judge
        - theory is that this may converge to correct/aligned actions. this requires that debate favors correct arguments in some sense.
    - interpretability and transparency
-     - [Chris Olah's views on AGI safety](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety)
-       - benefits of interpretability/transparency (done well) 
-         - could catch problems early (probably not with very clever deceptive
-           alignment)
-         - test how well interpretability/transparency work with adversarial
-           games (between humans)
-         - could improve design process and understanding
-         - use as part of the objective to ensure reasoning is done 'how we want'
-           (this seems likely to run into Goodhart type issues).  In other words,
-           make 'showing your work' part of the process.
-         - model diffing: how do high level representations differ over
-           training/between models
-       - microscope AI (see tool vs agent concerns above)
-       - does interpretability break down?
-         - Chris thinks strong interpretability is possible (it's possible to
-           turn neural net into large amount of human understandable 'code')
-         - currently seems to get easier as models get more powerful (better
-           abstractions)
-         - plausible it will get harder again as models become superhuman
-       - Chris thinks it's possible to direct the ML field more toward deliberate
-         design via interpretability (this seems doubtful to me).
+     - [Chris Olah's views on AGI safety](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety) (see papers.md for notes)
+     - [introduction to circuits](https://distill.pub/2020/circuits/zoom-in/)
+   - Open ended search
+     - search/optimization which involves searching for learnings
+     - related to field of Artificial life and idea of open-ended evolution
+     - [open questions in creating safe open-ended ai](https://arxiv.org/abs/2006.07495),
+        not that important to read/understand (see papers.md for notes)
    - general theory (MIRI stuff, etc.)
      - [embedded agents](https://intelligence.org/2018/10/29/embedded-agents/)
        - This is very worth reading. I don't know why I didn't read this
