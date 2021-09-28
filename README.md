@@ -74,7 +74,7 @@ All of this is available via RSS
        - theory is that this may converge to correct/aligned actions. this requires that debate favors correct arguments in some sense.
    - interpretability and transparency
      - [Chris Olah's views on AGI safety](https://www.alignmentforum.org/posts/X2i9dQQK3gETCyqh2/chris-olah-s-views-on-agi-safety) (see papers.md for notes)
-     - [introduction to circuits](https://distill.pub/2020/circuits/zoom-in/)
+     - [Zoom In: An introduction to circuits](https://distill.pub/2020/circuits/zoom-in/)
    - Open ended search
      - search/optimization which involves searching for learnings
      - related to field of Artificial life and idea of open-ended evolution
@@ -106,6 +106,23 @@ All of this is available via RSS
  - Scaling laws
  - POMDPs (and other agent models?)
  - AI governance
+   - windfall clause 
+     - [report](https://www.fhi.ox.ac.uk/wp-content/uploads/Windfall-Clause-Report.pdf) (NOTE: I haven't read this and I probably won't, it's unnecessarily long)
+     - it seems to me like isn't that great of a solution to transformative AI
+       governance
+       - Who gets the donations? (seems like current donation practices very
+         inefficient...)
+       - maybe better to just reinvest all of the profits for a while (maybe
+         these wouldn't be counted as profits)
+       - plausibly this discourages investment (but maybe that is a good thing
+         for slowing down capabilities...), may make it harder to get firms to
+         agree
+       - Seems like this applies in a pretty narrow range of profits. Too
+         little and windfall doesn't apply. Too much and firm is too powerful
+         or it's going to be plundered/seized by some government or other power
+         any way.
+    - 
+
    - [week 7](https://www.eacambridge.org/agi-week-7) of EA Cambridge course (TODO: subset)
    - TODO more stuff here
  - 
@@ -115,6 +132,11 @@ All of this is available via RSS
  - [80000 hours guide for ML engineering](https://80000hours.org/articles/ml-engineering-career-transition-guide/) and
     [associated podcast](https://80000hours.org/podcast/episodes/olsson-and-ziegler-ml-engineering-and-safety/)
  - [reproducing deep rl papers](http://amid.fish/reproducing-deep-rl)
+ - [spinning up as a deep RL researcher](https://spinningup.openai.com/en/latest/spinningup/spinningup.html)
+ - 
 
 ## Learning RL
  - [spinning up](https://spinningup.openai.com/en/latest/user/introduction.html)
+
+## TODO
+ - Go over eventually and ankify as needed.

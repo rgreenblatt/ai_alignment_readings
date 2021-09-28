@@ -129,7 +129,11 @@ My thoughts on some papers.
  - the little drawing they use for people are kind of absurd...
  - individual vs planner prospective (from AGI point of view, seems clear to me
    that we converge to planner regardless)
- - 
+ - institutions maybe can select equilibrium (not clear to me that this notion of an institution is useful for AGI, plausibly for transformative AI)
+ - cooperation may require same beliefs/predictions (NOTE: by aumann's agreement theorem, agents can maybe come to the same beliefs - requires trust)
+ - maybe shared understanding of superrationality is useful
+ - changing equilibrium likely to be harder
+ - didn't read further, decided wasn't good use of time
 
 
 ## TODO
