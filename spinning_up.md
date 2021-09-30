@@ -11,7 +11,17 @@
      - Categorical: distribution over fixed discrete states (typically log prob
        is used for scaling reasons)
      - Diagonal Gaussian: used for continuous
-        - TODO: actually understand this when needed
+        - Sample from multivariate Gaussian with only diagonal entries in the
+          covariance matrix.
+        - Model maps from state to means.
+        - variances can be function of state (e.g. via deep NN) or independent
+          parameters which vary in some other way
+        - More typical to do standalone parameters for variances (reflects
+          exploration, exploitation trade off)
+        - What are downsides to only diagonal entries in covariance matrix?
+          Seems plausible you could do better at least in theory.
+        - This is a very specific parametric approach, are there other sane parametric approaches?
+          What about less parametric closer to non-parametric approaches?
         - What are the inductive biases of this approach? (in general, any
           distribution over the full reals must have some sort of reasonably
           strong prior, you can't have non-negligible mass everywhere)
@@ -58,13 +68,23 @@
      - SAC
  - TODO: Maybe read more about model based RL later...
  - [simple policy gradient](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#deriving-the-simplest-policy-gradient)
-   - maybe go back through derivation at some point
+   - straight forward derivation
+   - intuition is that we weight returns of trajectories by the log probability of the trajectories
    - estimate expectation using sample mean of set of trajectories 
+   - possible to subtract out baseline from the reward without changing expectation (might improve performance)
+   - common to subtract out the on-policy value function (see above)
+   - TODO checkout [generalized advantage estimation](https://arxiv.org/abs/1506.02438)
+   - TODO: reread/implement
+ - [trust region policy optimization (TRPO)](https://spinningup.openai.com/en/latest/algorithms/trpo.html)
+   - largest step to improve performance while holding KL-divergence in policies below some threshold
+ - [proximal policy optimization (PPO)](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
+   - reduce policy changes without explicit KL-divergence limit (allow trade offs)
+   - clipping approach and penalty approach
+   - typically clipping approach used
 
       
-
-      
-  
+# TODO 
+ - go back through this and Ankify once my knowledge of importance is more solid.
 
 
 
