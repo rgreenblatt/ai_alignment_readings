@@ -75,12 +75,41 @@
    - common to subtract out the on-policy value function (see above)
    - TODO checkout [generalized advantage estimation](https://arxiv.org/abs/1506.02438)
    - TODO: reread/implement
+   - reward to go: only reinforce actions based on rewards which which come
+     after that action (when computing rewards for a trajectory, do a
+     cumulative sum instead of just summing over all values).
+     Probably just a good idea in general.
  - [trust region policy optimization (TRPO)](https://spinningup.openai.com/en/latest/algorithms/trpo.html)
    - largest step to improve performance while holding KL-divergence in policies below some threshold
  - [proximal policy optimization (PPO)](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
    - reduce policy changes without explicit KL-divergence limit (allow trade offs)
    - clipping approach and penalty approach
    - typically clipping approach used
+
+# Experiments
+
+## Modifying cart pole reward function
+ - some stuff I played with (some with simple policy gradient and some with PPO):
+   - change reward to encourage death (negative reward): agent quickly learns
+     to run off screen
+   - change reward to not just reward duration but to also penalize distance
+     from upright in the middle: seems surprisingly easy to make the 'right'
+     policy hard to learn with just minor differences
+     however, does converge to nice solution with little movement
+   - change reward to want close to center with specific angle of pole
+     - does learn, not clear if it reaches near optimal solution ever.
+     - reward doesn't steadily improve, jumps back down a bunch
+     - final policy looks strange
+   - change reward to want to lean just a bit to the right:similar to normal
+     policy, but less stable?
+   - change reward to want to lean just a bit to the right or to the left
+     (abs): similar to normal policy, but less stable again?
+ - conclusions: 
+   - be careful on positive vs negative reward
+   - some 'hard to reach' policies can lead to very random behavior
+   - minor changes can make policy equilibrium much less stable
+     
+
 
       
 # TODO 

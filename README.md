@@ -102,7 +102,6 @@ All of this is available via RSS
          - subsystem alignment: parts of agent just obey physical laws, so they must also be aligned
 
  - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
- - [week 6 (other paradigms for safety work)](https://www.eacambridge.org/agi-week-6) of EA Cambridge course (TODO: subset)
  - Scaling laws
  - POMDPs (and other agent models?)
  - AI governance
