@@ -135,6 +135,17 @@ My thoughts on some papers.
  - changing equilibrium likely to be harder
  - didn't read further, decided wasn't good use of time
 
+## Proximal Policy Optimization Algorithms
+ - [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
+ - Why is TRPO not compatible with noise or parameter sharing (read paper
+   eventually)?
+ - Alternation between sampling and multiple epochs of optimization? So we can
+   (and maybe should) optimize off-policy? (see * for answer)
+ - multiple versions of surrogate objective (analogous to reward shaping), but
+   clip empirically is best
+ - Multiple optimization steps on same trajectory can work with policy
+   gradient, but doesn't work empirically (over updates) *
+ - 
 
 ## TODO
  - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of single neural net)
