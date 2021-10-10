@@ -147,8 +147,63 @@ My thoughts on some papers.
    gradient, but doesn't work empirically (over updates) *
  - 
 
+## Learning from human preferences
+ - [https://arxiv.org/abs/1706.03741](https://arxiv.org/abs/1706.03741)
+ - standard rl, but with supervised reward function estimate
+   (important question: do they use policy/value function model for reward
+   function too?)
+   - I think answer to question is no, but I don't recall seeing it in the
+     paper anywhere.
+   - It doesn't seem to me like sharing params is a good idea given that
+     training is totally separate (probably hard to mix batching as would be
+     probably important with standard SGD)
+ - reward model is latent factor explaining human preference
+ - preference probability depends exponentially on sum of
+   this latent reward
+   - just elo system (preferences instead of wins)
+   - standard approach used in previous papers
+ - depending exponentially is nice for a few reasons:
+   - allows for factoring out states/actions which give same reward
+   - maybe has nice interpolation? (not sure)
+   - maybe matches actual empirical preference probabilities?
+ - NOTE: see simple modifications
+ - lol, 1/e proportion of data used for validation
+ - need to assume always 10% error chance in rating
+ - queries for human rater selected based on ensemble empirical
+   uncertainty. (maybe doesn't perform all that well)
+   - ideally should sample based on expected value of information
+   - could use a different approach for uncertainty (really we just want
+     relative uncertainty, we only care about which is the most uncertain)
+   - take a look at later similar works (summarization...) to see if any
+     updates in the method
+ - how did they queue up the trajectories back to back?
+ - how many epochs for supervised reward model?
+
+## Summarization from Human Feedback
+ - [https://arxiv.org/abs/2009.01325](https://arxiv.org/abs/2009.01325) 
+ - TLDR dataset from reddit
+ - standard summary length
+ - reward model is trained totally offline! (on human summaries and on
+   supervised output)
+ - to avoid issues with overfitting reward model, loss minimizes
+   KL divergence from supervised model
+   - this probably handicaps model considerably
+   - but, if dataset is accessible, should be easier to reproduce their
+     results
+ - value function with separate params from policy (presumably also
+   pretrained)
+   - claim is that this is to avoid destroying the pretrained
+     policy
+   - unclear if how much other stuff they tried (e.g., param freezing etc.)
+ - TODO: go over again (mostly just read methods and skimmed results)
+
+
 ## TODO
  - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of single neural net)
  - [understanding RL vision](https://distill.pub/2020/understanding-rl-vision/) (maybe some good projects along these lines...)
+ - [fine tuning language models from human feedback](https://arxiv.org/abs/1909.08593)
+ - [Evaluating Arguments One Step at a Time](https://ought.org/updates/2020-01-11-arguments)
+   - experiment with humans along the lines of ai safety via debate (but
+     trying to evaluate sub claims: test distributing the work)
 
 
