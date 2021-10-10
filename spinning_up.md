@@ -108,6 +108,9 @@
    - be careful on positive vs negative reward
    - some 'hard to reach' policies can lead to very random behavior
    - minor changes can make policy equilibrium much less stable
+   - PPO doesn't perform much better than naive in very simple cases. Makes
+     sense because PPO/GAE designed to handle issues which arise in harder
+     problems
      
 
 
@@ -118,7 +121,9 @@
 
 
 # Project ideas (beyond simple)
- - Try portfolio agent method (change training approach throughout training 
+ - Try portfolio agent method (change training approach throughout training)
+   I think [rainbow](https://arxiv.org/abs/1710.02298) is basically this
+   (but for DQN specifically).
 
 
 

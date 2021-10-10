@@ -145,7 +145,21 @@ My thoughts on some papers.
    clip empirically is best
  - Multiple optimization steps on same trajectory can work with policy
    gradient, but doesn't work empirically (over updates) *
- - 
+ - Pretty simple, we just clip on ratio
+ - also, we can train policy with multiple steps of gradient descent by
+   making sure to stop when KL is over some threshold. Standard sample efficiency
+   vs performance trade-offs apply of course.
+ - Nothing too complicated.
+
+## GAE
+ - [https://arxiv.org/abs/1506.02438](https://arxiv.org/abs/1506.02438)
+ - simple approach for estimating advantage using exponentially weighted sum of
+   TD-residual
+ - should be lower variance (with some bias)
+ - we have to eat bias regardless due to how value function is generally
+   estimated
+ - a decent amount of time spent on derivation, but I think intuition is
+   reasonably clear
 
 ## Learning from human preferences
  - [https://arxiv.org/abs/1706.03741](https://arxiv.org/abs/1706.03741)
