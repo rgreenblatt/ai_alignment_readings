@@ -193,6 +193,27 @@ My thoughts on some papers.
  - how did they queue up the trajectories back to back?
  - how many epochs for supervised reward model?
 
+## Fine tuning language models from human feedback
+ - [https://arxiv.org/abs/1909.08593](https://arxiv.org/abs/1909.08593)
+ - fine tuning with kl penalty originally comes from earlier paper
+ - tasks:
+   - continue text and match style
+   - summarization (I think this goes poorly/degenerates due to human feedback)
+ - online vs offline data collection
+   - similar for style
+   - online better for summarization
+ - reward model uses originally pretrained model as base (to avoid weight
+   corruption presumably). Section 4.2 claims this is to avoid overfitting, but
+   actually its not exactly clear this was the issue based on what they say.
+ - same exponential/elo loss as in learning from human preferences 
+ - online data collection is hard
+   - complex software with many parts that can break
+   - hard to debug
+   - need to filter out poor labellers soon?
+ - lol, section 4.4...
+ - [some of the code](https://github.com/openai/lm-human-preferences)
+
+
 ## Summarization from Human Feedback
  - [https://arxiv.org/abs/2009.01325](https://arxiv.org/abs/2009.01325) 
  - TLDR dataset from reddit
@@ -213,9 +234,9 @@ My thoughts on some papers.
 
 
 ## TODO
+ - recall exact encoder decoder language model structure for GPT/BeRT
  - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of single neural net)
  - [understanding RL vision](https://distill.pub/2020/understanding-rl-vision/) (maybe some good projects along these lines...)
- - [fine tuning language models from human feedback](https://arxiv.org/abs/1909.08593)
  - [Evaluating Arguments One Step at a Time](https://ought.org/updates/2020-01-11-arguments)
    - experiment with humans along the lines of ai safety via debate (but
      trying to evaluate sub claims: test distributing the work)
