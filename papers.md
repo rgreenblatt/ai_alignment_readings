@@ -67,6 +67,50 @@ My thoughts on some papers.
      - could use ensembles, explicitly calibration, or other
    - modify inductive bias to avoid poor behavior
    - I skipped section on other approaches and verifying alignment (maybe better covered elsewhere)
+ - recursive reward modeling
+   - type of iterated amplification, but with reward modeling instead of
+     supervised/imitation learning
+   - do error accumulate? or self-correct?
+   - assumes that evaluation is easier than doing the thing itself
+   - assumes that agents can be useful in further evaluation (unclear exactly how this hierarchy can be built)
+ - claim of the overall approach is that good reward model is
+   important/valuable approach
+ - maybe also weaker claim that other stuff is easy (fulfilling capabilities of
+   reward model/inner alignment easier)
+
+## Reward modeling papers (brief)
+
+### Pitfalls of learning reward function online
+ - [https://arxiv.org/pdf/2004.13654.pdf](https://arxiv.org/pdf/2004.13654.pdf)
+ - goes through some potential issues with online learning for (potentially)
+   intelligent agents
+ - outlines ideas of unriggability (agent can't make reward function easier
+   to optimize) and uninfluencedability (operates by learning fact about
+   environment e.g., true reward func)
+ - uninfluencedability implies unriggability
+
+### Quantifying differences in reward functions
+ - [https://arxiv.org/pdf/2006.13900.pdf](https://arxiv.org/pdf/2006.13900.pdf)
+ - builds distance measure for comparing reward functions
+ - supposedly not too much computation to accurately approximate
+ - claim some advantages vs other approaches
+ - distance from optimal should follow reward (some theoretical guarantees)
+ - pseudometric
+ - could be useful for evaluation without even having to consider policy
+
+### Learning human objectives by evaluating hypothetical behavior
+ - [https://arxiv.org/pdf/1912.05652.pdf](https://arxiv.org/pdf/1912.05652.pdf)
+ - some other algorithm for learning reward model (supervised?)
+ - what is a forward dynamics model? (just predict next state?)
+ - so maybe hypothetical behaviors synthesized off-policy?
+   - how can that work in general? (typically interesting behaviors occur
+    after agent is trained)
+ - some sort of approach to guess unsafe states without user query
+ - what does it mean to synthesis hypothetical behavior 'from scratch'?
+ - where does off-policy data come from?
+ - so idea is to construct trajectories to test with high value of information (VOI)
+ - can't be computed, so instead we use optimization with several criteria
+ - off-policy data used to train generative model (evaluates probs of trajectory)
 
 ## Open Questions in Creating Safe Open-ended AI
  - [https://arxiv.org/abs/2006.07495](https://arxiv.org/abs/2006.07495)
