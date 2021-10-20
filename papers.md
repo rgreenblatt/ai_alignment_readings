@@ -276,6 +276,27 @@ My thoughts on some papers.
    - unclear if how much other stuff they tried (e.g., param freezing etc.)
  - TODO: go over again (mostly just read methods and skimmed results)
 
+## Truthful question answering/changing biases of pretrained models
+
+### TruthfulQA
+
+- truthful question dataset
+- also train GPT-judge as metric for success on dataset (ideally don't just fit
+  to GPT-judge...)
+- test various prompts and look at truthfulness perf of existing language models
+- size doesn't necessarily improve perf
+
+### Papers in this area to read
+
+- [Queens are powerful too](https://arxiv.org/abs/1911.03842): reduce gender
+  bias in model via changing training
+- [Understanding capabilities, limitation, impact of models](Understanding capabilities, limitation, impact of models)
+- [Recipes for safety in open-domain chatbots](https://arxiv.org/abs/2010.07079)
+- [Process for Adapting Language Models to Society (PALMS)](https://cdn.openai.com/palms.pdf)
+- [FEVEROUS: Fact Extraction and VERification Over Unstructured and Structured information](https://arxiv.org/abs/2106.05707)
+- (also note that language model learning from human prefs is relevant here)
+- Should probably be more? (I haven't looked too carefully...)
+
 
 ## TODO
  - recall exact encoder decoder language model structure for GPT/BeRT
@@ -284,5 +305,10 @@ My thoughts on some papers.
  - [Evaluating Arguments One Step at a Time](https://ought.org/updates/2020-01-11-arguments)
    - experiment with humans along the lines of ai safety via debate (but
      trying to evaluate sub claims: test distributing the work)
-
+ - some new architectures/language models in general:
+   - [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
+   - mixture of experts
+   - [switch transformers](https://arxiv.org/abs/2101.03961)
+   - 
+   - ? (haven't spent much time looking into what to read...)
 
