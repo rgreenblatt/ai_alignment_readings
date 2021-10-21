@@ -313,6 +313,17 @@ My thoughts on some papers.
 - Should probably be more? (I haven't looked too carefully...)
 
 
+## Cooperative Inverse Reinforcement Learning (CIRL) 
+
+- [https://arxiv.org/abs/1606.03137](https://arxiv.org/abs/1606.03137)
+- robots payoff is actual human reward
+- robots distribution over reward model parameters is sufficient statistic
+- optimal (or at least better) teaching is important (e.g., finding important
+  sample to train on)
+- apprenticeship is type of cirl
+- recommend approach of 'converge to right purpose over training' (learn purpose)
+ 
+
 ## TODO
  - recall exact encoder decoder language model structure for GPT/BeRT
  - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of single neural net)

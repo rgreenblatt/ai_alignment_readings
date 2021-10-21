@@ -36,5 +36,4 @@
 
 ## Prior work
 
-- TruthfulQA paper uses 'GPT-judge' which is fine tuned to check if truthful QA
-  questions are right or not
+- see 'Truthful question answering' section in papers.md
