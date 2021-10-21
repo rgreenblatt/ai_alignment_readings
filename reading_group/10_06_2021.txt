@@ -1,7 +1,0 @@
-Overall theme: scaling laws/compute?
-
- - maybe [ai and compute](https://openai.com/blog/ai-and-compute/) and [ai and efficiency](https://openai.com/blog/ai-and-efficiency/)
- - human preference soon
- - 11 approaches
- - designated person to speak with focus
-
