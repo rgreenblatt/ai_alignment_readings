@@ -111,6 +111,21 @@ My thoughts on some papers.
  - so idea is to construct trajectories to test with high value of information (VOI)
  - can't be computed, so instead we use optimization with several criteria
  - off-policy data used to train generative model (evaluates probs of trajectory)
+ - so they do just use random policies (isn't that likely to be very weak in
+   exploration?)
+ - embed states for easier optimization via VAE
+ - classify states with straight forward labels
+ - 'acquisition function': how useful human feedback on trajectory would be
+   - maximize reward model uncertainty (logits are close)
+   - maximize predicted reward (focus on things which are supposed to be really good)
+   - minimize predicted reward (focus on unsafe)
+   - novelty: maximize euclidean distance between state embeddings
+ - query trajectory optimizes acquisition function + log prob (to ensure
+   probable trajectory is selected)
+ - model based control using forward predictor needed for training reward model
+ - ok, so actually not that much going on... (probably not very general
+   approach...)
+
 
 ## Open Questions in Creating Safe Open-ended AI
  - [https://arxiv.org/abs/2006.07495](https://arxiv.org/abs/2006.07495)

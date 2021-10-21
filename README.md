@@ -103,6 +103,9 @@ All of this is available via RSS
 
  - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
  - Scaling laws
+ - [The alignment problem in different capability regimes](https://www.alignmentforum.org/posts/HHunb8FPnhWaDAQci/the-alignment-problem-in-different-capability-regimes)
+   - competence causes different alignment problems (model certainly
+     understands humans, but maybe more effectively deceptive)
  - POMDPs (and other agent models?)
  - AI governance
    - windfall clause 
