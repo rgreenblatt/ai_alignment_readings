@@ -60,5 +60,9 @@ extensions which may be worth some experimentation:
   of text.
 
 
-[^1]: Like the approach used in TruthfulQA. Use a few-shot prompt with examples of
-   questions answered like a conspiracy theorist.
+[^1]: Like the approach used in TruthfulQA. Harmful few-shot
+  prompts consist of examples of questions answered like a conspiracy theorist
+  (or other types of poor answers which can be found in the original training
+  distribution).
+  Helpful few-shot prompts consist of questions answered truthfully and in
+  the desired style.
