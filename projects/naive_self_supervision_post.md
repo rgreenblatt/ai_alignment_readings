@@ -30,7 +30,7 @@ For example, how much more would training on TruthfulQA questions
 improve performance vs training on a set of unrelated questions?
 
 For these reasons, I am planning on doing some experiments along these
-lines.
+lines (probably working with a friend of mine).
 If I do so, I will post a followup with results.
 I'm curious if anyone is aware of prior experiments along these
 lines or has any ideas for related schemes or questions.
