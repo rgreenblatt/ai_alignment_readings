@@ -29,7 +29,7 @@ improve performance vs training on a set of unrelated questions?
 I think that answers to these questions have a small but
 reasonable chance to result in some weak updates on approaches to truthful AI.
 
-For these reasons, I am planning on doing some fast experiments along these
+I am planning on doing some fast experiments along these
 lines (probably working with a friend of mine).
 If I do so, I will post a followup with results.
 I'm curious if anyone is aware of prior experiments along these
