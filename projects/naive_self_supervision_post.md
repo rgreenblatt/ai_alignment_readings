@@ -18,8 +18,6 @@ curation or human labeling. It does require a dataset of questions,
 but that may be easier to arrange. Presumably this sort
 of very weak self-consistency enforcement/pseudolabeling results in
 little improvement on truthfulness. 
-<!-- Certainly, this approach should perform worse than a reward model learned from -->
-<!-- human preferences or fine-tuning on curated dataset. --> 
 However, I don't have much confidence in what the results would like.  It seems
 likely that the model would learn to adapt the style of answers to appear more
 truthful to itself, but I don't have any sense of how much actual improvement
