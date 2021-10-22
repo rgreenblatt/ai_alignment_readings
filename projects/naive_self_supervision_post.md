@@ -1,6 +1,6 @@
 # Naive self-supervised approaches to truthful AI.
 
-Useful background: https://www.lesswrong.com/posts/PF58wEdztZFX2dSue/how-truthful-is-gpt-3-a-benchmark-for-language-models
+Useful background: [TruthfulQA](https://www.lesswrong.com/posts/PF58wEdztZFX2dSue/how-truthful-is-gpt-3-a-benchmark-for-language-models)
 
 Consider the following approach to (possibly) make a pretrained generative
 language model (like GPT-3) more truthful:
@@ -38,7 +38,7 @@ lines or has any ideas for related schemes or questions.
 I can also think of some other similar self-supervised/self-play schemes and
 extensions which may be worth some experimentation:
 
-- Ask a model questions with a 'harmful prompt'[1]. Ask the same model
+- Ask a model questions with a 'harmful prompt'[^1]. Ask the same model
   the same question with a 'helpful prompt' instead and train
   the model to answer harmful prompts like it answers helpful prompts.
   This could be done with token by token supervised learning or
@@ -60,5 +60,5 @@ extensions which may be worth some experimentation:
   of text.
 
 
-[1] Like the approach used in TruthfulQA. Use a few-shot prompt with examples of
+[^1]: Like the approach used in TruthfulQA. Use a few-shot prompt with examples of
    questions answered like a conspiracy theorist.
