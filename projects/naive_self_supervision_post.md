@@ -26,8 +26,10 @@ on truthfulness would be limited to the set of questions used for training
 or if truthfulness learned in this way would generalize.
 For example, how much more would training on TruthfulQA questions
 improve performance vs training on a set of unrelated questions?
+I think that answers to these questions could result
+in some weak updates 
 
-For these reasons, I am planning on doing some experiments along these
+For these reasons, I am planning on doing some fast experiments along these
 lines (probably working with a friend of mine).
 If I do so, I will post a followup with results.
 I'm curious if anyone is aware of prior experiments along these
@@ -56,6 +58,8 @@ extensions which may be worth some experimentation:
   weak amplification approach. It would also be possible to apply
   self-supervised learning to the process of finding relevant passages
   of text.
+- Use another model to generate questions. This model
+  could be trained as an adversary to the consistency of other components.
 
 
 [^1]: Like the approach used in TruthfulQA. Harmful few-shot
