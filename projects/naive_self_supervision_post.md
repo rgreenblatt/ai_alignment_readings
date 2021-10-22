@@ -26,8 +26,8 @@ on truthfulness would be limited to the set of questions used for training
 or if truthfulness learned in this way would generalize.
 For example, how much more would training on TruthfulQA questions
 improve performance vs training on a set of unrelated questions?
-I think that answers to these questions could result
-in some weak updates 
+I think that answers to these questions have a small but
+reasonable chance to result in some weak updates on approaches to truthful AI.
 
 For these reasons, I am planning on doing some fast experiments along these
 lines (probably working with a friend of mine).
