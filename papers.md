@@ -428,14 +428,65 @@ My thoughts on some papers.
 
 ## Evaluating arguments one step at a time
 
+- study of factored cognition using just humans (ought)
+- dividing up args into short and structured chunks
+- test of AI safety via debate (and similar)
+- only one step shown for each checker
+- can work in some cases, but brittle because isn't consensus on whether step
+  is valid (maybe would work for proofs? trivially works for proofs in many
+  formal languages for some chunk sizes)
+- uses ebert reviews (is this really a good dataset? isn't optimized for
+  argumentative qual)
+- adversarial setup
+- 'claim tree' (subclaims and quotes)
+- also rebuttals and supporting quotes
+- I don't really feel like I know what to conclude. Somehow results in no
+  update at all? I this just because I wasn't sure what to expect, research is
+  exactly what I would expect, or because research is useless?
+- It looks like ought hasn't published that much, but this is representative of
+  the type of stuff they have published.
+
+## Switch transformers
+
+- sparse transformer
+- plausible considerably more computationally efficient for a give level of
+  loss
+- do the types of things it gets right differ substantially from higher param,
+  but not sparse approach?
+- just replaces dense FF with sparse switched layer (otherwise normal transformer)
+- note that most of params in dense FF
+- distributed approach splits weights by device
+- param switching approach is from [https://arxiv.org/abs/1701.06538](https://arxiv.org/abs/1701.06538)
+  - they use softmax with top-k with k > 1 to ensure gradients
+  - also mention possible to due k = 1 with RL like approach (mention REINFORCE
+    (aka vanilla policy gradient), but should be possible with other on-policy
+    approaches)
+- somehow they route to only a single expert (k = 1)? are they using RL like approach?
+- expert per device
+- capacity multiplier so that there is a fixed max tokens per expert (device) per batch
+- if too many tokens for expert, layer values are yeeted and tokens are purely
+  residual (so batch items can interfere with each other... lol just standard
+  random deep learning noise,
+  who needs correctness anyway...)
+- possible to distill sparse nets for further improvements
+- also load balancing loss 
+- use bfloat16
+- can use expert dropout to reduce overfit
+- ok, so we still multiply by route
+  prob (despite pure greedy sampling) in order to ensure grad flow: [checkout this code](https://github.com/labmlai/annotated_deep_learning_paper_implementations/blob/master/labml_nn/transformers/switch/__init__.py)
+  (but wow is this mad sketch. some weird scale dependence...)
+- presumably all top-k MoE uses this approach and doesn't instead normalize to
+  true selection prob (which is always 1 with k = 1)
+- I find this so sketchy, but blessings of scale...
+- legit everything is ill founded (just multiplier, token yeeting, params to
+  the max, bfloat16)
+
+
 ## TODO
 
 - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of
   single neural net. I am somewhat familiar, but maybe go back over and take
   some notes on all sections)
-- [Evaluating Arguments One Step at a Time](https://ought.org/updates/2020-01-11-arguments)
-  - experiment with humans along the lines of ai safety via debate (but
-    trying to evaluate sub claims: test distributing the work)
 - some new architectures/language models in general:
   - [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
   - mixture of experts
