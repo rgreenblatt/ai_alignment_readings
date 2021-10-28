@@ -481,6 +481,47 @@ My thoughts on some papers.
 - legit everything is ill founded (just multiplier, token yeeting, params to
   the max, bfloat16)
 
+## My take on Vanessa Kosoy's take on AGI safety
+
+- [https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety](https://www.alignmentforum.org/posts/SzrmsbkqydpZyPuEh/my-take-on-vanessa-kosoy-s-take-on-agi-safety)
+- technical ai safety alignment also called 'single-single' alignment problem
+  (instruction manual for making FAI)
+- algorithms first vs desiderata first
+- route:
+  - formal desiderata (if ai satisfies these _desired_ conditions, then ai is safe)
+    - probably requires something like utility function
+  - prove algo satisfies desiderata (regret upper bound)
+  - as needed, start with simplified desiderata and weaker (large computational
+    requirements) alg, then make both more realistic
+- to me, it seems exceptionally unlikely to prove anything of direct relevance.
+  even the most directly relevant proofs in computational learning theory thus
+  far aren't that relevant (and they tend to be impossibility results which
+  aren't what we are looking for here)
+- issues with traps:
+  - current RL approaches require random exploration
+  - so, to determine outcome is bad, outcome must be tested.
+  - but in non-episodic contexts where permanence is an issue, it's possible to
+    lock in permanently worse reward (trap)
+  - proposed solution: delegative RL (allow agent to delegate when it isn't
+    sure how to avoid trap, then the agent which is delegated to can avoid
+    trap)
+    - seems to require human to do all(!) exploration
+    - also seems to require that human obeys some guarantees?
+    - we don't require that human actions can't result in trap:
+      some action could have low probability of being trap
+  - solve humans committing actions which could be trap via quantilization 
+    - randomly sample from best actions human could have taken
+    - 'less' optimization
+    - I don't understand why this is supposed to help on average, maybe
+      something, something goodhart?
+- issues with realizability: infra-bayesianism
+  - realizability better discussed elsewhere (e.g. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh)
+  - approach is to solve this with move from bayesianism -> infra-bayesianism
+  - not clear why directly needed for this agenda, something with the
+    desiderata? (mentions agent doesn't have to be following this model, but I
+    don't understand why this is important for desiderata)
+  - infra-bayesianism abstracts over hypothesises via convex sets of
+    probability distributions (technical details complex...)
 
 ## TODO
 
