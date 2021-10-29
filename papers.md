@@ -507,21 +507,31 @@ My thoughts on some papers.
     trap)
     - seems to require human to do all(!) exploration
     - also seems to require that human obeys some guarantees?
-    - we don't require that human actions can't result in trap:
-      some action could have low probability of being trap
+    - we don't require that human actions can't result in trap: some action
+      could have low probability of being trap
   - solve humans committing actions which could be trap via quantilization 
     - randomly sample from best actions human could have taken
     - 'less' optimization
     - I don't understand why this is supposed to help on average, maybe
       something, something goodhart?
 - issues with realizability: infra-bayesianism
-  - realizability better discussed elsewhere (e.g. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh)
+  - realizability better discussed elsewhere (e.g.
+    https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh)
   - approach is to solve this with move from bayesianism -> infra-bayesianism
   - not clear why directly needed for this agenda, something with the
     desiderata? (mentions agent doesn't have to be following this model, but I
     don't understand why this is important for desiderata)
   - infra-bayesianism abstracts over hypothesises via convex sets of
     probability distributions (technical details complex...)
+- non-cartesian daemons
+  - where the hell (hah, get it) does this term come from? (google definition
+    of cartesian daemon doesn't seem to correspond...)
+  - usage of channels other than input/output (e.g., hacking sandbox)
+  - violates assumption for provable guarantees
+    - which maybe implies provable guarantees don't require intent alignment
+      (otherwise, why would hacks be concern?)
+  - maybe solvable with homomorphic encryption (but this is unusable slow!)
+
 
 ## TODO
 
