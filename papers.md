@@ -375,6 +375,7 @@ My thoughts on some papers.
 
 ## Understanding RL vision
 
+- [https://distill.pub/2020/understanding-rl-vision/](https://distill.pub/2020/understanding-rl-vision/)
 - uses attribution (apparently standard approach?, look into this) and
   dimensionality reduction (e.g. PCA)
 - requires procedural generation

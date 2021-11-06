@@ -40,14 +40,17 @@ All of this is available via RSS
      - [gradient hacking](https://www.lesswrong.com/posts/uXH4r6MmKPedk8rMA/gradient-hacking)
  - [alignment landscape](https://ai-alignment.com/ai-alignment-landscape-d3773c37ae38) (diagram on components of making AI go well)
    - corrigibility in general is hard
+   - proving various concerns are valid/when they do or don't hold
+     - Alex Turner's (aka TurnTrout) work on instrumental convergence or power
+       seeking more generally (TODO: read more)
  - Various current research avenues
    - deceptiveness (particularly language models)
    - alignment strategies (prosaic)
      - iterated amplification [original paper](https://arxiv.org/abs/1810.08575) and 
        [summary](https://ai-alignment.com/iterated-distillation-and-amplification-157debfd1616)
-
        See Iterated Amplification subsection in papers.md for notes/questions
      - reward modeling more generally
+       - learning preferences is hard in general
      - [deep rl from human preferences](https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/). Otherwise known as backflip paper.
      - [11 proposals](https://www.alignmentforum.org/posts/fRsjBseRuvRhMPPE5/an-overview-of-11-proposals-for-building-safe-advanced-ai)
      - tool vs agent concerns
@@ -63,7 +66,8 @@ All of this is available via RSS
          - relaxes fully specificed objective (we don't know how to specify)
          - see also [benefits of assistance games](https://drive.google.com/file/d/1Xp9p6RLNjZrgsdEbGIJK61FnV_drDTQf/view)
      - [cooperative inverse reinforcement learning (CIRL)](https://arxiv.org/abs/1606.03137)
-         - model/approach in which ai learns human preferences and human investiages their own preferences in cooperative game
+         - model/approach in which ai learns human preferences and human
+           investiages their own preferences in cooperative game
          - reduces to POMDP
      - [ambitious vs narrow value learning](https://ai-alignment.com/ambitious-vs-narrow-value-learning-99bd0c59847e)
        Related, consider idea that we should avoid AIs which need to model human preferences (for example 
@@ -101,7 +105,7 @@ All of this is available via RSS
            - corrigibility maybe important
          - subsystem alignment: parts of agent just obey physical laws, so they must also be aligned
 
- - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs
+ - [tool vs agent AIs](https://www.gwern.net/Tool-AI) (and why we are likely to end up with agent AIs)
  - Scaling laws
  - [The alignment problem in different capability regimes](https://www.alignmentforum.org/posts/HHunb8FPnhWaDAQci/the-alignment-problem-in-different-capability-regimes)
    - competence causes different alignment problems (model certainly
@@ -123,10 +127,7 @@ All of this is available via RSS
          little and windfall doesn't apply. Too much and firm is too powerful
          or it's going to be plundered/seized by some government or other power
          any way.
-    - 
-
-   - [week 7](https://www.eacambridge.org/agi-week-7) of EA Cambridge course (TODO: subset)
-   - TODO more stuff here
+    - TODO: thought on various governance agenda's?
  - 
 
 ## Career advice
