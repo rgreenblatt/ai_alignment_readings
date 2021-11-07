@@ -127,7 +127,9 @@ All of this is available via RSS
          little and windfall doesn't apply. Too much and firm is too powerful
          or it's going to be plundered/seized by some government or other power
          any way.
-    - TODO: thought on various governance agenda's?
+   - [multipolar alignment failure examples](https://www.lesswrong.com/posts/LpM3EAakwYdS6aRKf/what-multipolar-failure-looks-like-and-robust-agent-agnostic)
+   Note, these examples also are basically single-single examples because the agents are individually aligned with no-one.
+   - TODO: thought on various governance agenda's?
  - 
 
 ## Career advice

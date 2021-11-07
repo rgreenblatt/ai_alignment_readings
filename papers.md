@@ -418,7 +418,7 @@ My thoughts on some papers.
   - validity of diversity hypo
   - relationship between diversity, interp, generalization, model size
   - failure cases of this approach
-  - quantify diversity 
+  - quantify diversity
   - how can interpretability be done without diversity?
   - RL:
     - how to interpret on non-visual inputs (think about text model interp...)?
@@ -470,7 +470,7 @@ My thoughts on some papers.
   random deep learning noise,
   who needs correctness anyway...)
 - possible to distill sparse nets for further improvements
-- also load balancing loss 
+- also load balancing loss
 - use bfloat16
 - can use expert dropout to reduce overfit
 - ok, so we still multiply by route
@@ -481,6 +481,7 @@ My thoughts on some papers.
 - I find this so sketchy, but blessings of scale...
 - legit everything is ill founded (just multiplier, token yeeting, params to
   the max, bfloat16)
+- TODO: anything else I would want to extract from this?
 
 ## My take on Vanessa Kosoy's take on AGI safety
 
@@ -510,7 +511,7 @@ My thoughts on some papers.
     - also seems to require that human obeys some guarantees?
     - we don't require that human actions can't result in trap: some action
       could have low probability of being trap
-  - solve humans committing actions which could be trap via quantilization 
+  - solve humans committing actions which could be trap via quantilization
     - randomly sample from best actions human could have taken
     - 'less' optimization
     - I don't understand why this is supposed to help on average, maybe
@@ -533,15 +534,36 @@ My thoughts on some papers.
       (otherwise, why would hacks be concern?)
   - maybe solvable with homomorphic encryption (but this is unusable slow!)
 
+## Power dynamics as a blind spot or blurry spot in our collective world-modeling, especially around AI
+
+- [https://www.lesswrong.com/posts/WjsyEBHgSstgfXTvm/power-dynamics-as-a-blind-spot-or-blurry-spot-in-our](https://www.lesswrong.com/posts/WjsyEBHgSstgfXTvm/power-dynamics-as-a-blind-spot-or-blurry-spot-in-our)
+- claims that LessWrong doesn't consider power dynamics sufficiently (over
+  focused on single-single)
+- may be because MIRI originally started with simple single-single agenda
+- may also be because original alignment community wanted to avoid talking
+  about arms races to avoid having an arms race.
+- I'm not sold that technical AI researchers should be all that concerned with
+  things other than single-single: I think technical work for multi-multi has single-single
+  as a prereq.
 
 ## TODO
 
 - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of
   single neural net. I am somewhat familiar, but maybe go back over and take
   some notes on all sections)
+- more of alex turner:
+  - [https://www.lesswrong.com/users/turntrout](https://www.lesswrong.com/users/turntrout)
+  - impact measures
+  - proofs on instrumental convergence
+  - [Conservative Agency via Attainable Utility Preservation](https://arxiv.org/abs/1902.09725)
+- [subagents and impact measures (via Stuart Armstrong)](https://www.lesswrong.com/s/iRwYCpcAXuFD24tHh/p/mdQEraEZQLg7jtozn) read Alex Turner stuff first
+- reward models:
+  - PEBBLE: feedback-efficient
+  - a unifying formalism for reward learning (what is the context for this?)
+  - B-Pref benchmarking preference-based
+  - active preference-base learning of ...
+- more stuff from ambassadors at EAG
 - some new architectures/language models in general:
-  - [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
-  - mixture of experts
-  - [switch transformers](https://arxiv.org/abs/2101.03961)
-  -
+  - maybe read more about [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
+  - maybe read more about clip?
   - ? (haven't spent much time looking into what to read...)
