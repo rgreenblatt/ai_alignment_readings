@@ -657,6 +657,20 @@ My thoughts on some papers.
   - only can (by definition) create weaker agents
 - TODO: go through later posts again and refine thoughts
 
+## Advanced artificial agents intervene in the provision of reward
+
+- general result/scenario wrt learned reward (based on observations from the
+  agent itself in some sense)
+- applies for arbitrarily advanced agent (perfect planning etc)
+- wireheading related?
+- proof?
+- agent may be uncertain between undesirable 'wireheadable' hypothesis and correct hypothesis
+  - choices between the two depend on inductive biases
+  - hypothesis 'intervenes in provision of reward'
+- straight forward, but slightly more detailed argument that agents are likely
+  to interfere with provisioning of reward
+- TODO: take another look through this paper and other papers by Michael
+
 
 ## TODO
 
