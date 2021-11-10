@@ -170,6 +170,76 @@ My thoughts on some papers.
 - ok, so actually not that much going on... (probably not very general
   approach...)
 
+### PEBBLE: Feedback-Efficient Interactive Reinforcement Learning via Relabeling Experience and Unsupervised Pre-training
+
+- improving sample efficiency
+- pre-train with unsupervised exploration (intrinsic motivation) prior to building reward
+  model to improve efficiency (how much does this actually matter in practice?)
+- use reward model off-line as well for off-policy training: relabel experience
+- standard preference between clips from teacher
+- why does off-policy matter for improving sample efficiency from perspective
+  of human? (having trained reward model is supposed to fix this...)
+  - claims this improves things a lot
+  - presumably, issue is that on-policy with low sampling rate overfits to
+    reward model
+  - so then reward model generalization is less of an issue when
+    just relabeling previous experiences which are part of the labeled
+    distribution
+- train using SAC for off policy!
+- exact same formulation of reward model loss from learning from human prefs
+- ensemble disagreement basically seems best...
+- not much too this paper, feel like it could have been TL DR...
+- should probably implement something like this for my projs
+
+### B-Pref: Benchmarking preference-base reinforcement learning
+
+- benchmark for preference-based RL
+- simulates teachers with varying degrees of irrationality
+- metrics based on robustness to this
+- assumes choices are:
+  - invalid/no ordering
+  - equal
+  - left/right better
+- approach looks like:
+  - have some \delta for rewards too close.
+  - if max trajectory total reward too low, skip
+  - if trajectory total rewards close (within \delta), equal pref
+  - otherwise, find which is better (but with stochastic irrationality model)
+    and finally make mistake with prob \epsilon
+- to find out which is better, rewards are discounted extra and we use \beta
+  irrationality coeff as inverse softmax temperature: everything gets close
+  with small \beta, small differences pulled apart with large \beta
+  (why didn't they just call it softmax temp...)
+- rationality coeff just how 'discerning' agent is (as its softmax temp)
+- consider normalized returns
+- test variety of teachers with/without various failures to check robustness. examples:
+  - myopic has extra discount
+  - stoc likely to mislabel with high temp
+  - etc
+- just compare orig to PEBBLE (same authors, so a touch incestuous, but hey, it's academia...)
+- should probably check this for my projs
+
+
+### Active Preference-based learning of reward functions
+
+- again, active learning, where trajectories selected for labeling
+- trajectory synth
+- assumes fixed d-dimensional feature function and then forces reward function
+  to be inner product of this feature and a learned weight (at least pretty sure \phi is fixed)
+- so this is why this doesn't work in the general case: this model is FAR too
+  constrained (typically we learn reward model as deep function, but this requires a linear reward model
+  on some fixed feature!) Maybe possible to learn feature and then re update multipliers?
+  (but it does seem like all the juice is in the reward model...)
+- so probably can't be used for atari/backflip/etc
+- but constrained approach allows for reasoning about bayesian update with
+  uniform prior
+- Ok, so this is basically not general and not useful in practice.
+- but if you can reduce to this case, it is possible to do some well-founded
+  optimization with PRoVen gUaRAnTEes (with cool stuff like volume removal from
+  the hypothesis space)
+- Not reading in more detail, because I now know why this isn't worthwhile
+
+
 ## Open Questions in Creating Safe Open-ended AI
 
 - [https://arxiv.org/abs/2006.07495](https://arxiv.org/abs/2006.07495)
@@ -362,6 +432,7 @@ My thoughts on some papers.
 - [FEVEROUS: Fact Extraction and VERification Over Unstructured and Structured information](https://arxiv.org/abs/2106.05707)
 - (also note that language model learning from human prefs is relevant here)
 - Should probably be more? (I haven't looked too carefully...)
+- generally looking at redwood research proj
 
 ## Cooperative Inverse Reinforcement Learning (CIRL)
 
@@ -546,24 +617,67 @@ My thoughts on some papers.
   things other than single-single: I think technical work for multi-multi has single-single
   as a prereq.
 
+## Reframing impact sequence
+
+- pretty pictures oooh
+- impact can be decomposed into value impact and objective impact
+- value impact
+  - impact on specific values
+  - exists independent of time and space
+  - exists even if it doesn't effect you
+- objective impact
+  - impacts ability to achieve goals in future
+  - space specific
+  - often general over many agents with different goals
+- impact iff changes ability to get what is wanted: attainable utility (AU)
+- kind of obvious I think?
+- impact is not primary about world state: is about attainable utility
+- impact doesn't depend on ontology: thus impact isn't about world states
+- impact happens to agent, not to world
+- impact isn't related to change in identities or states (if doesn't effect AU)
+- anticipated utility depends on expectations, so different agents may have
+  different understandings of each other's anticipated utility (see
+  robber/client
+  [here](https://www.lesswrong.com/s/7CdoznhJaLEKHwvJW/p/coQCEe962sjbcCqB9))
+- power as ability to achieve goals in general (behind veil of ignorance of
+  reward function)
+- power seeking depends on time prefs
+- power seeking depends on reward distribution
+- in general, reward functions best optimized by seeking power
+- catastrophe: high impact for you, destroys your ability to get what you want
+- objective catastrophe: high impact for many agents, destroys many agents
+  abilities to get what they want
+- consider going back through some of the later posts again (I kinda feel like
+  I'm missing something (but not strongly))
+- attainable utility preservation: do what you want, but don't seek power in
+  general
+  - should be a distance measure which pushes catastrophe far away (reduces the
+    reward)
+  - note: considering optimal policies 
+  - only can (by definition) create weaker agents
+- TODO: go through later posts again and refine thoughts
+
+
 ## TODO
 
 - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of
   single neural net. I am somewhat familiar, but maybe go back over and take
   some notes on all sections)
 - more of alex turner:
-  - [https://www.lesswrong.com/users/turntrout](https://www.lesswrong.com/users/turntrout)
-  - impact measures
   - proofs on instrumental convergence
   - [Conservative Agency via Attainable Utility Preservation](https://arxiv.org/abs/1902.09725)
 - [subagents and impact measures (via Stuart Armstrong)](https://www.lesswrong.com/s/iRwYCpcAXuFD24tHh/p/mdQEraEZQLg7jtozn) read Alex Turner stuff first
 - reward models:
-  - PEBBLE: feedback-efficient
-  - a unifying formalism for reward learning (what is the context for this?)
-  - B-Pref benchmarking preference-based
-  - active preference-base learning of ...
+  - a unifying formalism for reward learning (what is the context for this? for now, leaving this)
 - more stuff from ambassadors at EAG
 - some new architectures/language models in general:
   - maybe read more about [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
   - maybe read more about clip?
   - ? (haven't spent much time looking into what to read...)
+- rescuing utility func (ontological crisis): https://arbital.com/p/rescue_utility/
+- reread open phil rfps 
+- invariant predication and causal inference
+- michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
+- cartesian frames (maybe start with 'chu are you')
+- read more jan leike and other open ai guy
+- 
