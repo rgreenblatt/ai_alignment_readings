@@ -671,16 +671,32 @@ My thoughts on some papers.
   to interfere with provisioning of reward
 - TODO: take another look through this paper and other papers by Michael
 
+## Causal inference using invariant predication
+
+- collect models that are invariant to interventions and assume they are (more)
+  causal
+- allows for obtaining confidence intervals for which factors are causal
+- maybe look into structural equation models
+- use causal relationships for statistical estimation
+- they are interested in Bayes net notion of causality: which predictors X are
+  directly pointing to the target Y
+- Ok, I am not going to look into this more right now, but it might be relevant
+  in the future.
+
+## Subagents and impact measures
+
+- didn't read in that much detail
+- rough idea is that conservative agency approaches have surprising issues
+  (subagents used as example, but likely these issues show up in other cases)
+
 
 ## TODO
 
 - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of
   single neural net. I am somewhat familiar, but maybe go back over and take
   some notes on all sections)
-- more of alex turner:
-  - proofs on instrumental convergence
-  - [Conservative Agency via Attainable Utility Preservation](https://arxiv.org/abs/1902.09725)
 - [subagents and impact measures (via Stuart Armstrong)](https://www.lesswrong.com/s/iRwYCpcAXuFD24tHh/p/mdQEraEZQLg7jtozn) read Alex Turner stuff first
+- penalizing side effects using stepwise relative reachability
 - reward models:
   - a unifying formalism for reward learning (what is the context for this? for now, leaving this)
 - more stuff from ambassadors at EAG
