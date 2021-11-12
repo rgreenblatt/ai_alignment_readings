@@ -711,5 +711,3 @@ My thoughts on some papers.
 - invariant predication and causal inference
 - michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
 - cartesian frames (maybe start with 'chu are you')
-- read more jan leike and other open ai guy
-- 
