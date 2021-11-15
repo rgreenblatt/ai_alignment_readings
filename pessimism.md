@@ -20,8 +20,8 @@ Reading:
 - [Discussion with Eliezer Yudkowsky on AGI interventions](https://www.lesswrong.com/posts/CpvyhFy9WvCNsifkY/discussion-with-eliezer-yudkowsky-on-agi-interventions)
   The comments of decently high karma are all pretty important. I would
   probably read all of them and prioritize comments over reading discussion in
-  full depth (but you need to at least skill discussion). They talk about
-  possibility of formal verification and objections.
+  full depth (but you need to at least skim discussion). The comments talk about
+  possibility of formal verification and objections to the views of EY.
 - [follow up post: 'What would we do if alignment were futile?'](https://www.lesswrong.com/posts/Xv77XjuZEkjRsvkJp/what-would-we-do-if-alignment-were-futile)
 
 I am considerably less pessimistic. Maybe 10-40% chance of AI catastrophe which
