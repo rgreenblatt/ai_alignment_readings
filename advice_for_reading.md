@@ -4,7 +4,7 @@ think the ideas are somewhat similar for more theoretical CS research in general
 
 Overall, the goal is to optimize for extracting maximum value of information
 per unit time (as with all epistemic activities, see also [this approach to
-research/high uncertainty activities](rsdp)). 
+research/high uncertainty activities][rsdp]). 
 
 Next, it's worth noting that academic papers aren't typically well optimized
 for maximizing value for information per unit time (compare to distill for
@@ -12,7 +12,7 @@ example).
 
 (Aside: This is actually a really hard task in general because of differing
 reader backgrounds, though it is possible to do better by having multiple paths
-like [this explanation of Bayes Theorem](a_bayes). Even given the difficulty,
+like [this explanation of Bayes Theorem][a_bayes]. Even given the difficulty,
 academic papers still kinda suck.)
 
 Given how poorly optimized they are, the optimal approach isn't just to read
