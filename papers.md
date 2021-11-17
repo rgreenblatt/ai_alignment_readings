@@ -240,6 +240,27 @@ My thoughts on some papers.
 - Not reading in more detail, because I now know why this isn't worthwhile
 
 
+### Reward-rational (implicit) choice: A unifying formalism for reward learning
+
+- human leaks preferences via actions (turning off robot in various cases,
+  pushing robot, etc.)
+- way to interpret all info (actions, suggestions, direct prefs) in unifying
+  formalism
+- consider every action as a reward-rational implicit choice:
+  - choice from implicit set of options
+  - approximately rational for reward
+- possible to make sense of behavior via:
+  - knowing set of options
+  - knowing (intended) effect of these options on robot behavior (paper doesn't
+    use intended, but that is actually needed right? e.g. IRL)
+- can be hard to get grounding or set of options, (though sometimes easy)
+- model choice via 'Boltzmann-rational' policy (same standard softmax approach
+  with rationality constant \beta)
+  - apparently this is max-ent, huh
+- TODO: maybe reread in a sec
+
+
+
 ## Open Questions in Creating Safe Open-ended AI
 
 - [https://arxiv.org/abs/2006.07495](https://arxiv.org/abs/2006.07495)
