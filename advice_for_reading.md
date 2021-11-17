@@ -53,7 +53,7 @@ something like this:
 - 3nd pass: reread sections at necessary in as much detail as necessary.
   Potentially start reading through proof/algorithms in some detail (if
   applicable). Repeat as needed.
-- <p dir='ltr' align='left'>א pass: reimplement and potentially extend the paper.</p> 
+- <p dir='ltr'>א pass: reimplement and potentially extend the paper.</p> 
  
 
  [rsdp]: https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html
