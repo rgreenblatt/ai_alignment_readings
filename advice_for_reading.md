@@ -1,4 +1,4 @@
-I think the optimal approach varies a descent amount by discipline, so I'll
+I think the optimal approach varies a decent amount by discipline, so I'll
 target my advice for applied machine learning/alignment research, though I
 think the ideas are somewhat similar for more theoretical CS research in general.
 
