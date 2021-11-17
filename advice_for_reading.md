@@ -53,7 +53,8 @@ something like this:
 - 3nd pass: reread sections at necessary in as much detail as necessary.
   Potentially start reading through proof/algorithms in some detail (if
   applicable). Repeat as needed.
-- ℵ pass: reimplement and potentially extend the paper.
+- ℵ₀ pass: reimplement and potentially extend the paper.
+- ℵ₁ pass: resolve all open questions related to or posed by the paper
  
 
  [rsdp]: https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html
