@@ -1,5 +1,3 @@
-Sorry about the late response, but hopefully this will be helpful in the future.
-
 I think the optimal approach varies a descent amount by discipline, so I'll
 target my advice for applied machine learning/alignment research, though I
 think the ideas are somewhat similar for more theoretical CS research in general.
