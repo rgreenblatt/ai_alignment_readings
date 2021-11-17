@@ -35,10 +35,10 @@ something like this:
 
   It might be helpful to write down your key uncertainties.
 
-  Check if there are any uncertainties for which resolving them could reduce
-  how much you care or change which sections seem important to read. If there
-  are any, it can be a good idea to focus on these first so that you can quit
-  earlier or be more optimal in general.
+  Check if resolving any uncertainties could reduce how much you care or change
+  which sections seem important to read. If there are any such uncertainties,
+  it can be a good idea to focus on these first so that you can quit earlier or
+  be more optimal in general.
 
 - 1st pass: skim intro, look at figures, look at headings, skim/read methods,
   skim results, glance at equations (mostly checking for recognition), skim
