@@ -732,3 +732,6 @@ My thoughts on some papers.
 - invariant predication and causal inference
 - michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
 - cartesian frames (maybe start with 'chu are you')
+- [late 2021 MIRI convs](https://www.lesswrong.com/s/n945eovrA3oDueqtq)
+- [readings/notes on research](https://forum.effectivealtruism.org/posts/qnF4rozLunaQz85zg/some-readings-and-notes-on-how-to-do-high-quality-efficient)
+- [assistance via empowerment](https://arxiv.org/abs/2006.14796)
