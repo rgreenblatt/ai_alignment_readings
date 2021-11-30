@@ -718,20 +718,17 @@ My thoughts on some papers.
 - [circuits papers](https://distill.pub/2020/circuits/) (distill analysis of
   single neural net. I am somewhat familiar, but maybe go back over and take
   some notes on all sections)
-- [subagents and impact measures (via Stuart Armstrong)](https://www.lesswrong.com/s/iRwYCpcAXuFD24tHh/p/mdQEraEZQLg7jtozn) read Alex Turner stuff first
-- penalizing side effects using stepwise relative reachability
-- reward models:
-  - a unifying formalism for reward learning (what is the context for this? for now, leaving this)
 - more stuff from ambassadors at EAG
 - some new architectures/language models in general:
   - maybe read more about [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
   - maybe read more about clip?
   - ? (haven't spent much time looking into what to read...)
-- rescuing utility func (ontological crisis): https://arbital.com/p/rescue_utility/
 - reread open phil rfps 
 - invariant predication and causal inference
 - michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
-- cartesian frames (maybe start with 'chu are you')
+- cartesian frames (maybe start with 'chu are you'), I now kinda think this is
+  useless nerd bait, field is dead
 - [late 2021 MIRI convs](https://www.lesswrong.com/s/n945eovrA3oDueqtq)
 - [readings/notes on research](https://forum.effectivealtruism.org/posts/qnF4rozLunaQz85zg/some-readings-and-notes-on-how-to-do-high-quality-efficient)
 - [assistance via empowerment](https://arxiv.org/abs/2006.14796)
+- maybe read some of [ai governance fundamentals material](https://forum.effectivealtruism.org/posts/68ANc8KhEn6sbQ3P9/ai-governance-fundamentals-curriculum-and-application)
