@@ -18,6 +18,7 @@ and how constructing _sufficiently useful_ and safe versions of these
 AIs depends on currently unknown (and highly contested!) properties of
 the space of intelligence itself and current machine learning (ML) 
 (compare to oracle/genie/sovereign: these ideas fall apart in a similar way (TODO: maybe this parenthetical isn't useful?)).
+(TODO: note how these are caricatures/continuous/could be combined)
 As such, I make the case that we should be trying to learn more about these _spooky properties_.
 
 My understanding is that EY thinks that these _spooky properties_ imply that
@@ -76,49 +77,77 @@ all? Specifically we'll first consider AIs which possess no agency: tool AIs.
 
 ## Tool AIs
 
-By definition, tool AIs aren't mesa-optimizers, so inner alignment isn't a concern.
-As such, they're in the same danger category as a nuclear bomb: they might kill
-a bunch of people, but you'll have to launch them first.
+One behavioral property that tool AIs have is that they don't optimize.
+Well, what do we mean by this precisely? Does a hammer optimize the position
+of a nail?
+Using the definition of optimization purposed [here](https://www.lesswrong.com/posts/znfkdCoHMANwqc2WE/the-ground-of-optimization-1),
+we'll say that a tool AI can be _used_ for optimization, but doesn't
+perform the optimization itself. The key distinction is in robustness
+to perturbations in the goals of the wielder. The optimization performed
+using a tool AI optimizes toward goals which can change
+greatly as the goals of the wielder change. This is a general property
+of friendly AI, though its worth noting that we would really like
+using the AI to optimize toward toward ... As such, Tool AIs can't be friendly,
+merely safe.
 
-The first question we need to ask is whether or not a tool AI can even exist and be _Tsukaeru_?
+<!-- something here about how using a tool AI might not further your goal? -->
+
+<!-- As such, tool AIs are in the same danger category as a nuclear bomb: they might -->
+<!-- kill a bunch of people, but you'll have to launch them first. -->
+
+
+The next question we need to ask is whether or not a tool AI can even exist and be _Tsukaeru_?
 Can something with no optimization ability or agency even be intelligent?
 Well this comes down to definitions, so we'll taboo intelligence and simply discuss
 capabilities.
 
 <!-- Ok so maybe below is obvious and a waste of time? -->
 
-Well how could we train a tool AI to do useful things? We could train a tool AI
-to imitate or predict instead of optimizing for outcomes. Perhaps apply some
-iterative amplification or similar and boom, you've got an tool AI which do
-useful things.
+How could we train a tool AI to do useful things? We could train to imitate or
+predict instead of optimizing for outcomes. Perhaps apply some iterative
+amplification or similar and boom, you've got an tool AI which do useful
+things.
 
 Did you catch it?
 
 The error in the above reasoning? Take a second and think through what's
 wrong before peeking.
 
->! Just because an AI is trained to imitate or predict doesn't mean it's a tool AI!
->!
->! For instance, consider an AI trained to predict the action a human would take.
->! If this AI was really good, it behaves exactly like a human. At this point, the
->! AI would be optimizing its environment because humans optimize their
->! environments. In fact, it seems reasonably likely that such AI produced by
->! techniques similar to current ML would _intend_ to optimize its environment.
->! The behavior of acting exactly like a human might end up being represented
->! as simply understanding the goals, irrationalities, and beliefs of the human
->! and optimizing based on them.
->! 
->! For an even more absurd case, consider training an AI to predict
->! the outputs of some other AI which optimizes for an objective.
->! Clearly this new AI would also optimize for the same objective.
->! In fact, modern understanding of distillation would seem
->! to indicate that if both of these AIs are trained using something
->! like current ML, the internal reasoning of the new AI would end up begin
->! similar to that of the original AI!
+:::spoiler
+ 
+Just because an AI is trained to imitate or predict doesn't mean it's a tool AI!
 
+For instance, consider an AI trained to predict the action a human would take.
+If this AI was really good, it behaves exactly like a human. At this point, the
+AI would be optimizing its environment because humans optimize their
+environments.
 
+<!-- In fact, it seems reasonably likely that such AI produced by -->
+<!-- techniques similar to current ML would _intend_ to optimize its environment. -->
+<!-- The behavior of acting exactly like a human might end up being represented -->
+<!-- as simply understanding the goals, irrationalities, and beliefs of the human -->
+<!-- and optimizing based on them. -->
 
-<!-- Hmm, maybe show IDA fallacy? -->
+Something, something Q function.
+
+For an even more absurd case, consider training an AI to predict
+the outputs of some other AI which optimizes for an some objective.
+Clearly this new AI would also optimize for the same objective.
+In fact, my understanding of distillation would indicates that if both of these
+AIs are trained using something like current ML, the internal reasoning of the
+new AI would likely end up being similar to that of the original AI!
+
+:::
+
+So, there isn't an obvious way to train a tool AI. In fact, we don't even
+have a way to train an AI and evaluate its agency which seems deep property,
+
+something something ontological dread, something something.
+something something generalization, something something.
+While some training approaches could result in reduced agency...
+Something, something, we don't know.
+Something something, agency in generalization?
+So something imply must be agentic, but non-agentic could be carried out by agent.
 
 At this time, I'm not aware of any pivotal act which a tool AI could obviously
 carry out. A tool AI could help speed up alignment research, but probably not
@@ -129,10 +158,9 @@ The alignment tax seems high overall.
 
 [tools want to be agents](https://www.gwern.net/Tool-AI)
 
-Given the likely incompetence of such an AI to even be intelligent,
-we'll try a different approach next: 
-constructing an intelligent utility maximizer and restraining
-its capabilities.
+Given the likely incompetence of such an AI we'll try a different approach
+next: constructing an intelligent utility maximizer and restraining its
+capabilities.
 
 
 ## Restrained AIs
@@ -141,15 +169,17 @@ For an example of a restrained AI, consider an AI which operates
 as a long term goal achieving consequentialist in some sort of
 constrained environment (e.g. theorem proving) without even
 knowing about the real world. Or consider AIs (hopefully) made safer
-by somehow removing their ability to model humans.
+by somehow removing their ability to model humans or another part of the world.
 Both of these AI have had their capabilities handicapped to reduce danger.
 Additionally, the classic 'boxed' AI is an example of this approach and the
 typically proposed issues generalize to restrained AIs more generally.
-The earlier examples are also 'boxed', just knowledge boxed
-instead of isolated via some other mechanism.
 
-Such AI could theoretically not be intent aligned and be highly
-capable consequentialist agents while also being safe.
+
+<!-- The earlier examples are also 'boxed' in some sense, they are boxed -->
+<!-- by knowledge knowledge instead of physical isolation. -->
+
+Such an AI could theoretically not be intent aligned and be a highly
+capable consequentialist agent while also being safe.
 Or could they?
 The classic boxed AI which is aware of the external world will manipulate
 and fight for unsafe freedom.
