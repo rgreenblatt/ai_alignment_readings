@@ -710,6 +710,75 @@ My thoughts on some papers.
 - rough idea is that conservative agency approaches have surprising issues
   (subagents used as example, but likely these issues show up in other cases)
 
+## Late 2021 MIRI Conv
+
+### Alignment difficulty
+
+- Supposing we have (reasonably) aligned AI first, Eliezer says that act
+  outside overton window needed to ensure safety (stop other ais from being
+  made)
+- Eliezer said the first (sketchy) alignment solution looks like mostly don't
+  think about x and ok do think about y, but only safe thoughts (I feel like I
+  don't understand this model, what about things like conservativeness. Also
+  thought crime approach just seems really hard.)
+- On systems which are more intelligent but much less agentic than humans
+  - Eliezer basically says these systems are very unlikely to emerge like this
+    given how current research (maybe deep learning more generally)
+    works under his model of intelligence (is this definitions debate? On review, no.)
+  - Eliezer says something like: to be powerful, system must be very 'close' to
+    agentic system in some sort of modeling capability (car analogy), so hard
+    to hold away from this (at least with current learning approaches).
+- Eliezer says stack more layers doesn't get to true AGI (so no strong scaling
+  hypothesis + longer timelines)
+- On math/prover AI:
+  - Eliezer says something like: No route to safety via this AI (or any other
+    obvious and verifiable domain?). I (and Ngo) basically agree.
+  - Eliezer says something like: doing math well requires something like goal
+    directed consequentialist behavior
+- Eliezer says something like: fundamental similarity
+  between tasks which probably leads to consequentialism (with current
+  techniques). This is dangerous.
+
+  (as summarized by Ngo)
+- Eliezer says something like: current ML techniques generalize Superhuman at X
+  to take over the world.  Depends on X and architecture, but all
+  profitable/useful for alignment X are dangerous.
+- Eliezer says something like: science AI would be very close to modeling
+  itself and have abilities to take over world (crux maybe: would it bother?)
+- Ngo says something like: self-modeling unlikely to occur in science/math
+  contexts
+- So far my crux seems to be inner alignment/why would the model care about
+  long term actions (in cases where model is process based instead of outcome
+  based, clearly outcome is dangerous).
+  - ah, deontology claims basically get at this
+- is deontology natural way for mind to work?
+  - does train for obedience result in deontologically obedient agent (or just
+    diff utils)
+  - Eliezer says something like: you will get optimization for correlates, not the thing itself
+- Eliezer, summarized by Richard (paraphrased by me): To avoid catastrophe,
+  whoever builds AGI first will have to a) align it sufficiently, b) decide not
+  to scale it up to alignment failure  and c) do some pivotal act that prevents
+  others from scaling it up to that level. But on our current trajectory, our
+  alignment techniques will be very far from adequate to create an AI that
+  safely performs any such pivotal act."
+- deep connection between solving any useful problem and taking over the world
+  (competent intelligence + goals + long term planning)
+- Ngo says possible to make a agent way too weak to take over the world, but
+  also useful for alignment research (or other such tasks). Because humans
+  poorly optimized for task.
+  - Eliezer responds that this probably insufficient for pivotal act.
+- there's a bunch more stuff in here I don't have notes on
+- particularly, see Nate's summaries
+
+### AI capability gains
+
+- Eliezer says he "expect[s] GDP not to depart from previous trendlines before
+  the world ends"
+- Eliezer says: "My read on the entire modern world is that GDP is primarily
+  constrained by bureaucratic sclerosis rather than by where the technological
+  frontiers lie" (I don't think I buy this... Ngo also doesn't buy)
+  
+BIG TODO on more of these posts (and maybe better notes)
 
 
 
