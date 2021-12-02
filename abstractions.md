@@ -1,33 +1,41 @@
 # TODO
 
+
+
 The [Late 2021 MIRI conversions](https://www.lesswrong.com/s/n945eovrA3oDueqtq)
-include discussion on why various approaches to alignment might fail
-if my understanding of the views of Eliezer Yudkowsky (EY) on intelligence and
-current AI research are broadly correct. (Please note that this post... something
-something kowtow to epistemic humility).
+includes discussion on why various approaches to alignment might fail.
+One [shared frame](https://www.lesswrong.com/posts/GkxxfdCukyGuyKXQQ/shared-frames-are-capital-investments-in-coordination)
+which wasn't immediately present in the discussion was a clean delineation of
+possible approaches to alignment and what they require.
+We claim that alignment techniques can be useful understood as *utility based*,
+deontological, or capability restriction (or a mixture) and we'll be going through the challenges
+associated with each of these approaches. _(TODO: Not a fan of this wording, also, fix utility based)_
 Note that this post is intended to be readable without spending hours reading
 those conversations. 
+In fact, I'd hope that this post would be useful to read before reading these discussion
+as it should help clarify and abstract. _(TODO: Not a fan of this wording)_
 
-In fact, I'd hope that this post would help clarify and
-distill some of that discussion (something like this, maybe also read before reading discussion?)
+To start, let's consider a 
 
-While I've seen all of these approaches to alignment discussed elsewhere,
-I haven't seen a crisp delineation of these ideas and why they might fall
-apart. Specifically, we'll be discussing tool AIs, restricted AIs, and deontological AIs
-and how constructing _sufficiently useful_ and safe versions of these
-AIs depends on currently unknown (and highly contested!) properties of
-the space of intelligence itself and current machine learning (ML) 
-(compare to oracle/genie/sovereign: these ideas fall apart in a similar way (TODO: maybe this parenthetical isn't useful?)).
-(TODO: note how these are caricatures/continuous/could be combined)
-As such, I make the case that we should be trying to learn more about these _spooky properties_.
+We'll abstract over ...
 
-My understanding is that EY thinks that these _spooky properties_ imply that
-you can't get _sufficiently useful_, safe, and super intelligent AIs with these
-approaches and current ML without some currently unknown *magic*.
-This post will mostly abstract over views on _spooky properties_, timelines, and weak to moderate views
-of societal coordination: when
-differences become relevant, we'll mention them (make this better/describe what
-we will actually do). 
+<!-- While I've seen all of these approaches to alignment discussed elsewhere, -->
+<!-- I haven't seen a crisp delineation of these ideas and why they might fall -->
+<!-- apart. Specifically, we'll be discussing deontological AIs and restricted AIs. -->
+<!-- and how constructing _sufficiently useful_ and safe versions of these -->
+<!-- AIs depends on currently unknown (and highly contested!) properties of -->
+<!-- the space of intelligence itself and current machine learning (ML) --> 
+<!-- (compare to oracle/genie/sovereign: these ideas fall apart in a similar way (TODO: maybe this parenthetical isn't useful?)). -->
+<!-- (TODO: note how these are caricatures/continuous/could be combined) -->
+<!-- As such, I make the case that we should be trying to learn more about these _spooky properties_. -->
+
+<!-- My understanding is that EY thinks that these _spooky properties_ imply that -->
+<!-- you can't get _sufficiently useful_, safe, and super intelligent AIs with these -->
+<!-- approaches and current ML without some currently unknown *magic*. -->
+<!-- This post will mostly abstract over views on _spooky properties_, timelines, and weak to moderate views -->
+<!-- of societal coordination: when -->
+<!-- differences become relevant, we'll mention them (make this better/describe what -->
+<!-- we will actually do). --> 
 
 <!-- This post is unfortunately unfocused, but there are two main aims: -->
 <!-- - Abstracting/categorizing types of safe AI and why those types may fail. -->
@@ -75,7 +83,13 @@ said that acting like an expected utility maximizer is a big no-no, so what if
 we considered AIs which don't (intentionally) optimize their environments at
 all? Specifically we'll first consider AIs which possess no agency: tool AIs. 
 
-## Tool AIs
+## Tool AIs are just totally deontological AIs
+
+<!-- Ok, maybe tool AI are just totally deontological AIs -->
+<!-- I need more deontological distillation -->
+<!-- deontological ill specified? -->
+<!-- deontological absolutists -->
+<!-- does training process get you deontological or expected value maximization -->
 
 One behavioral property that tool AIs have is that they don't optimize.
 Well, what do we mean by this precisely? Does a hammer optimize the position
