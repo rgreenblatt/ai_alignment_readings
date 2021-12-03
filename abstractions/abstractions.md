@@ -30,6 +30,7 @@ The main prerequisite will be the sorts of concepts discussed in [AGI safety
 from first principles][firstprin].
 
 We'll refer in more detail to:
+
 - The idea of utility maximization and [that coherent decisions imply consistent utilities][coherant]
 - [Goodhart's law][goodhart]
 - The concept of inner alignment
@@ -42,6 +43,7 @@ Really, nothing else?
 Well, other knowledge or ideas will hopefully be linked as
 necessary. Also, here are some posts which could be helpful to read (though I'm
 not sure if I would recommend reading them before or after reading this post):
+
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
 - [Model splintering: out of distribution behavior][splintering]
@@ -454,7 +456,7 @@ leads to Yudkowskization (similar to [carcinization][carcinization]).
     unless training is arbitrarily long there can still be safety concerns due
     to probabilistic treacherous turns.
 [^deontsplint]: Unless for some reason deontological properties are likely to
-    splinter into consequentialism?.
+    splinter into consequentialism?
 [^proveconsequences]: I'm not claim that theorem proving requires long-term
     consequentialism, just that a long-term consequentialist could prove
     theorems.
