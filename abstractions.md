@@ -1,23 +1,61 @@
 # TODO
 
-
+_(TODO: we vs I?)_
 
 The [Late 2021 MIRI conversions](https://www.lesswrong.com/s/n945eovrA3oDueqtq)
-includes discussion on why various approaches to alignment might fail.
+include discussion on why various approaches to alignment might fail.
 One [shared frame](https://www.lesswrong.com/posts/GkxxfdCukyGuyKXQQ/shared-frames-are-capital-investments-in-coordination)
 which wasn't immediately present in the discussion was a clean delineation of
 possible approaches to alignment and what they require.
 We claim that alignment techniques can be useful understood as *utility based*,
-deontological, or capability restriction (or a mixture) and we'll be going through the challenges
-associated with each of these approaches. _(TODO: Not a fan of this wording, also, fix utility based)_
+deontological, or capability restriction (or a mixture of these) and we'll be going through the challenges
+associated with constructing _sufficiently useful_ and safe AI using these approaches. 
+_(TODO: Not a fan of this wording, also fix utility based)_
 Note that this post is intended to be readable without spending hours reading
 those conversations. 
-In fact, I'd hope that this post would be useful to read before reading these discussion
+In fact, I'd hope that this post would be useful to read before reading these discussions
 as it should help clarify and abstract. _(TODO: Not a fan of this wording)_
 
-To start, let's consider a 
+_(TODO: frame epistemic context for piece)_
 
-We'll abstract over ...
+Now what is this _sufficiently useful_ criteria we are using to judge AIs?
+That the alignment tax is sufficiently small on the capability dimensions we care about. _(TODO: link to something on alignment tax)_
+And how can this be evaluated?
+Well, this isn't well known, but 2 typical models are: _(TODO more epistemic humility)_
+
+1. Small enough that alignment can be enforced via governance without
+   encouraging deception. This framing is probably more relevant in slow takeoff.
+2. Small enough that an actor could use a lead in AI capabilities to accomplish
+   a [pivotal act](https://arbital.com/p/pivotal/) safely before unaligned AIs _(TODO: this article isn't very focused, better one?)_
+   are constructed. Note that under this framing, the 'capability dimensions we care about'
+   are the ones which can be used to cause a pivotal act. If the alignment penalty makes all pivotal acts
+   impossible, then that technique is (approximately) worthless.
+   This framing is more relevant in fast takeoff and acceptable levels of alignment tax could
+   depend on how far ahead the actor attempting to cause a pivotal act is. _(TODO: revise/cleanup language)_
+
+For the remainder of this post, we'll abstract over this distinction in views,
+referencing different perspectives as necessarily.
+
+<!-- Now, first lets try to see what a safe AI which could be used for pivotal act looks like. -->
+<!-- What's a pivotal act you say? Some sort of action which is able to ensure unsafe AI isn't produced by someone else. -->
+<!-- For example, maybe your safe AI conquers the world yielding a golden age under the new Yudkow-tocracy. -->
+
+<!-- (TODO: expand/clarify/consolidate this. how much background do we want? can link to pauls -->
+<!-- views on alignment tax/governance, not sure what to link to on pivotal act -->
+<!-- framing. Need to mention Yudkow-tocracy somewhere!) -->
+
+
+<!-- The term _sufficiently useful_ probably has some unhelpful associations, -->
+<!-- so we will taboo this and instead use the Japanese word for -->
+<!-- useful: _Tsukaeru_. --> 
+<!-- While we're at it, we'll pull this word into the hellscape which is the English -->
+<!-- grammatical system to make writing more convenient (TOO much I think?) -->
+
+<!-- Something something, criteria including discussion of pivotal act. -->
+
+
+<!-- The first question is what objective we are aligning for... --> 
+<!-- We'll abstract over ... -->
 
 <!-- While I've seen all of these approaches to alignment discussed elsewhere, -->
 <!-- I haven't seen a crisp delineation of these ideas and why they might fall -->
@@ -45,38 +83,153 @@ We'll abstract over ...
 
 But abstracting over everything results in a mess, so we'll make the following
 assumptions:
-1. Highly capable and strongly superintelligent AIs which basically act like
-   expected utility maximizers (aka Consequentialists) would kill us all if
-   created with approaches reasonably similar to current ML.
+1. Unrestricted and superintelligent AGIs which basically act like
+   long-term expected utility maximizers (aka Consequentialists) would kill us
+   all if created with approaches reasonably similar to current ML.
 2. Societal and government competence and coordination aren't very high.
 
-I am not certain that both of these assumptions are true and I can imagine
-scenarios in which they wouldn't hold. However, I would be very surprised if
-either claim was totally false and I think that they are useful assumptions for
-reducing the safe AI search space. I make the case for why these are good
-assumptions in the appendix to avoid clutter (because I'd guess most readers
-mostly already buy them). If you strongly disagree with either of these
-assumptions, well, maybe pick a different post to read.
+I make the case for why these are good assumptions in the appendix to avoid
+clutter (because I'd guess most readers mostly already buy them). If you
+strongly disagree with either of these assumptions, well, maybe pick a
+different post to read.
 
-Now what is this _sufficiently useful_ criteria we are using to judge AIs?
-Well, depending on views, either sufficiently small alignment tax so society
-can collectively enforce via governance or sufficiently small capabilities
-penalty such that an actor could use this AI to accomplish a 'pivotal act'.
-The term _sufficiently useful_ probably has some unhelpful associations,
-so we will taboo this and instead use the Japanese word for
-useful: _Tsukaeru_. 
-<!-- While we're at it, we'll pull this word into the hellscape which is the English -->
-<!-- grammatical system to make writing more convenient (TOO much I think?) -->
+## Utility based approaches
 
-<!-- Something something, criteria including discussion of pivotal act. -->
+Given that we assume that long-term expected utility maximizers would kill us
+all, what's left? Well, expected utility maximizers which don't care about the
+long run of course! These are typically described as myopic agents.
+Unfortunately, we currently [don't know how to construct myopic
+agents](https://www.lesswrong.com/posts/LCLBnmwdxkkz5fNvH/open-problems-with-myopia),
+simply training agents with myopic reward is insufficient.
+The issues here broadly come to inner alignment. 
+We don't have solid approaches for inspecting the cognition of deep agents.
+Or a decent understanding of
+what agent cognition will result from a specific training process.
+And it's unclear if techniques will generalize to higher intelligence regimes.
+These issues are a theme for this entire post. My current
+view is that this is the difficult crux of alignment and we'll
+present only one (dangerous) way to proceed without resolving these issues.
+_(TODO: maybe this should be moved earlier?)_
 
-Now, first lets try to see what a safe AI which could be used for pivotal act looks like.
-What's a pivotal act you say? Some sort of action which is able to ensure unsafe AI isn't produced by someone else.
-For example, maybe your safe AI conquers the world yielding a golden age under the new Yudkow-tocracy.
+Even though long-term expected utility maximizers would kill us all, there's
+still value in the ability to produce agents with utility functions reasonably close
+to the desired one. This would greatly increase the applicability of deontological
+and restriction based approaches as discussed below.
 
-(TODO: expand/clarify/consolidate this. how much background do we want? can link to pauls
-views on alignment tax/governance, not sure what to link to on pivotal act
-framing. Need to mention Yudkow-tocracy somewhere!)
+## Deontological approaches
+
+_(TODO: maybe define/link deontology)_
+
+### Tool AIs
+
+We've covered expected utility maximization, so let's now consider AIs which
+don't (intentionally) optimize their environments at all. Specifically we'll
+first consider AIs which possess no or very limited agency: tool AIs. _(TODO:
+Contested if this even is a real thing, maybe mention here)_ You may have
+noticed this appears in the deontological approaches section.  That's because I
+claim that tool AIs (as typically described) are just _purely deontological_
+AIs. [Agency is mostly just a set of capabilities coupled with
+consequentialism](https://www.lesswrong.com/s/mzgtmmTKKn5MuCzFJ/p/bz5GdmCWj8o48726N).
+If wish to remove agency while keeping some capabilities, we are left with a
+deontological AI. It may also be possible to reduce agency by removing some
+capabilities (such as self-modeling), this will be discussed in the section on
+restriction based approaches.
+Tool AIs are an extreme version of a deontological approach as they are _purely deontological_,
+but they serve as a good exhibit of ...
+
+One behavioral property that tool AIs have is that they don't optimize.
+Well, what do we mean by this precisely? Does a hammer optimize the position
+of a nail?
+Using the definition of optimization purposed [here](https://www.lesswrong.com/posts/znfkdCoHMANwqc2WE/the-ground-of-optimization-1),
+we'll say that a tool AI can be _used_ for optimization, but doesn't
+perform the optimization itself. The key distinction is in robustness
+to perturbations in the actions of the wielder. The optimization performed
+using a tool AI optimizes toward targets which can change
+greatly as the actions of the wielder change. This is a general property
+of friendly AI, though its worth noting that we would really like
+using the AI to optimize toward toward ... As such, Tool AIs can't be friendly,
+merely safe.
+<!-- There should be something more here... -->
+
+The next question we need to ask is whether or not a tool AI can even exist and be _sufficiently useful_?
+Can something without any consequentialism even be intelligent?
+Well this comes down to definitions, so we'll taboo intelligence and simply discuss
+capabilities.
+
+How could we train a tool AI to do useful things? We could train to imitate or
+predict instead of optimizing for outcomes. Perhaps apply some iterative
+amplification or similar and boom, you've got an tool AI which do useful
+things.
+
+Did you catch it?
+
+The error in the above reasoning? Take a second and think through what's
+wrong before peeking.
+
+:::spoiler
+ 
+Just because an AI is trained to imitate or predict doesn't mean it's a tool AI!
+
+For instance, consider an AI trained to predict the action a human would take.
+If this AI was really good at this task, it would behave exactly like a human.
+At this point, the AI would be optimizing its environment because humans
+optimize their environments.
+
+In the RL context, a [Q
+function](https://spinningup.openai.com/en/latest/spinningup/rl_intro2.html) is
+_just_ a prediction function! But add argmax
+action selection and you have a full agent.
+
+:::
+
+So, there isn't an obvious way to train a tool AI. In fact, we
+don't even know how to check how agentic an AI is.
+We're back to difficult crux of alignment discussed earlier.
+
+something something compression, something something.
+something something generalization, something something.
+While some training approaches could result in reduced agency...
+Something, something, we don't know.
+Something something, agency in generalization?
+So something imply must be agentic, but non-agentic could be carried out by agent.
+
+At this time, I'm not aware of any pivotal act which a tool AI could obviously
+carry out. A tool AI could help speed up alignment research, but probably not
+astronomically, so it doesn't really help us here. 
+Perhaps there is some IDA type structure... (TODO)
+
+The alignment tax seems high overall.
+
+[tools want to be agents](https://www.gwern.net/Tool-AI)
+
+### Deontological properties to hope for 
+
+something something corrigiblity, something something
+
+Given the likely incompetence of such an AI we'll try a different approach
+next: constructing an intelligent utility maximizer and restraining its
+capabilities.
+
+
+
+
+A deontologically corrigible or obedient agent might have
+incoherent preferences, but there's a problem we run into even
+before that: how the hell do we instill deontological preferences?
+
+For any environment which rewards deontological methods, there
+exists an agent which simply models that reward as part of its
+utility functions and achieves full marks.
+Without knowing more about the learning process or inspecting the agent
+we can't hope to do better.
+
+So maybe if you setup your Very Clever corrigibility encouraged environment
+and train to convergence you get a super intelligent, modestly aligned,
+and corrigible agent. But maybe not. And we have no good physics
+or even chemistry style models for understanding the eventual intentions
+of super intelligent AI produced via such a process.
+
+
 
 Now we're ready to motivate the approaches to safety discussed earlier. We've
 said that acting like an expected utility maximizer is a big no-no, so what if
@@ -155,26 +308,6 @@ new AI would likely end up being similar to that of the original AI!
 
 So, there isn't an obvious way to train a tool AI. In fact, we don't even
 have a way to train an AI and evaluate its agency which seems deep property,
-
-something something ontological dread, something something.
-something something generalization, something something.
-While some training approaches could result in reduced agency...
-Something, something, we don't know.
-Something something, agency in generalization?
-So something imply must be agentic, but non-agentic could be carried out by agent.
-
-At this time, I'm not aware of any pivotal act which a tool AI could obviously
-carry out. A tool AI could help speed up alignment research, but probably not
-astronomically, so it doesn't really help us here. 
-Perhaps there is some IDA type structure... (TODO)
-
-The alignment tax seems high overall.
-
-[tools want to be agents](https://www.gwern.net/Tool-AI)
-
-Given the likely incompetence of such an AI we'll try a different approach
-next: constructing an intelligent utility maximizer and restraining its
-capabilities.
 
 
 ## Restrained AIs
