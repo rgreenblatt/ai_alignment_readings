@@ -5,7 +5,7 @@ The [Late 2021 MIRI conversions][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
 present in the discussion was a clean delineation of possible approaches to
-alignment and what they require. We claim that alignment techniques can be
+alignment and what they require. I claim that alignment techniques can be
 useful understood as deontological, utility focused, or capability restriction
 (or a mixture of these) and we'll be going through the challenges associated
 with constructing _sufficiently useful_ and safe AI using these approaches.
@@ -87,7 +87,7 @@ assumptions:
 I won't make a case for why these are good assumptions here (because I'd guess
 most readers at least roughly already buy this). _(TODO: maybe make arguments
 in appendix? maybe link something?)_ If you strongly disagree with these
-statements, well, maybe pick a different post to read.
+statements, please post your objections in the comments.
 
 We'll also mostly pretend AIs will be deep neural networks trained with SGD,
 but I wouldn't be surprised if this post generalizes.
@@ -353,7 +353,7 @@ must be ...
 
 Even though long-term expected utility maximizers would kill us all, there's
 still value in the ability to produce agents with utility functions reasonably
-close to the desired one, particularly for complex or hard to specify alignment
+close to the desired one, particularly for complex or hard to specify utility
 functions. This greatly effects the applicability of deontological and
 restriction based approaches.
 
