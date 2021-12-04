@@ -126,7 +126,7 @@ process based task vs purely deontological and how uses of these terms has
 differed? Maybe put this footnote below where we discuss purely deontological
 AIs which basically act like agents? In general, I'm worried about language
 related confusion given how I first expand the notion of tools and then
-contract the notion of actually achievable purely deontological AIs below)
+contract the notion of actually achievable purely deontological AIs below)_
 
 
 ### 4.1.2 Purely Deontological AI, what is it good for
