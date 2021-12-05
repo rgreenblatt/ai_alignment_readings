@@ -1,4 +1,4 @@
-# 1. Background
+# 1 Background
 
 The [Late 2021 MIRI conversions][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
@@ -31,7 +31,7 @@ to cover a lot of ground. But everyone keeps telling me to be Very Ambitious
 and that alignment lacks strategic direction. So, uh, here goes an attempt at
 that I guess?
 
-# 2. Prerequisites
+# 2 Prerequisites
 
 The main prerequisite will be the sorts of concepts discussed in [AGI safety
 from first principles][firstprin].
@@ -57,7 +57,7 @@ not sure if I would recommend reading them before or after reading this post):
 - [Model splintering: out of distribution behavior][splintering]
 - [Reward splintering: model splintering on reward (really utility)][rewardsplintering]
 
-# 3. Assumptions and focuses
+# 3 Assumptions and focuses
 
 First of all, what is this _sufficiently useful_ criteria we mentioned earlier?
 The criteria is that the [alignment tax][currentworkinalign] must be
@@ -108,7 +108,7 @@ statements, please post your objections in the comments.
 We'll also mostly pretend AIs will be deep neural networks trained with SGD,
 but I wouldn't be surprised if this post generalizes.
 
-# 4. Approaches
+# 4 Approaches
 
 ## 4.1 Deontological approaches
 
@@ -506,7 +506,7 @@ aware of any promising directions.
 The enforcement side looks similarly poor. Actors would likely perceive very
 strong incentives from increasing the capabilities of AIs.
 
-# 5. Combining approaches
+# 5 Combining approaches
 
 First of all, it's worth noting that restrictions could (slightly) reduce the
 possibility of catastrophe when testing other approaches in high intelligence
@@ -528,7 +528,7 @@ safety properties.
 At this time, I don't believe I have any other non-trivial insight into
 combining the 3 approaches discussed in this post.
 
-# 6. Strategic recommendations
+# 6 Strategic recommendations
 
 I was broadly in favor of [prosaic alignment][prosaic] work before starting to
 write this post and I remain so. However, I have updated very slightly against
@@ -551,7 +551,7 @@ over and under rated topics, but first I think it's illustrative to go through
 an example of a project which I think is worthwhile and specific examples of
 additional sub-experiments I think are particularly valuable to conduct.
 
-## 5.1 Redwood Research's Project
+## 6.1 Redwood Research's Project
 
 An example of work on instilling deontological properties is [Redwood
 Research's project on getting a language model to never describe someone
@@ -592,7 +592,7 @@ predicate. Here are some example experiments which I think get at this notion:
 Of course, there are likely cheaper and more effective ways
 to run experiments which get at the same ideas.
 
-## 5.2 Ideas for some experiments on RL agent decision making
+## 6.2 Ideas for some experiments on RL agent decision making
 
 One domain of experimentation I'm particularly interested in is determining how
 decision making is modeled inside of RL agents. I'll go through an outline of
@@ -636,7 +636,7 @@ Here are some extensions/variants of this project which I think could worthwhile
    by changing model weights 'by hand'. Can these techniques be used to adjust the
    behavior of the model with respect to the obstacle?
 
-## 5.3 How focus should change
+## 6.3 How focus should change
 
 It's worth noting that my analysis here is highly speculative. Specifically,
 imagine everything in this section is prefixed with 'I speculatively think'.
