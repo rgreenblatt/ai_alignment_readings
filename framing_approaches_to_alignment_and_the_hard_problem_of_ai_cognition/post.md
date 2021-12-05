@@ -343,9 +343,9 @@ properties back again should be cause for alarm.
 There's an additional problem with partially deontological AIs which didn't
 exist with purely deontological AIs. If the deontological principles of an
 purely deontological AI [splinter][splintering], the AI remains very unlikely
-to kill us all. It merely will have some other deontological properties
-potentially making the AI less useful.[^deontsplint] However, if the
-deontological properties of an partially deontological AI splintered or were
+to cause existential catastrophe. It merely will have some other deontological
+properties potentially making the AI less useful.[^deontsplint] However, if the
+deontological properties of a partially deontological AI splintered or were
 merely somewhat off, but the consequentialist capabilities were retained, then
 it's possible that consequentialism wouldn't be overridden in important cases
 and the AI would kill us all. We don't just need to ensure that we get
@@ -353,14 +353,14 @@ deontological properties: we need to ensure we get the right deontological
 properties and those properties actually prevent existential catastrophe.
 
 Beyond all of these issues, we also now have to worry about the utility
-function of agent with respect to consequences. While sufficient deontological
-properties could ensure that an AI with the wrong utility function didn't kill
-us all, it might not be very useful. Assuming the utility function of the AI
-was 'close enough' to desired, partially deontological AI could certainly be
-_sufficiently useful_. There can potentially be just as capable as pure
-consequentialists. However, there are likely trade-offs between the strength of
-deontological properties and the capabilities of the agent. Sufficiently strong
-conservatism results in doing nothing at all.
+function of the agent with respect to consequences. While sufficient
+deontological properties could ensure that an AI with the wrong utility
+function didn't kill us all, it might not be very useful. Assuming the utility
+function of the AI was 'close enough' to desired, partially deontological AI
+could certainly be _sufficiently useful_. They can potentially be just as
+capable as pure consequentialists. However, there are likely trade-offs between
+the strength of deontological properties and the capabilities of the agent.
+Sufficiently strong conservatism results in doing nothing at all.
 
 ## 4.2 Consequentialist approaches
 
@@ -375,11 +375,11 @@ reward is insufficient. This is the hard problem of AI cognition once again.
 However, I'd note that it would likely be easier _(TODO: maybe clarify what I
 mean by easier: higher success probability given equal resources (or maybe this
 is obvious?))_ to create myopic agents then to instill complex deontological
-values. However, if we know how to construct myopic agents, they have
+values. However, even if we know how to construct myopic agents, they have
 [potential safety issues mostly related to decision theory][myopicissues].
 Resolving these safety issues also likely requires grappling with the hard
 problem of AI cognition. Specifically, many issues could be resolved via
-producing an agent which follows [dumb decision theory (DDT)][dumbdecision]. My
+producing an agent which follows [dumb decision theory][dumbdecision]. My
 understanding is that getting an AI to use a specific decision theory is likely
 to be considerably harder than instilling deontological properties. Of course
 this would depend on the specific deontological property. In summary, just
@@ -394,8 +394,8 @@ Following dumb decision theory implies that the myopic agent will always pick
 the choice which maximizes utility: superrationality isn't a concern. So, the
 time horizon sufficient for safety depends on how fast the agent could seize
 power and the additional utility associated with possessing power. For
-instance, suppose that the time horizon was several years and that the AI could
-seize power in a few days and that the AI would be able to achieve much more
+instance, suppose that the time horizon was several years, the AI could
+seize power in a few days, and the AI would be able to achieve much more
 utility over the remaining period than if it didn't seize power. This time
 horizon clearly results in existential catastrophe. Unfortunately, it's likely
 to be difficult to predict how much higher utility would be for a given agent
