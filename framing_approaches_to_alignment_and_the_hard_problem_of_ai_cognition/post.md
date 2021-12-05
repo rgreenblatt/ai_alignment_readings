@@ -1,5 +1,7 @@
 # 1 Background
 
+_(General editing TODOs: better/more consistent tone, make more engaging?)_
+
 The [Late 2021 MIRI conversions][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
