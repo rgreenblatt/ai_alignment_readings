@@ -325,7 +325,7 @@ predication, and reasoning about counterfactuals. For instance, note that among
 life on earth intelligence seems to correlate with consequentialism. While ants
 (and other organisms) can look quite consequentialist from afar, this is really
 an emergent and less generalizable phenomenon than human consequentialism.
-_(TODO: maybe better better justify these claims. Note sure if ant sentences
+_(TODO: maybe better better justify these claims. Note sure if ant sentence
 good/needed)_ This difference in difficulty could also result from the fact
 that consequentialism is the 'correct' model as discussed earlier. This
 difference in difficult creates the potential for quite a dangerous situation
@@ -698,10 +698,10 @@ section](#4_2_2_Getting_utility_closer_to_alignment) of the post.
 
 I don't think it's worth spending the time going over a bunch more topics in
 detail (before I know more details about the reaction to this analysis), so
-I'll just do a quick and dirty overrated/underrated in the style
-of Tyler Cowen. I will probably not mention a bunch of topics in practice.
-If you want me to add a topic or discuss a topic in more details in the comments,
-I'll probably do so.
+I'll just do a quick and dirty overrated/underrated in the style of Tyler
+Cowen. This list probably doesn't include many important topics. If you want me
+to add a topic or discuss a topic in more details in the comments, I'll
+probably do so.
 
 **Overrated:**
 
