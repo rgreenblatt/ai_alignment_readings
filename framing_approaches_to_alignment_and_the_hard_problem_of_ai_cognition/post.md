@@ -88,15 +88,15 @@ assumptions:
 1. Unrestricted, superintelligent, and capable AGIs which act like long-term,
    outcome expected utility maximizers (aka consequentialists) would cause an
    existential catastrophe if created with approaches reasonably similar to
-   current ML. When I say 'outcome expected utility maximizer' I mean that the
-   expected utility maximizer cares intrinsically about consequences
-   (consequentialism) instead of about actions (deontology). We'll use
-   the term consequentialism for the remainder of these post. We'll also go
-   through this distinction in more detail below. This assumption is due to an
-   inability to construct a human values utility function, an inability to
-   perfectly inner align an agent's utility function, Goodhart's law, and
-   [instrumental convergence][powerseek].
-   _(TODO: could this be made clearer? Possibly remove some adjectives?)_
+   current ML. _(TODO: could this be made clearer? Possibly remove some
+   adjectives?)_ When I say 'outcome expected utility maximizer' I mean that
+   the expected utility maximizer cares intrinsically about consequences
+   (consequentialism) instead of about actions (deontology). We'll use the term
+   consequentialism for the remainder of these post. We'll also go through this
+   distinction in more detail below. This assumption is due to an inability to
+   construct a human values utility function, an inability to perfectly inner
+   align an agent's utility function, Goodhart's law, and [instrumental
+   convergence][powerseek].
 2. Societal and government competence and coordination aren't very high (this
    informs how hard it is to enforce alignment through governance).
 
