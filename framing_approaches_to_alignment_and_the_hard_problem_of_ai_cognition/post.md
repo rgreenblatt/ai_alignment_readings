@@ -387,26 +387,27 @@ creating myopic agents might be easer than instilling deontological properties,
 but we might need to control the decision theory of myopic agents which could
 make the overall difficulty harder.
 
-What about _sufficient usefulness_? The alignment tax will depend on how limited
-the time horizon must be to ensure safety. We'll assume that this time horizon
-maps onto real world time and that myopic agents follow dumb decision theory.
-Following dumb decision theory implies that the myopic agent will always pick
-the choice which maximizes utility: superrationality isn't a concern. So, the
-time horizon sufficient for safety depends on how fast the agent could seize
-power and the additional utility associated with possessing power. For
-instance, suppose that the time horizon was several years, the AI could
-seize power in a few days, and the AI would be able to achieve much more
+What about _sufficient usefulness_? The alignment tax will depend on how
+limited the time horizon must be to ensure safety. We'll assume that this time
+horizon maps onto real world time and that myopic agents follow dumb decision
+theory. Following dumb decision theory implies that the myopic agent will
+always pick the choice which maximizes utility: superrationality isn't a
+concern. So, the time horizon sufficient for safety depends on how fast the
+agent could seize power and the additional utility associated with possessing
+power. For instance, suppose that the time horizon was several years, the AI
+could seize power in a few days, and the AI would be able to achieve much more
 utility over the remaining period than if it didn't seize power. This time
 horizon clearly results in existential catastrophe. Unfortunately, it's likely
 to be difficult to predict how much higher utility would be for a given agent
-if it possessed power (presumably utility would increase up over time with
-power). So, the time horizon would likely need to be shorter or around the same
-time as it would take the AI to fully seize power. This is also difficult to
-predict, but it does seem to imply that enacting a pivotal act with a myopic AI
-would be difficult. This is because enacting a pivotal act would probably take
-around the same time as seizing power. However, perhaps the pivotal act could
-be 'split up' such that a myopic AI achieving high utility on the shorter term
-consequences of its actions would be sufficient.
+if it possessed power (presumably utility increases over time when possessing
+power due to higher and higher utilisation). So, the time horizon would likely
+need to be shorter or around the same time as it would take the AI to fully
+seize power. This is also difficult to predict, but it does seem to imply that
+enacting a pivotal act with a myopic AI would be difficult. This is because
+enacting a pivotal act would probably take around the same amount of time as
+seizing power. However, perhaps the pivotal act could be 'split up' such that a
+myopic AI achieving high utility on the shorter term consequences of its
+actions would be sufficient.
 
 Another potential power seeking concern is that the AI might not have time to
 seek all power but it would have time to seek some power (possibly causing a
@@ -415,7 +416,7 @@ to stop an AI which has _only_ acquired some power, if the AI wasn't stopped,
 it might keep acquiring some power continuously eventually resulting in
 existential catastrophe. The trade-off between utilisation and acquisition of
 power would depend on the discounting of the agent's utility function within
-the time horizon. This could push the time horizon down even further.
+the time horizon. This could push the required time horizon down even further.
 
 Given how short the time horizon would have to be, the usefulness analysis of
 myopic agents proceeds very similarly to that of purely deontological agents
@@ -442,19 +443,19 @@ deontological and restriction based approaches. Additionally, reward models or
 classifiers for complex or hard to specify behavior could be very useful
 building blocks for instilling deontological properties. This also implies that
 knowing how to construct these components would be useful for researching how
-to instill complex deontological properties.
+to instill complex deontological properties in general.
 
 I think that (unaligned) corporate and academic research might end up
 meaningfully contributing to this topic which reduces the marginal benefit of
 aligned work in this space. This reasoning is less applicable in scenarios
-where timelines and/or takeoff are much faster than corporate leadership
-expects.
+where commercial timelines and/or takeoff are much faster than corporate
+leadership expects.
 
 ## 4.3 Restrained AIs
 
 The approaches to safety we've seen so far encounter the hard problem of AI
 cognition (or require getting lucky). Is there another way? Well, we could
-allow for fully blown, somewhat misaligned long-term consequentialist AI and
+allow for fully blown, somewhat misaligned, long-term consequentialist AI and
 restrain it in various ways.
 
 For one example of a restrained AI, consider an AI which operates as a
@@ -513,9 +514,9 @@ First of all, it's worth noting that restrictions could (slightly) reduce the
 possibility of catastrophe when testing other approaches in high intelligence
 regimes. For this to be useful at all, it would require that these restrictions
 are at least slightly robust to maliciousness.
-Additionally this approach is easily fooled by deceptiveness. So,
+Additionally, this approach is easily fooled by deceptiveness. So,
 approaches which reduce deceptiveness such as myopia or deontological
-honest synergize well with using restrictions for testing.
+honesty synergize well with using restrictions for testing.
 Even AIs which weakly value honesty might reveal malicious intentions
 if the AI estimates a low probability of successful power seeking
 and decides not to engage in acausal trade.
@@ -534,9 +535,9 @@ combining the 3 approaches discussed in this post.
 I was broadly in favor of [prosaic alignment][prosaic] work before starting to
 write this post and I remain so. However, I have updated very slightly against
 prosaic alignment due to a considerable increase in my estimation of alignment
-difficulty, (more information in the author's note below). These
-recommendations will focus on prosaic alignment, though I won't make the case
-for prosaic alignment here.
+difficulty. See [the section on alignment difficulty](#7_alignment_difficulty)
+for more details. My recommendations will focus on prosaic alignment, though
+I won't make the case for prosaic alignment here.
 
 My recommendations here are hopefully reasonably robust to differing views in
 takeoff speeds and modest changes in timelines. However, conditioning on very
