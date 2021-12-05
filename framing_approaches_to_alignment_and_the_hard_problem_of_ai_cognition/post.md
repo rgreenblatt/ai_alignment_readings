@@ -301,8 +301,8 @@ using purely deontological AIs is very unlikely to succeed.
 ### 4.1.4 Partially Deontological AI, what is it good for
 
 Given the capability weakness of the purely deontological AIs we'd be able to
-create, perhaps we can tolerate some level of consequentialism, but instill
-some deontological properties. For instance, perhaps we'd like to instill
+create, perhaps we can tolerate some level of consequentialism, but also
+instill deontological properties. For instance, perhaps we'd like to instill
 deontological properties like honesty, obedience, corrigibility, or
 conservativeness which would override consequentialism in some cases or
 prohibit certain courses of action.
@@ -312,7 +312,7 @@ decisions][incoherent], but there's a problem we run into even before that: how
 the hell do we instill deontological properties? We're back to the hard problem
 of AI cognition. For any outcome based environment which rewards deontological
 properties, there exists an agent which simply models that reward for
-deontological properties as one of the consequences in its utility function and
+deontological properties as a desirable consequence in its utility function and
 achieves full marks. For instance, rewarding honesty could be modeled as 'be
 honest' or as 'appear honest to the overseer'. Note that in some sense this
 'consequence model' is the 'correct' model: by definition, outcome based
@@ -324,14 +324,14 @@ property. But maybe not.
 A further concern is that it might be easier to instill deontological
 properties in less intelligent agents. This could result from full blown
 consequentialism requiring relatively advanced capabilities like self-modeling,
-predication, and reasoning about counterfactuals. For instance, note that among
+predication, and reasoning about counterfactuals. For instance, note that for
 life on earth intelligence seems to correlate with consequentialism. While ants
 (and other organisms) can look quite consequentialist from afar, this is really
 an emergent and less generalizable phenomenon than human consequentialism.
 _(TODO: maybe better better justify these claims. Note sure if ant sentence
 good/needed)_ This difference in difficulty could also result from the fact
-that consequentialism is the 'correct' model as discussed earlier. This
-difference in difficult creates the potential for quite a dangerous situation
+that consequentialism is the 'correct' model as discussed earlier. Overall,
+this issue creates the potential for quite a dangerous situation
 in which there is a smooth transition between dumb deontologist AIs and more
 intelligent purely consequentialist AIs which deceptively pretend to have
 deontological properties. Even if the transition isn't smooth, there is still
