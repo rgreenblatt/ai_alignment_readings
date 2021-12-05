@@ -140,10 +140,6 @@ are purely deontological, but they serve as a good exhibit of the weaknesses
 and safety advantages of deontological AIs as well as the challenges in
 constructing them.
 
-_(TODO: also serve as exhibit/lead in to some of main claims of post, maybe motivate better)_
-_(TODO: maybe something like: We'll use tool AIs to motivate introducing a few of the core claims
-of this post.)_
-
 _(TODO: maybe footnote here explaining that purely deontological AIs basically
 always have the features which are currently associated with the words 'tool
 AIs'. However, there is exception of very strange deontological principles like
@@ -273,9 +269,11 @@ I think the answer to this question would be useful. My understanding is that
 in [this conversation][aligndiff] Eliezer Yudkowsky says that he thinks that
 current machine learning techniques couldn't even produce an intelligent[^inteldef] and
 purely deontological model. There's also some speculation in [this post on
-safety in predictive learning][predsafe]
+safety in predictive learning][predsafe].
 
-_(TODO: add predication widget thing here for GPT-3 being purely deontological and GPT-n always being purely deontological.)_
+Elicit Prediction ([forecast.elicit.org/binary/questions/8SV58Eq2d](forecast.elicit.org/binary/questions/8SV58Eq2d)) _note, will be formatted in final post_
+
+Elicit Prediction ([forecast.elicit.org/binary/questions/Wgff0HgNf](forecast.elicit.org/binary/questions/Wgff0HgNf)) _note, will be formatted in final post_
 
 Now let's suppose that process based tasks do in fact result in purely deontological
 agents and consider if such agents can be _sufficiently useful_.
@@ -287,7 +285,9 @@ could possibly help speed up alignment research, but probably not
 astronomically, so that isn't sufficient for a pivotal act.
 _(TODO: more justification of these claims? seems straight forward to me?)_
 
-_(TODO: add predication widget thing here for existence of such an act.)_
+Elicit Prediction ([https://forecast.elicit.org/binary/questions/MhpdWy-A-](
+https://forecast.elicit.org/binary/questions/MhpdWy-A-))
+_note, will be formatted in final post_
 
 If purely deontological AI via process based tasks is the main approach to
 alignment enforced by governance, the benefits of defection would likely seem
@@ -361,8 +361,6 @@ _sufficiently useful_. There can potentially be just as capable as pure
 consequentialists. However, there are likely trade-offs between the strength of
 deontological properties and the capabilities of the agent. Sufficiently strong
 conservatism results in doing nothing at all.
-
-_(TODO: anything more here?)_
 
 ## 4.2 Consequentialist approaches
 
