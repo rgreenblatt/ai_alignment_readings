@@ -279,10 +279,11 @@ Now let's suppose that process based tasks do in fact result in purely deontolog
 agents and consider if such agents can be _sufficiently useful_.
 
 I'm not currently aware of any pivotal act which can be achieved using a
-process based task AI. A process based task AI could possibly help speed up
-alignment research, but probably not astronomically, so that isn't sufficient
-for a pivotal act.
-_(TODO: justify this claim)_
+process based task AI. Pivotal acts likely require careful and superintelligent
+planning which requires reasoning about consequences. A process based task AI
+could possibly help speed up alignment research, but probably not
+astronomically, so that isn't sufficient for a pivotal act.
+_(TODO: more justification of these claims? seems straight forward to me?)_
 
 _(TODO: add predication widget thing here for existence of such an act.)_
 
