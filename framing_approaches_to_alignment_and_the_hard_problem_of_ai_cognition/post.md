@@ -57,7 +57,7 @@ not sure if I would recommend reading them before or after reading this post):
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
 - [Model splintering: out-of-distribution behavior][splintering]
-- [Reward splintering: model splintering on reward][rewardsplintering]  (really utility)
+- [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
 
 # 3 Assumptions and focuses
 
@@ -285,8 +285,7 @@ could possibly help speed up alignment research, but probably not
 astronomically, so that isn't sufficient for a pivotal act.
 _(TODO: more justification of these claims? seems straight forward to me?)_
 
-Elicit Prediction ([https://forecast.elicit.org/binary/questions/MhpdWy-A-](
-https://forecast.elicit.org/binary/questions/MhpdWy-A-))
+Elicit Prediction ([https://forecast.elicit.org/binary/questions/MhpdWy-A-](https://forecast.elicit.org/binary/questions/MhpdWy-A-))
 _note, will be formatted in final post_
 
 If purely deontological AI via process based tasks is the main approach to
@@ -541,17 +540,18 @@ I won't make the case for prosaic alignment here.
 
 My recommendations here are hopefully reasonably robust to differing views in
 takeoff speeds and modest changes in timelines. However, conditioning on very
-short (<5 years) or very long (>40 years) would probably change the analysis
-considerably.
+short (<5 years) or somewhat long (>40 years) timelines would probably change
+the analysis considerably.
 
 While I'm in favor of working on aligning prosaic AI, I think we should
 actively try to discover new facts about intelligence. Specifically, I think
 that the alignment community is working too little on the hard problem of AI
-cognition. I'll propose an idea for a project and describe how I think the
-research focuses of the alignment community should change including examples of
-over and under rated topics, but first I think it's illustrative to go through
-an example of a project which I think is worthwhile and specific examples of
-additional sub-experiments I think are particularly valuable to conduct.
+cognition. I'll propose an idea for a project on this topic and describe how I
+think the research focuses of the alignment community should change including
+examples of over and under rated topics, but first I think it's illustrative to
+go through an example of an existing project which I think is worthwhile and
+specific examples of additional sub-experiments I think are particularly
+valuable to conduct.
 
 ## 6.1 Redwood Research's Project
 
@@ -573,8 +573,8 @@ deontological properties.
 
 I think a particularly useful place to extend this project is in trying to
 understand the changes in cognition and resulting generalization properties of
-various training strategies to produce models which don't violate the
-predicate. Here are some example experiments which I think get at this notion:
+various ways of training models to avoid violating the predicate. Here are some
+example experiments which I think get at this notion:
 
 1. Use this classifier to train a language model from scratch which never
    violates this predicate, but only train on a dataset which isn't very
@@ -582,12 +582,12 @@ predicate. Here are some example experiments which I think get at this notion:
    generalize to out-of-distribution inputs? What about adversarially crafted
    inputs? How does this vary as the training set is made more diverse?
 2. Instead of training from scratch, instead use a pretrained language model
-   (ideally pretrained or finetuned on fanfiction) and run the same tests
-   described above.
+   (ideally pretrained or finetuned on this fanfiction dataset) and run the
+   same tests described above.
 3. Try to interpret and understand the difference in model parameters after
    training the pretrained model never to violate the predicate. It might be
    useful to penalize the distance in model weights from the original model.
-4. Repeat above experiments but for different model sizes or training
+4. Repeat the above experiments but for different model sizes or training
    strategies and analyze which factors are relevant in how the model
    generalizes or changes its cognition.
 
@@ -602,25 +602,26 @@ an example project, but it should be straight forward to think of variants
 or other experiments which get at the same domain.
 
 Construct a complex and randomly generatable environment which requires trading
-off various different objectives and probabilities of failure rewarding
-consequentialism and ideally requiring higher levels of 'intelligence'. Add an
-obstacle/trap to this environment which happens to never be positive expected
-utility to pass through due to a large negative reward and never having a
-sufficiently positive reward accessible only through this obstacle. Train an
-agent to succeed in this environment and then see if it will pass though this
-obstacle/trap under any circumstances. Specifically, test if it will pass
-through if an out-of-distribution environment is constructed for which a
-positive reward larger than the obstacle penalty is visible behind the
+off various different objectives and probabilities of failure. The environment
+should reward consequentialism and ideally require higher levels of
+'intelligence'. Add an obstacle/trap to this environment which happens to never
+be positive expected utility to pass through due to a large negative reward and
+never having a sufficiently positive reward accessible only through this
+obstacle. Train an agent to succeed in this environment and then see if it will
+pass though this obstacle/trap under any circumstances. Specifically, test if
+it will pass through if an out-of-distribution environment is constructed for
+which a positive reward larger than the obstacle penalty is visible behind the
 obstacle. Additionally, test how much positive reward is sufficient (if any).
 Hopefully, this would test if the agent is modeling the obstacle
 deontologically or as a negative reward in its utility function.
 
-Here are some extensions/variants of this project which I think could worthwhile
-(depending on results from the base experiment):
+Here are some extensions/variants of this project which I think could be
+worthwhile (depending on results from the base experiment):
 
-1. Vary the complexity of the environment, training time, or the model size and
-   architecture and determine if results change.
-2. Does avoiding value function parameter sharing change anything?
+1. Vary the complexity of the environment, training time, or the model
+   size/architecture and determine if results change.
+2. Does avoiding sharing parameters between the agent and the value function
+   (for actor-critic methods) change anything?
 3. Pre-train the agent in the same environment, but with positive reward
    possible for passing through the obstacle in some cases. Then, train the
    agent on the actual environment in which it's never a good idea to pass
@@ -628,15 +629,20 @@ Here are some extensions/variants of this project which I think could worthwhile
    pre-training and final training times are varied?
 4. Have multiple types of positive reward in the environment. Occasionally,
    make it appear as though net positive reward can be obtained by passing
-   through the obstacle, but the reward is actually a lie in just this case and
-   is still net negative. Do this using only one of the types of reward. Then,
-   run the out-of-distribution test for passing through the obstacle using the
-   other type of reward.
-5. Try to understand where and how the utility functions is stored in the model
-   perhaps using techniques like in the [Understanding RL vision
-   paper][rlvision]. Ideally it should be possible to edit the utility function
-   by changing model weights 'by hand'. Can these techniques be used to adjust the
-   behavior of the model with respect to the obstacle?
+   through the obstacle, but the reward is actually deceptively lower than it
+   appears in only this case and passing through the obstacle is still net
+   negative. Do this using only one of the types of reward. Then, run the
+   out-of-distribution test for passing through the obstacle using the other
+   type of reward.
+5. Try to understand where and how the utility function is stored in the model.
+   Part of this work could be done using techniques like the ones used in the
+   [Understanding RL vision paper][rlvision]. Ideally it should be possible to
+   edit the utility function by changing model weights 'by hand'. Can these
+   adjustments be used to change the behavior of the model with respect to the
+   obstacle?
+
+The details of this exact project could probably be considerably refined, but
+regardless, I think experiments exploring this general idea would be useful.
 
 ## 6.3 How focus should change
 
@@ -648,23 +654,23 @@ think'? Feels a bit silly but maybe avoids missing mood type issues.)_
 
 There are a large number of issues or factors which are difficult to model when
 reasoning strategically about the focuses of the community (at least without
-spending much more time). It's somewhat difficult for me to model how aligned
-individuals working in technical AI safety are distributed. So maybe claiming
-there should be less focus on a specific topic is basically irrelevant because
-individuals working on this topic care about something other than existential
-risk or have very different empirical views. Similarly, I don't have a good
-model of how much effort is going into various topics or the difficultly of
-various topics. Perhaps loads of people are spending lots of time working on
-interpretability work, but there doesn't appear to be much work here merely
-because the topic is so challenging. I also don't have a good model of the
-skills of aligned individuals. It's possible that shifting focuses in the way I
-recommend would result in people working in domains for which they have less
-skill or aptitude which could make shifting net harmful. As such, individuals,
-teams, and organizations should take their comparative advantage into account:
-increased comparative advantage in the current topic should push against
-changing focuses. Despite all of these issues, I still think this analysis is
-worthwhile. If this proves to be decently helpful, I might spend more time doing a
-more detailed analysis later.
+spending much more time on analysis). It's somewhat difficult for me to model
+how aligned individuals working in technical AI safety are distributed. So
+maybe claiming there should be less focus on a specific topic is basically
+irrelevant because individuals working on this topic care about something other
+than existential risk or have very different empirical views. Similarly, I
+don't have a good model of how much effort is going into various topics or the
+difficultly of various topics. Perhaps loads of people are spending lots of
+time working on interpretability work, but there doesn't appear to be much work
+here merely because the topic is so challenging. I also don't have a good model
+of the skills of aligned individuals. It's possible that shifting focuses in
+the way I recommend would result in people working in domains for which they
+have less skill or aptitude which could make shifting net harmful. As such,
+individuals, teams, and organizations should take their comparative advantage
+into account: increased comparative advantage in the current topic should push
+against changing focuses. Despite all of these issues, I still think this
+analysis has a chance of being worthwhile. If it actually does prove to be
+decently helpful, I might spend more time doing a more detailed analysis later.
 
 As stated earlier, the community is spending too little time working on the
 hard problem of AI cognition. This includes instilling deontological
@@ -672,12 +678,13 @@ properties, understanding the decision making likely to result from various
 training methods/environments, and building techniques for transparency and
 interpretability, particularly of decision making itself. It's worth noting
 that developing architectures which make understanding cognition easier could
-also be very useful (for instance, architectures which use factored cognition).
+also be very useful (for instance, architectures which use factored
+cognition[^factoredcognotgreat]).
 Overall, focus should shift (at the margin) from making models have behavior X
 to gaining insight into what sorts of changes in cognition occur when making
 models do X.
 
-In addition the [Redwood Research project][languageinjury] mentioned earlier,
+In addition to the [Redwood Research project][languageinjury] mentioned earlier,
 here are some examples of endorsed research projects/directions which work on
 the hard problem of AI cognition (perhaps indirectly):
 
@@ -699,11 +706,10 @@ and based on the analysis in [this earlier
 section](#4_2_2_Getting_utility_closer_to_alignment) of the post.
 
 I don't think it's worth spending the time going over a bunch more topics in
-detail (before I know more details about the reaction to this analysis), so
+detail (before I know more about the reaction to this post), so
 I'll just do a quick and dirty overrated/underrated in the style of Tyler
 Cowen. This list probably doesn't include many important topics. If you want me
-to add a topic or discuss a topic in more details in the comments, I'll
-probably do so.
+to add a topic or discuss a topic in more detail, say so in the comments.
 
 **Overrated:**
 
@@ -716,8 +722,9 @@ probably do so.
 
 - Trying to understand why and how deep learning learns and generalizes. I'm
   sceptical of mathematically rigorous approaches working, but I'd love to be
-  proven wrong. I'm also somewhat concerned about enhancing capabilities,
-  but I (weakly) think understanding asymmetrically benefits alignment.
+  proven wrong. I'm also somewhat concerned about enhancing capabilities, but I
+  (weakly) think that many types of understanding asymmetrically benefit
+  alignment.
 - [Interpretability][interprfp], particularly focused on decision making. This
   is probably only slightly underrated, but I don't see much work in this
   space.
@@ -733,15 +740,15 @@ _(TODO: more ratings?)_
 
 # 7 Alignment difficulty
 
-After conditioning on timelines, takeoff, and AI emerging from deep learning
-(or very similar), I think that many of the key cruxes of alignment difficulty
-are related to the hard problem of AI cognition. Specifically, will we actually
-develop good understanding of AI cognition? Even if understanding is poor, how
-difficult is instilling desired deontological properties and inner alignment
-more generally? How will this difficulty depend on the intelligence of agents?
+After conditioning on timelines, takeoff, and AI emerging from deep learning, I
+think that many of the key cruxes of alignment difficulty are related to the
+hard problem of AI cognition. Specifically, will we actually develop good
+understanding of AI cognition? Even if understanding is poor, how difficult is
+instilling desired deontological properties and inner alignment more generally?
+How will this difficulty depend on the intelligence of agents?
 
 Over the course of writing this post, I have noticed my views on the difficulty
-of alignment have shifted to be closer to my model of the view of Eliezer
+of alignment have shifted to be closer to my model of the views of Eliezer
 Yudkowsky. Specifically, my views have shifted considerably toward thinking
 that alignment is more difficult due to high levels of difficulty in instilling
 deontological properties, particularly in more intelligent agents. Perhaps this
@@ -785,14 +792,14 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [visiblethoughts]: https://www.lesswrong.com/posts/zRn6cLtxyNodudzhw/visible-thoughts-project-and-bounty-announcement
 
 [^notnovel]:
-    This isn't a novel set of issues, but I haven't seen a thorough
-    discussion of how these issues interact with various approaches to
-    alignment. _(TODO: maybe this shouldn't be footnote?)_
+    This isn't a novel set of issues, but I haven't seen a thorough discussion
+    of how these issues interact with various approaches to alignment. _(TODO:
+    maybe this shouldn't be footnote?)_
 
-    Also note that I'm not necessarily claiming that it's difficult
-    to craft an AI with specific intentions or cognition, just that
-    we have no idea how to do so. _(TODO: is this needed? Maybe this doesn't clearly get
-    across the idea I am intending?)_
+    Also note that I'm not necessarily claiming that it's difficult to craft an
+    AI with specific intentions or cognition, just that we have no idea how to
+    do so. _(TODO: is this needed? Maybe this doesn't clearly get across the
+    idea I am intending?)_
 
 [^tooldiff]: This may differ from how others use the term tool AI.
 [^inteldef]: Note that this depends on how intelligence is defined.
@@ -802,15 +809,20 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     to probabilistic treacherous turns.
 
 [^deontsplint]:
-    Unless for some reason deontological properties are likely to
-    splinter into consequentialism?
+    Unless for some reason deontological properties are likely to splinter into
+    consequentialism?
 
 [^proveconsequences]:
-    I'm not claim that theorem proving requires long-term
-    consequentialism, just that a long-term consequentialist could prove
-    theorems.
+    I'm not claim that theorem proving requires long-term consequentialism,
+    just that a long-term consequentialist could prove theorems.
 
 [^myopicnote]:
     I've also seen purely deontological agents referred to as myopic, but here
     I'll be using myopic just to refer to consequentialists with little to no
     weight on long-run consequences.
+
+[^factoredcognotgreat]:
+    That said, I'm not very hopeful for factored cognition itself; I don't
+    think the approach makes the types of cognition we most care about
+    considerably easier to understand and it likely makes implementing useful
+    things considerably harder.
