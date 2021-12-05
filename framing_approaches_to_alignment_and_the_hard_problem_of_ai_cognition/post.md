@@ -14,14 +14,14 @@ _(TODO: should 'consequentialist' category have a different name?)_
 I'll also be discussing and motivating a set of issues which I'll refer to as
 'the hard problem of AI cognition': we don't have tools for understanding the
 cognition or intention of AIs produced by current machine learning methods or
-understanding of how decision making depends on training (c.f. [inner
+understanding of how AI decision making depends on training (c.f. [inner
 alignment][riskslearned]).[^notnovel]
 _(TODO: maybe cognition -> decision making?)_
 After going through deontological,
 consequentialist, and capability restriction approaches at a high level and
 explaining where I think the hard problem of AI cognition is relevant, I'll
-explain my take on the strategic implications of this analysis and attempt to
-craft a frame for analyzing alignment difficulty. We'll be focussing on X-risk,
+explain my take on the strategic implications of this analysis and briefly
+discuss alignment difficulty. We'll be focussing on X-risk,
 so we won't directly discuss failures which would 'only' result in large losses
 of life or economic damage. This is primarily a 'first principles' sort of
 analysis, though I'll be implicitly (and occasionally explicitly) referencing
@@ -43,7 +43,7 @@ We'll refer in more detail to:
 - The idea of utility maximization and [that coherent decisions imply
   consistent utilities][coherant]
 - [Goodhart's law][goodhart]
-- The concept of inner alignment
+- The concept of [inner alignment][riskslearned]
 - [Power seeking/instrumental convergence][powerseek]
 - The current lack of understanding around deep learning generalization and
   transparency
@@ -57,7 +57,7 @@ not sure if I would recommend reading them before or after reading this post):
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
 - [Model splintering: out of distribution behavior][splintering]
-- [Reward splintering: model splintering on reward (really utility)][rewardsplintering]
+- [Reward splintering: model splintering on reward][rewardsplintering]  (really utility)
 
 # 3 Assumptions and focuses
 
@@ -91,7 +91,7 @@ assumptions:
    outcome expected utility maximizers (aka consequentialists) would cause an
    existential catastrophe if created with approaches reasonably similar to
    current ML. _(TODO: could this be made clearer? Possibly remove some
-   adjectives?)_ When I say 'outcome expected utility maximizer' I mean that
+   adjectives?)_ When I say 'outcome expected utility maximizer', I mean that
    the expected utility maximizer cares intrinsically about consequences
    (consequentialism) instead of about actions (deontology). We'll use the term
    consequentialism for the remainder of these post. We'll also go through this
@@ -136,7 +136,7 @@ capabilities, we must remove consequentialism yielding a deontological AI. It
 may also be possible to reduce agency by removing some capabilities (such as
 self-modeling), this will be discussed in the section on restriction based
 approaches. Tool AIs are an extreme version of a deontological approach as they
-are _purely deontological_, but they serve as a good exhibit of the weaknesses
+are purely deontological, but they serve as a good exhibit of the weaknesses
 and safety advantages of deontological AIs as well as the challenges in
 constructing them.
 
@@ -159,12 +159,12 @@ contract the notion of actually achievable purely deontological AIs below)_
 _(TODO, ok maybe use actual title that references that this section is about safety properties...)_
 
 Given that different people use the term 'tool AI' in somewhat different ways,
-I will stick with the verbose _purely deontological_ AI from here on.
+I will stick with the verbose purely deontological AI from here on.
 
-Note that _purely deontological_ AIs can be capable of modeling consequences,
+Note that purely deontological AIs can be capable of modeling consequences,
 but they don't _care_ about the consequences of their actions.[^tooldiff] This
-means that _purely deontological_ AIs can appear very agentic. For instance,
-consider a _purely deontological_ AI which just cares about imitating the
+means that purely deontological AIs can appear very agentic. For instance,
+consider a purely deontological AI which just cares about imitating the
 actions of a human. For a more absurd example, consider an AI which only cares
 about imitating what its actions would be if it were a consequentialist. For a
 competent imitator, this the _same_ as being a consequentialist. So wait! Why
