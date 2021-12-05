@@ -694,7 +694,7 @@ work on [enhancing human feedback][enhancefeedbackrfp], active learning,
 improving sample efficiency, and other related topics. This is based on the
 understanding that a large amount of research is being conducted in this area
 and based on the analysis in [this earlier
-section](#4.2.2-getting-utility-closer-to-alignment) of the post.
+section](#4.2.2-Getting-utility-closer-to-alignment) of the post.
 
 I don't think it's worth spending the time going over a bunch more topics in
 detail (before I know more details about the reaction to this analysis), so
