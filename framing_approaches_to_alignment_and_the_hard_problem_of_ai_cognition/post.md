@@ -506,7 +506,7 @@ aware of any promising directions.
 The enforcement side looks similarly poor. Actors would likely perceive very
 strong incentives from increasing the capabilities of AIs.
 
-# 4. Combining approaches
+# 5. Combining approaches
 
 First of all, it's worth noting that restrictions could (slightly) reduce the
 possibility of catastrophe when testing other approaches in high intelligence
@@ -528,7 +528,7 @@ safety properties.
 At this time, I don't believe I have any other non-trivial insight into
 combining the 3 approaches discussed in this post.
 
-# 5. Strategic recommendations
+# 6. Strategic recommendations
 
 I was broadly in favor of [prosaic alignment][prosaic] work before starting to
 write this post and I remain so. However, I have updated very slightly against
@@ -551,7 +551,7 @@ over and under rated topics, but first I think it's illustrative to go through
 an example of a project which I think is worthwhile and specific examples of
 additional sub-experiments I think are particularly valuable to conduct.
 
-# 5.1 Redwood Research's Project
+## 5.1 Redwood Research's Project
 
 An example of work on instilling deontological properties is [Redwood
 Research's project on getting a language model to never describe someone
@@ -729,7 +729,7 @@ I'll probably do so.
 
 _(TODO: more ratings?)_
 
-# 6 Alignment difficulty
+# 7 Alignment difficulty
 
 After conditioning on timelines, takeoff, and AI emerging from deep learning
 (or very similar), I think that many of the key cruxes of alignment difficulty
