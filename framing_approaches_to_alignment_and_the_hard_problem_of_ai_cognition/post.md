@@ -56,7 +56,7 @@ not sure if I would recommend reading them before or after reading this post):
 
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
-- [Model splintering: out of distribution behavior][splintering]
+- [Model splintering: out-of-distribution behavior][splintering]
 - [Reward splintering: model splintering on reward][rewardsplintering]  (really utility)
 
 # 3 Assumptions and focuses
@@ -137,8 +137,8 @@ may also be possible to reduce agency by removing some capabilities (such as
 self-modeling), this will be discussed in the section on restriction based
 approaches. Tool AIs are an extreme version of a deontological approach as they
 are purely deontological, but they serve as a good exhibit of the weaknesses
-and safety advantages of deontological AIs as well as the challenges in
-constructing them.
+and safety advantages of deontological AIs as well as the challenges associated
+with constructing them.
 
 _(TODO: maybe footnote here explaining that purely deontological AIs basically
 always have the features which are currently associated with the words 'tool
@@ -157,31 +157,31 @@ _(TODO, ok maybe use actual title that references that this section is about saf
 Given that different people use the term 'tool AI' in somewhat different ways,
 I will stick with the verbose purely deontological AI from here on.
 
-Note that purely deontological AIs can be capable of modeling consequences,
-but they don't _care_ about the consequences of their actions.[^tooldiff] This
+Note that purely deontological AIs can be capable of modeling consequences, but
+they don't _care_ about the consequences of their actions.[^tooldiff] This
 means that purely deontological AIs can appear very agentic. For instance,
-consider a purely deontological AI which just cares about imitating the
-actions of a human. For a more absurd example, consider an AI which only cares
-about imitating what its actions would be if it were a consequentialist. For a
+consider a purely deontological AI which just cares about imitating the actions
+of a human. For a more absurd example, consider an AI which only cares about
+imitating what its actions would be if it were a consequentialist. For a
 competent imitator, this the _same_ as being a consequentialist. So wait! Why
 have we bothered with defining this class of AIs if it practically includes
-consequentialists anyway!? Well, this come down to why the intentions
-of AIs matter at all. Intentions determine behavior when out of distribution
-for intelligent and robustly capable agents. _(TODO: maybe more here about how
+consequentialists anyway!? Well, this come down to why the intentions of AIs
+matter at all. Intentions determine behavior when out-of-distribution for
+intelligent and robustly capable agents. _(TODO: maybe more here about how
 capability robustness probably fails safe instead of failing 'kill us all' so
 we shouldn't care as much about that for x-risk)_ For example, consider [some
 empirical observations of objective robustness failures][objrob] in which
-agents 'care' about a correlated feature and then purse that feature when out
-of distribution instead of the reward from the original environment. There are
-also more arcane considerations like deceptive alignment which can leverage
-slight distributional differences into unsafety failures.[^indist] _(TODO:
-maybe better justify that intentions determine generalization or link
-something? Possibly I should just state this less confidently: I'm not that
-confident this is true in a deep sense.)_
+agents 'care' about a feature correlated with the reward and then purse that
+feature when out-of-distribution instead of the reward from the original
+environment. There are also more arcane considerations like deceptive alignment
+which can leverage slight distributional differences into safety
+failures.[^indist] _(TODO: maybe better justify that intentions determine
+generalization or link something? Possibly I should just state this less
+confidently: I'm not that confident this is true in a deep sense.)_
 
 So there can be purely deontological AIs which act like consequentialist agents
 in their training environments, but we generally expect them to act less like
-consequentialist agents on out of distribution inputs. In general, I would be
+consequentialist agents on out-of-distribution inputs. In general, I would be
 Very Surprised if a purely deontological AI caused existential
 catastrophe in a bid for power without having been trained explicitly to do so.
 It is isn't agency which scares us: it's generalizing agency.
@@ -226,7 +226,7 @@ So, there isn't an obvious way to train a purely deontological AI. In fact, we
 don't even know how to check how if an AI cares about consequences or
 deontological rules. Inner alignment with current machine learning approaches
 is hard. We have no [physics style models][physics] for understanding the
-eventual intentions of super intelligent AI produced via such a process.
+eventual intentions of superintelligent AI produced via such a process.
 _(TODO: ecological models?)_ We don't have solid approaches for inspecting the
 decision making of deep agents. Or a decent understanding of what decision
 making will result from a specific training process. We don't know why or how
@@ -257,7 +257,7 @@ deontological AIs. This is putting aside edge cases or the application of some
 not currently known technique. I'd also make a similar claim about AIs trained
 to imitate another consequentialist AI. Note that constructing plans
 also falls into the category of outcome based training (assuming you care about
-whether or not those plans work!). Also be careful not to over generalize my
+whether or not those plans work!). Also be careful not to over-generalize my
 statement: I'm just saying that you wouldn't get _purely_ deontological agents,
 not that you couldn't get _partially_ deontological agents which we will
 discuss later. So, this leaves the tasks which are classically associated with
@@ -275,8 +275,8 @@ Elicit Prediction ([forecast.elicit.org/binary/questions/8SV58Eq2d](forecast.eli
 
 Elicit Prediction ([forecast.elicit.org/binary/questions/Wgff0HgNf](forecast.elicit.org/binary/questions/Wgff0HgNf)) _note, will be formatted in final post_
 
-Now let's suppose that process based tasks do in fact result in purely deontological
-agents and consider if such agents can be _sufficiently useful_.
+Now let's suppose that all process based tasks do in fact result in purely
+deontological agents and consider if such agents can be _sufficiently useful_.
 
 I'm not currently aware of any pivotal act which can be achieved using a
 process based task AI. Pivotal acts likely require careful and superintelligent
@@ -387,7 +387,7 @@ creating myopic agents might be easer than instilling deontological properties,
 but we might need to control the decision theory of myopic agents which could
 make the overall difficulty harder.
 
-What about sufficient usefulness? The alignment tax will depend on how limited
+What about _sufficient usefulness_? The alignment tax will depend on how limited
 the time horizon must be to ensure safety. We'll assume that this time horizon
 maps onto real world time and that myopic agents follow dumb decision theory.
 Following dumb decision theory implies that the myopic agent will always pick
@@ -796,7 +796,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [^tooldiff]: This may differ from how others use the term tool AI.
 [^inteldef]: Note that this depends on how intelligence is defined.
 [^indist]:
-    Even if test inputs are within the training distribution (somehow),
+    Even if test inputs are always within the training distribution (somehow),
     unless training is arbitrarily long there can still be safety concerns due
     to probabilistic treacherous turns.
 
