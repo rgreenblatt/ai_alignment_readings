@@ -12,8 +12,10 @@ _(TODO: should 'consequentialist' category have a different name?)_
 I'll also be discussing and motivating a set of issues which I'll refer to as
 'the hard problem of AI cognition': we don't have tools for understanding the
 cognition or intention of AIs produced by current machine learning methods or
-understanding of how cognition depends on training (c.f. [inner
-alignment][riskslearned]).[^notnovel] After going through deontological,
+understanding of how decision making depends on training (c.f. [inner
+alignment][riskslearned]).[^notnovel]
+_(TODO: maybe cognition -> decision making?)_
+After going through deontological,
 consequentialist, and capability restriction approaches at a high level and
 explaining where I think the hard problem of AI cognition is relevant, I'll
 explain my take on the strategic implications of this analysis and attempt to
@@ -228,10 +230,10 @@ deontological rules. Inner alignment with current machine learning approaches
 is hard. We have no [physics style models][physics] for understanding the
 eventual intentions of super intelligent AI produced via such a process.
 _(TODO: ecological models?)_ We don't have solid approaches for inspecting the
-cognition of deep agents. Or a decent understanding of what agent cognition
-will result from a specific training process. We don't know why or how deep
-learning generalizes. And it's unclear if techniques will generalize to higher
-intelligence and capability regimes. This is the 'the hard problem of AI
+decision making of deep agents. Or a decent understanding of what decision
+making will result from a specific training process. We don't know why or how
+deep learning generalizes. And it's unclear if techniques will generalize to
+higher intelligence and capability regimes. This is the 'the hard problem of AI
 cognition' which we'll be referencing throughout the post. My current view is
 that this is a difficult crux of alignment and we'll present only one
 (dangerous) way to proceed without resolving these issues.
@@ -306,13 +308,15 @@ These deontological properties could result in [incoherent
 decisions][incoherent], but there's a problem we run into even before that: how
 the hell do we instill deontological properties? We're back to the hard problem
 of AI cognition. For any outcome based environment which rewards deontological
-properties, there exists an agent which simply models that deontological
-property as consequences with some utility and achieves full marks. For
-instance, rewarding honesty could be modeled as 'be honest' or as 'appear
-honest to the overseer'. So maybe if you setup your deontological property
-encouraged environment and train to convergence you get a super intelligent,
-consequentialist agent which also has the desired deontological property. But
-maybe not.
+properties, there exists an agent which simply models that reward for
+deontological properties as one of the consequences in its utility function and
+achieves full marks. For instance, rewarding honesty could be modeled as 'be
+honest' or as 'appear honest to the overseer'. Note that in some sense this
+'consequence model' is the 'correct' model: by definition, outcome based
+environments reward consequences. So maybe if you setup your deontological
+property encouraged environment and train to convergence you get a super
+intelligent, consequentialist agent which also has the desired deontological
+property. But maybe not.
 
 A further concern is that it might be easier to instill deontological
 properties in less intelligent agents. This could result from full blown
@@ -322,14 +326,16 @@ life on earth intelligence seems to correlate with consequentialism. While ants
 (and other organisms) can look quite consequentialist from afar, this is really
 an emergent and less generalizable phenomenon than human consequentialism.
 _(TODO: maybe better better justify these claims. Note sure if ant sentences
-good/needed)_ This creates the potential for quite a dangerous situation in
-which there is a smooth transition between dumb deontologist AIs and more
-intelligent purely consequentialist AIs which deceptively pretend to
-have deontological properties. Even if the transition isn't smooth, there is
-still potential for danger. When dialing up the intelligence knob (params,
-training time, etc), noticing a transition region between having deontological
-properties you want, some alignment failures, and then seemingly getting those properties
-back again should be a cause for alarm.
+good/needed)_ This difference in difficulty could also result from the fact
+that consequentialism is the 'correct' model as discussed earlier. This
+difference in difficult creates the potential for quite a dangerous situation
+in which there is a smooth transition between dumb deontologist AIs and more
+intelligent purely consequentialist AIs which deceptively pretend to have
+deontological properties. Even if the transition isn't smooth, there is still
+potential for danger. When dialing up the intelligence knob (params, training
+time, etc), noticing a transition region between having the deontological
+properties you want, some alignment failures, and then seemingly getting those
+properties back again should be cause for alarm.
 
 There's an additional problem with partially deontological AIs which didn't
 exist with purely deontological AIs. If the deontological principles of an
@@ -490,26 +496,37 @@ Idea, so we'll rule it out when speculating about alignment tax. We'll
 reconsider this when contemplating combining approaches to alignment.
 
 From the pivotal act perspective, it seems very difficult to perform such an
-act with an AI which has sufficiently restricted knowledge or cognition about
-the world. However, the space of possible restrictions is large, so perhaps
-there are achievable ways to limit the cognition of AIs in order to ensure (or
-at least increase the probability of) safety while still being able to
-accomplish a pivotal act. I'm not currently aware of any promising directions.
+act with an AI which has sufficiently restricted knowledge or ability to
+perform cognition involving the real world. However, the space of possible
+restrictions is large, so perhaps there are achievable ways to limit the
+cognition of AIs in order to ensure (or at least increase the probability of)
+safety while still being able to accomplish a pivotal act. I'm not currently
+aware of any promising directions.
 
 The enforcement side looks similarly poor. Actors would likely perceive very
 strong incentives from increasing the capabilities of AIs.
 
 # 4. Combining approaches
 
-_(TODO: unfinished section, just outlined)_
+First of all, it's worth noting that restrictions could (slightly) reduce the
+possibility of catastrophe when testing other approaches in high intelligence
+regimes. For this to be useful at all, it would require that these restrictions
+are at least slightly robust to maliciousness.
+Additionally this approach is easily fooled by deceptiveness. So,
+approaches which reduce deceptiveness such as myopia or deontological
+honest synergize well with using restrictions for testing.
+Even AIs which weakly value honesty might reveal malicious intentions
+if the AI estimates a low probability of successful power seeking
+and decides not to engage in acausal trade.
 
-First of all, ... testing with restrictions and hopefully begin prepared for malicious ness. Likely to be fooled by deception. Advantage of things which reduce deceptiveness
-(myopic/deontological honest). Even non-deontological honest
-could be useful if AI doesn't think it could take over and decides
-not to engage in acausal trade.
+It would be possible to combine myopic agency with some deontological
+properties as an approach for safety. I'm not currently aware of
+any synergies or anti-synergies; it seems like both approaches
+would impose some alignment tax and potentially offer different
+safety properties.
 
-Myopia + purely deontological not a thing
-myopia + deontological properties don't obviously synergy or anti-synergy in general.
+At this time, I don't believe I have any other non-trivial insight into
+combining the 3 approaches discussed in this post.
 
 # 5. Strategic recommendations
 
@@ -621,63 +638,113 @@ Here are some extensions/variants of this project which I think could worthwhile
 
 ## 5.3 How focus should change
 
-It's worth noting that my analysis here is highly speculative. It's somewhat
-difficult for me to model how aligned individuals working in technical AI
-safety are distributed. So maybe claiming there should be less focus on a
-specific topic is basically irrelevant because individuals working on this
-topic care about something other than existential risk or have very different
-empirical views. Similarly, I don't have a good model of how much effort is
-going into various topics or the difficultly of various topics. Perhaps loads
-of people are spending lots of time working on interpretability work, but there
-doesn't appear to be much work here merely because the topic is so challenging.
-I also don't have a good model of the skills of aligned individuals.
-It's possible that shifting focuses in the way I recommend would
-result in people working in domains for which they have less skill
-or aptitude which could make shifting net harmful.
-As such, individuals, teams, and organizations should take
-their comparative advantage into account: increased comparative advantage
-in the current topic should push against changing focuses.
-Despite all of these issues, I still think this analysis is worthwhile.
+It's worth noting that my analysis here is highly speculative. Specifically,
+imagine everything in this section is prefixed with 'I speculatively think'.
 
-I think the important work lies on instilling deontological properties,
-understanding the cognition likely to result from various training
-methods/environments and building techniques for transparency and
-interpretability, particularly of cognition. Its worth noting that
-developing architectures...
+_(TODO: should I literally just prefix many sentences with 'I speculatively
+think'? Feels a bit silly but maybe avoids missing mood type issues.)_
 
-Overall: change from make model do X to gain insight into what sorts
-of changes in cognition occur when making model do X.
+There are a large number of issues or factors which are difficult to model when
+reasoning strategically about the focuses of the community (at least without
+spending much more time). It's somewhat difficult for me to model how aligned
+individuals working in technical AI safety are distributed. So maybe claiming
+there should be less focus on a specific topic is basically irrelevant because
+individuals working on this topic care about something other than existential
+risk or have very different empirical views. Similarly, I don't have a good
+model of how much effort is going into various topics or the difficultly of
+various topics. Perhaps loads of people are spending lots of time working on
+interpretability work, but there doesn't appear to be much work here merely
+because the topic is so challenging. I also don't have a good model of the
+skills of aligned individuals. It's possible that shifting focuses in the way I
+recommend would result in people working in domains for which they have less
+skill or aptitude which could make shifting net harmful. As such, individuals,
+teams, and organizations should take their comparative advantage into account:
+increased comparative advantage in the current topic should push against
+changing focuses. Despite all of these issues, I still think this analysis is
+worthwhile. If this proves to be decently helpful, I might spend more time doing a
+more detailed analysis later.
+
+As stated earlier, the community is spending too little time working on the
+hard problem of AI cognition. This includes instilling deontological
+properties, understanding the decision making likely to result from various
+training methods/environments, and building techniques for transparency and
+interpretability, particularly of decision making itself. It's worth noting
+that developing architectures which make understanding cognition easier could
+also be very useful (for instance, architectures which use factored cognition).
+Overall, focus should shift (at the margin) from making models have behavior X
+to gaining insight into what sorts of changes in cognition occur when making
+models do X.
+
+In addition the [Redwood Research project][languageinjury] mentioned earlier,
+here are some examples of endorsed research projects/directions which work on
+the hard problem of AI cognition (perhaps indirectly):
+
+- [TruthfulQA][truthfulqa] and other work on truthfulness (this would depend on
+  the exact work of course, merely improving on benchmarks doesn't imply
+  progress in understanding)
+- [Visible Thoughts][visiblethoughts]
+- [Understanding RL Vision][rlvision]
+
+_(TODO: more examples?)_
 
 I think effort should be reallocated away from on crafting reward models for
 more complex or harder to write utility functions. For examples of this type of
 research, consider [Learning from human preferences][lprefs]. This includes
-work on active learning, improving sample efficiency, and other related topics.
-This is based on the understanding that a large amount of research ...
+work on [enhancing human feedback][enhancefeedbackrfp], active learning,
+improving sample efficiency, and other related topics. This is based on the
+understanding that a large amount of research is being conducted in this area
+and based on the analysis in [this earlier
+section](#4.2.2-Getting-utility-closer-to-alignment) of the post.
+
+I don't think it's worth spending the time going over a bunch more topics in
+detail (before I know more details about the reaction to this analysis), so
+I'll just do a quick and dirty overrated/underrated in the style
+of Tyler Cowen. I will probably not mention a bunch of topics in practice.
+If you want me to add a topic or discuss a topic in more details in the comments,
+I'll probably do so.
 
 **Overrated:**
 
--
--
-- **Underrated:**
+- Reward modeling/preference learning (discussed above).
+- Multi-agent interaction and agent-human interaction. This seems like a capability
+  which will be developed by default in slow takeoff and which we don't need in
+  fast takeoff.
 
--
-- **Higher uncertainty but could be good:**
+**Underrated:**
 
--
--
+- Trying to understand why and how deep learning learns and generalizes. I'm
+  sceptical of mathematically rigorous approaches working, but I'd love to be
+  proven wrong. I'm also somewhat concerned about enhancing capabilities,
+  but I (weakly) think understanding asymmetrically benefits alignment.
+- [Interpretability][interprfp], particularly focused on decision making. This
+  is probably only slightly underrated, but I don't see much work in this
+  space.
 
-Overall,
+**Around correctly rated:**
+
+- Trying to predict potential issues with various approaches to alignment.
+- Forecasting more generally.
+- Factored cognition.
+- [Truthfulness/honesty][honestrfp].
+
+_(TODO: more ratings?)_
 
 # 6 Alignment difficulty
 
-# A. Authors Note
-
-_(TODO: maybe move these views elsewhere?)_
+After conditioning on timelines, takeoff, and AI emerging from deep learning
+(or very similar), I think that many of the key cruxes of alignment difficulty
+are related to the hard problem of AI cognition. Specifically, will we actually
+develop good understanding of AI cognition? Even if understanding is poor, how
+difficult is instilling desired deontological properties and inner alignment
+more generally? How will this difficulty depend on the intelligence of agents?
 
 Over the course of writing this post, I have noticed my views on the difficulty
-of alignment have shifted to be closer to that of Eliezer Yudkowsky. Perhaps
-this is an example of a general phenomenon: first principles contemplation of
-consequentialism, agency and intelligence leads to Yudkowskization (similar to
+of alignment have shifted to be closer to my model of the view of Eliezer
+Yudkowsky. Specifically, my views have shifted considerably toward thinking
+that alignment is more difficult due to high levels of difficulty in instilling
+deontological properties, particularly in more intelligent agents. Perhaps this
+is an example of a general phenomenon: first principles contemplation of
+consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [carcinization][carcinization]).
 
 [miriconv]: https://www.lesswrong.com/s/n945eovrA3oDueqtq
@@ -709,6 +776,11 @@ consequentialism, agency and intelligence leads to Yudkowskization (similar to
 [mlab]: https://forum.effectivealtruism.org/posts/iwTr8S8QkutyYroGy/apply-to-the-ml-for-alignment-bootcamp-mlab-in-berkeley-jan
 [lprefs]: https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/
 [rlvision]: https://distill.pub/2020/understanding-rl-vision/
+[enhancefeedbackrfp]: https://www.lesswrong.com/s/Tp3ryR4AxY56ctGh2/p/ybThg9nA7u6f8qfZZ
+[honestrfp]: https://www.lesswrong.com/s/Tp3ryR4AxY56ctGh2/p/sdxZdGFtAwHGFGKhg
+[interprfp]: https://www.lesswrong.com/s/Tp3ryR4AxY56ctGh2/p/CzZ6Fch4JSpwCpu6C
+[truthfulqa]: https://www.lesswrong.com/posts/PF58wEdztZFX2dSue/how-truthful-is-gpt-3-a-benchmark-for-language-models
+[visiblethoughts]: https://www.lesswrong.com/posts/zRn6cLtxyNodudzhw/visible-thoughts-project-and-bounty-announcement
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
