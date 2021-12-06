@@ -183,7 +183,7 @@ matter at all.
 Intentions determine behavior when out-of-distribution for intelligent and
 robustly capable agents. By definition, robustly capable agents robustly
 pursue their goals, so we'll consider the case where an agent will still pursue
-it's goals effectively on an out-of-distribution input.[^capableexistential]
+its goals effectively on an out-of-distribution input.[^capableexistential]
 Nearly identical behavior on a specific distribution of tasks from the training
 environment could be the result of many possible goals (intentions). However,
 these different goals can be distinguished by different behavior on
