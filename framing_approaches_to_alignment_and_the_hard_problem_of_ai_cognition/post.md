@@ -106,7 +106,7 @@ assumptions:
    informs how hard it is to enforce alignment through governance).
 3. AIs capable of directly causing existential catastrophe (with at least small
    probability) have to be quite intelligent and capable. There are other
-   threat models worth considering, but we won't talk about them much here.
+   [threat models][threatmodel] worth considering, but we won't talk about them much here.
 
 I won't make a case for why these are good assumptions here (because I'd guess
 most readers at least roughly already buy them). _(TODO: maybe make arguments
@@ -812,6 +812,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [interprfp]: https://www.lesswrong.com/s/Tp3ryR4AxY56ctGh2/p/CzZ6Fch4JSpwCpu6C
 [truthfulqa]: https://www.lesswrong.com/posts/PF58wEdztZFX2dSue/how-truthful-is-gpt-3-a-benchmark-for-language-models
 [visiblethoughts]: https://www.lesswrong.com/posts/zRn6cLtxyNodudzhw/visible-thoughts-project-and-bounty-announcement
+[threatmodel]: https://www.lesswrong.com/tag/threat-models
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough discussion
