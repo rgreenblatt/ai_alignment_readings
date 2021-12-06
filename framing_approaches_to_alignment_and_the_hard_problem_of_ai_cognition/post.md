@@ -8,22 +8,19 @@ alignment and what they require. I claim that alignment techniques can be
 useful understood as deontological, consequentialist, or capability restriction
 (or a mixture of these) and we'll be going through the challenges associated
 with constructing _sufficiently useful_ and safe AI using these approaches.
-_(TODO: should 'consequentialist' category have a different name?)_
 I'll also be discussing and motivating a set of issues which I'll refer to as
 'the hard problem of AI cognition': we don't have tools for understanding the
 cognition or intention of AIs produced by current machine learning methods or
 understanding of how AI decision making depends on training (c.f. [inner
-alignment][riskslearned]).[^notnovel]
-_(TODO: maybe cognition -> decision making?)_
-After going through deontological,
+alignment][riskslearned]).[^notnovel] After going through deontological,
 consequentialist, and capability restriction approaches at a high level and
 explaining where I think the hard problem of AI cognition is relevant, I'll
 explain my take on the strategic implications of this analysis and briefly
-discuss alignment difficulty. We'll be focussing on X-risk,
-so we won't directly discuss failures which would 'only' result in large losses
-of life or economic damage. This is primarily a 'first principles' sort of
-analysis, though I'll be implicitly (and occasionally explicitly) referencing
-empirical work.
+discuss alignment difficulty. We'll be focussing on X-risk, so we won't
+directly discuss failures which would 'only' result in large losses of life or
+economic damage. This is primarily a 'first principles' sort of analysis,
+though I'll be implicitly (and occasionally explicitly) referencing empirical
+work.
 
 Epistemic status: exploratory. While many of the ideas stated here appear to be
 widely accepted in the alignment community, I'm a newcomer to the field trying
@@ -147,19 +144,18 @@ consequences of those actions. In other words, deontological principles 'care'
 about actions instead of their consequences. Note that some deontological
 properties can be encoded or modeled using utility functions, but for others
 [this might not be possible due to incoherent decisions][incoherent] (it's not
-important to have intuition for why incoherent decisions are sometimes required).
-Confused or wondering about the implications of AIs having these principles?
-Hopefully the next sections will clarify this, so read on. _(TODO, I'm not a
-huge fan of this paragraph. Lots of room for improvement...)_
+important for this post to have intuition about why incoherent decisions are
+sometimes required). Confused or wondering about the implications of AIs having
+these principles? Hopefully the next sections will clarify this, so read on.
 
 ### 4.1.1 Tool AIs are purely deontological AIs
 
-Long-run consequentialism kills us all, so let's now consider AIs
-which don't care about optimizing their environments. Specifically we'll first
-consider AIs which have reduced agency: tool AIs. You may have noticed this
-appears in the deontological approaches section. That's because I claim that
-tool AIs (as typically described) are just _purely deontological_ AIs.[^someedgecases] [Agency
-is mostly just a set of capabilities coupled with (long-term)
+Long-run consequentialism kills us all, so let's now consider AIs which don't
+care about optimizing their environments. Specifically we'll first consider AIs
+which have reduced agency: tool AIs. You may have noticed this appears in the
+deontological approaches section. That's because I claim that tool AIs (as
+typically described) are just _purely deontological_ AIs.[^someedgecases]
+[Agency is mostly just a set of capabilities coupled with (long-term)
 consequentialism][firstprinagency]. If we wish to remove agency while keeping
 capabilities, we must remove consequentialism yielding a deontological AI. It
 may also be possible to reduce agency by removing some capabilities (such as
@@ -168,16 +164,6 @@ approaches. Tool AIs are an extreme version of a deontological approach as they
 are purely deontological, but they serve as a good exhibit of the weaknesses
 and safety advantages of deontological AIs as well as the challenges associated
 with constructing them.
-
-_(TODO: maybe footnote here explaining that purely deontological AIs basically
-always have the features which are currently associated with the words 'tool
-AIs'. However, there is exception of very strange deontological principles like
-wanting to imitate a consequentialist etc... Maybe also description of tool vs
-process based task vs purely deontological and how uses of these terms has
-differed? Maybe put this footnote below where we discuss purely deontological
-AIs which basically act like agents? In general, I'm worried about language
-related confusion given how I first expand the notion of tools and then
-contract the notion of actually achievable purely deontological AIs below)_
 
 ### 4.1.2 Purely Deontological AI, what is it good for
 
@@ -248,7 +234,7 @@ on or thinking about alignment. However, it does seem like a potential trap, so
 I thought I would try to push readers away from the trap strongly.
 
 So, there isn't an obvious way to train a purely deontological AI. In fact, we
-don't even know how to check how if an AI cares about consequences or
+don't even know how to check if an AI cares about consequences or
 deontological rules. Inner alignment with current machine learning approaches
 is hard. We have no [physics style models][physics] for understanding the
 eventual intentions of superintelligent AI produced via such a process.
@@ -335,18 +321,17 @@ deontological properties like honesty, obedience, corrigibility, or
 conservativeness which would override consequentialism in some cases or
 prohibit certain courses of action.
 
-These deontological properties could result in [incoherent
-decisions][incoherent], but there's a problem we run into even before that: how
-the hell do we instill deontological properties? We're back to the hard problem
-of AI cognition. For any outcome based environment which rewards deontological
-properties, there exists an agent which simply models that reward for
-deontological properties as a desirable consequence in its utility function and
-achieves full marks. For instance, rewarding honesty could be modeled as 'be
-honest' or as 'appear honest to the overseer'. Note that in some sense this
-'consequence model' is the 'correct' model: by definition, outcome based
-environments reward consequences. So maybe if you set up your deontological
-property and train to convergence you get a superintelligent, consequentialist
-agent which also has the desired deontological property. But maybe not.
+The next relevant question is how the hell do we instill deontological
+properties? We're back to the hard problem of AI cognition. For any outcome
+based environment which rewards deontological properties, there exists an agent
+which simply models that reward for deontological properties as a desirable
+consequence in its utility function and achieves full marks. For instance,
+rewarding honesty could be modeled as 'be honest' or as 'appear honest to the
+overseer'. Note that in some sense this 'consequence model' is the 'correct'
+model: by definition, outcome based environments reward consequences. So maybe
+if you set up your deontological property and train to convergence you get a
+superintelligent, consequentialist agent which also has the desired
+deontological property. But maybe not.
 
 A further concern is that it might be easier to instill deontological
 properties in less intelligent agents. This could result from full blown
@@ -743,7 +728,7 @@ to add a topic or discuss a topic in more detail, say so in the comments.
   capability which will be developed by default in slow takeoff and which we
   don't need in fast takeoff.
 - Agent foundations. I'm not sure if anyone is even doing agent foundations
-  anymore, but I'll beat the dead horse regardless. My not very confident or
+  anymore, but I'll beat the dead horse regardless. My not very confident nor
   well supported intuition is that proving useful things or gaining valuable
   understanding with this approach is sufficiently unlikely that intellectual
   resources should be directed elsewhere.
