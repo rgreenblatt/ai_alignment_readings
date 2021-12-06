@@ -1,6 +1,6 @@
 # 1 Background
 
-The [Late 2021 MIRI conversions][miriconv] include discussion about the
+The [late 2021 MIRI conversions][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
 present in the discussion was a clean delineation of possible approaches to
@@ -56,6 +56,14 @@ not sure if I would recommend reading them before or after reading this post):
   alignment][framinginner]
 - [Model splintering: out-of-distribution behavior][splintering]
 - [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
+
+If you'd like to read the [late 2021 MIRI conversions][miriconv] (and haven't
+read them yet), my weakly suggested reading order is:
+- This post
+- [Zvi's gears level analysis of AGI intervention][zvigears]
+- The conversions themselves
+
+(Of course, this reflects my biases.)
 
 # 3 Assumptions and focuses
 
