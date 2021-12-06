@@ -821,6 +821,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [truthfulqa]: https://www.lesswrong.com/posts/PF58wEdztZFX2dSue/how-truthful-is-gpt-3-a-benchmark-for-language-models
 [visiblethoughts]: https://www.lesswrong.com/posts/zRn6cLtxyNodudzhw/visible-thoughts-project-and-bounty-announcement
 [threatmodel]: https://www.lesswrong.com/tag/threat-models
+[zvigears]: https://www.lesswrong.com/posts/xHnuX42WNZ9hq53bz/attempted-gears-analysis-of-agi-intervention-discussion-with-1
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough discussion
