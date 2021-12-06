@@ -1,6 +1,6 @@
 # 1 Background
 
-The [late 2021 MIRI conversions][miriconv] include discussion about the
+The [late 2021 MIRI conversations][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
 present in the discussion was a clean delineation of possible approaches to
@@ -57,12 +57,12 @@ not sure if I would recommend reading them before or after reading this post):
 - [Model splintering: out-of-distribution behavior][splintering]
 - [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
 
-If you'd like to read the [late 2021 MIRI conversions][miriconv] (and haven't
+If you'd like to read the [late 2021 MIRI conversations][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
 
 - This post
 - [Zvi's gears level analysis of AGI intervention][zvigears]
-- The conversions themselves
+- The conversations themselves
 
 (Of course, this reflects my biases.)
 
@@ -194,9 +194,7 @@ competent imitator, this is the _same_ as being a consequentialist. So wait!
 Why have we bothered with defining this class of AIs if it practically includes
 consequentialists anyway!? Well, this comes down to why the intentions of AIs
 matter at all. Intentions determine behavior when out-of-distribution for
-intelligent and robustly capable agents. _(TODO: maybe more here about how
-capability robustness probably fails safe instead of failing 'kill us all' so
-we shouldn't care as much about that for x-risk)_ For example, consider [some
+intelligent and robustly capable agents. For example, consider [some
 empirical observations of objective robustness failures][objrob] in which
 agents 'care' about a feature correlated with the reward and then purse that
 feature when out-of-distribution instead of the reward from the original
