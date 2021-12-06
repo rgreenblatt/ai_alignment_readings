@@ -79,13 +79,12 @@ dimensions? Well, I don't think we currently have a good understanding of this
    incentive for defection. This framing is probably more relevant in slow
    takeoff.
 2. Small enough that an actor could use a lead in AI capabilities to accomplish
-   a [pivotal act][pivotal] _(TODO: this article isn't very focused, better
-   one?)_ safely before unaligned AIs are constructed. Note that under this
-   framing, the 'capability dimensions we care about' are the ones which can be
-   used to cause a pivotal act. If the alignment penalty makes all pivotal acts
-   impossible, then that technique is (approximately) worthless. This framing
-   is more relevant in fast takeoff and the acceptable levels of alignment tax
-   could depend on the capabilities lead.
+   a [pivotal act][pivotal] safely before unaligned AIs are constructed. Note
+   that under this framing, the 'capability dimensions we care about' are the
+   ones which can be used to cause a pivotal act. If the alignment penalty
+   makes all pivotal acts impossible, then that technique is (approximately)
+   worthless. This framing is more relevant in fast takeoff and the acceptable
+   levels of alignment tax could depend on the capabilities lead.
 
 For the remainder of this post, we'll abstract over these two models as well as
 different views on takeoff speed, referencing different perspectives as
@@ -179,16 +178,32 @@ imitating what its actions would be if it were a consequentialist. For a
 competent imitator, this is the _same_ as being a consequentialist. So wait!
 Why have we bothered with defining this class of AIs if it practically includes
 consequentialists anyway!? Well, this comes down to why the intentions of AIs
-matter at all. Intentions determine behavior when out-of-distribution for
-intelligent and robustly capable agents. For example, consider [some
-empirical observations of objective robustness failures][objrob] in which
-agents 'care' about a feature correlated with the reward and then purse that
-feature when out-of-distribution instead of the reward from the original
-environment. There are also more arcane considerations like deceptive alignment
-which can leverage slight distributional differences into safety
-failures.[^indist] _(TODO: maybe better justify that intentions determine
-generalization or link something? Possibly I should just state this less
-confidently: I'm not that confident this is true in a deep sense.)_
+matter at all.
+
+Intentions determine behavior when out-of-distribution for intelligent and
+robustly capable agents. By definition, robustly capable agents robustly
+pursue their goals, so we'll consider the case where an agent will still pursue
+it's goals effectively on an out-of-distribution input.[^capableexistential]
+Nearly identical behavior on a specific distribution of tasks from the training
+environment could be the result of many possible goals (intentions). However,
+these different goals can be distinguished by different behavior on
+out-of-distribution inputs. For example, consider [some empirical observations
+of objective robustness failures][objrob] in which agents 'care' about a
+feature correlated with the reward and then pursue that feature when
+out-of-distribution instead of the reward from the original environment. The
+behavior out-of-distribution reveals more information about the true goals of
+the agent (in so far as these weak agents can be seen as having goals). There
+are also more arcane considerations like [deceptive alignment][decepalign]. A
+deceptively aligned agent would have the instrumental goal of doing well at
+training and not being detected. Its terminal goals could be anything. So
+clearly this agent (if capable) would perform well in training, but its true
+goals would result in different behaviour once it determined that it's no
+longer in training and there isn't need for deception. How would the agent be
+able to determine this? By detecting the out-of-distribution property that it's
+free to defect and seize power. In practice this could work via mechanisms such
+as detecting out of distribution inputs, modeling the world in general,
+checking if time has passed relative to when it was training, or simply
+defecting with small probability at any point[^nottechnicallyoutofdist].
 
 So there can be purely deontological AIs which act like consequentialist agents
 in their training environments, but we generally expect them to act less like
@@ -295,10 +310,16 @@ deontological agents and consider if such agents can be _sufficiently useful_.
 
 I'm not currently aware of any pivotal act which can be achieved using a
 process based task AI. Pivotal acts likely require careful and superintelligent
-planning which requires reasoning about consequences. A process based task AI
-could possibly help speed up alignment research, but probably not
-astronomically, so that isn't sufficient for a pivotal act.
-_(TODO: more justification of these claims? seems straight forward to me?)_
+planning which requires reasoning about consequences. One possible route would
+be to use process based task AI to radically speed up alignment research.
+However, research requires a large amount of consequentialist agency which
+process based task AIs can't do without assistance. So, the use of AI would
+have to radically speed up alignment research while simultaneously still having
+humans do the consequentialist component.  My best guess is that this
+bottleneck would result in insufficient research speed improvements
+particularly given that AI would also likely be used for capability research
+(depending on the capabilities lead). The analysis of other pivotal acts
+proceeds similarly.
 
 Elicit Prediction ([https://forecast.elicit.org/binary/questions/MhpdWy-A-](https://forecast.elicit.org/binary/questions/MhpdWy-A-))
 _note, will be formatted in final post_
@@ -807,6 +828,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [visiblethoughts]: https://www.lesswrong.com/posts/zRn6cLtxyNodudzhw/visible-thoughts-project-and-bounty-announcement
 [threatmodel]: https://www.lesswrong.com/tag/threat-models
 [zvigears]: https://www.lesswrong.com/posts/xHnuX42WNZ9hq53bz/attempted-gears-analysis-of-agi-intervention-discussion-with-1
+[decepalign]: https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough discussion
@@ -831,10 +853,10 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 
 [^tooldiff]: This may differ from how others use the term tool AI.
 [^inteldef]: Note that this depends on how intelligence is defined.
-[^indist]:
-    Even if test inputs are always within the training distribution (somehow),
-    unless training is arbitrarily long there can still be safety concerns due
-    to probabilistic treacherous turns.
+[^nottechnicallyoutofdist]:
+    Defecting probabilistically doesn't depend on
+    out-of-distribution inputs, but it does represent a guess from the agent that
+    it is out-of-distribution in a deeper sense.
 
 [^deontsplint]:
     Unless for some reason deontological properties are likely to splinter into
@@ -860,6 +882,13 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     issues][myopicissues].
 
 [^someedgecases]:
-   There are some edge cases in which my definition of a purely deontological
-   AI doesn't match typical intuition for tool AIs. These cases will come
-   up below.
+
+There are some edge cases in which my definition of a purely deontological
+AI doesn't match typical intuition for tool AIs. These cases will come
+up below.
+
+[^capableexistential]:
+
+If an agent is unable to pursue goals effectively, it's unlikely to be able
+to cause an existential catastrophe, so we won't consider the potential
+safety issue of capability robustness.
