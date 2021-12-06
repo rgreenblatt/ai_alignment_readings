@@ -1,7 +1,5 @@
 # 1 Background
 
-_(General editing TODOs: better/more consistent tone, make more engaging?)_
-
 The [Late 2021 MIRI conversions][miriconv] include discussion about the
 difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
@@ -248,28 +246,29 @@ considerably tricker.
 In the superintelligent, highly capable regime, what sorts of training and
 objectives might produce purely deontological agents (as opposed to agents
 which are at least partially consequentialists)? Well, we're clearly deep into
-speculation land, because we don't even know how to produce a superintelligent,
-highly capable AI (and I wouldn't tell you even if I knew). However, I would be
-Very Surprised if training agents based on the consequences of their actions
-(outcomes) in even modestly complex environments with something resembling
-modern machine learning (e.g. reinforcement learning) resulted in purely
-deontological AIs. This is putting aside edge cases or the application of some
-not currently known technique. I'd also make a similar claim about AIs trained
-to imitate another consequentialist AI. Note that constructing plans
-also falls into the category of outcome based training (assuming you care about
-whether or not those plans work!). Also be careful not to over-generalize my
-statement: I'm just saying that you wouldn't get _purely_ deontological agents,
-not that you couldn't get _partially_ deontological agents which we will
-discuss later. So, this leaves the tasks which are classically associated with
-tool AIs such as prediction. We'll refer to these tasks as _process based_ as
-opposed to _outcome based_. _(TODO: better name than process based, maybe a
-standard name which exists somewhere?)_ So would process based tasks actually
-result in purely deontological AIs? I will hold off on speculating here, though
-I think the answer to this question would be useful. My understanding is that
-in [this conversation][aligndiff] Eliezer Yudkowsky says that he thinks that
-current machine learning techniques couldn't even produce an intelligent[^inteldef] and
-purely deontological model. There's also some speculation in [this post on
-safety in predictive learning][predsafe].
+speculation land, because there isn't even currently public knowledge of how to
+produce a superintelligent, highly capable AI (and I wouldn't publish it if I
+knew). However, I would be Very Surprised if training agents based on the
+consequences of their actions (outcomes) in even modestly complex environments
+with something resembling modern machine learning (e.g. reinforcement learning)
+resulted in purely deontological AIs. This is putting aside edge cases or the
+application of some not currently known technique. I'd also make a similar
+claim about AIs trained to imitate another consequentialist AI. Note that
+constructing plans also falls into the category of outcome based training
+(assuming you care about whether or not those plans work!). Also be careful not
+to over-generalize my statement: I'm just saying that you wouldn't get _purely_
+deontological agents, not that you couldn't get _partially_ deontological
+agents which we will discuss later. So, this leaves the tasks which are
+classically associated with tool AIs such as prediction. We'll refer to these
+tasks as _process based_ as opposed to _outcome based_. _(TODO: better name
+than process based, maybe a standard name which exists somewhere?)_ So would
+process based tasks actually result in purely deontological AIs? I will hold
+off on speculating here, though I think the answer to this question would be
+useful. My understanding is that in [this conversation][aligndiff] Eliezer
+Yudkowsky says that he thinks that current machine learning techniques couldn't
+even produce an intelligent[^inteldef] and purely deontological model. There's
+also some speculation in [this post on safety in predictive
+learning][predsafe].
 
 Elicit Prediction ([forecast.elicit.org/binary/questions/8SV58Eq2d](forecast.elicit.org/binary/questions/8SV58Eq2d)) _note, will be formatted in final post_
 
