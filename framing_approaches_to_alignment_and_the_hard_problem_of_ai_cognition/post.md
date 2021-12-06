@@ -147,7 +147,7 @@ consequences of those actions. In other words, deontological principles 'care'
 about actions instead of their consequences. Note that some deontological
 properties can be encoded or modeled using utility functions, but for others
 [this might not be possible due to incoherent decisions][incoherent] (it's not
-important to have intuition for why incoherent decisions are required).
+important to have intuition for why incoherent decisions are sometimes required).
 Confused or wondering about the implications of AIs having these principles?
 Hopefully the next sections will clarify this, so read on. _(TODO, I'm not a
 huge fan of this paragraph. Lots of room for improvement...)_
@@ -158,7 +158,7 @@ Long-run consequentialism kills us all, so let's now consider AIs
 which don't care about optimizing their environments. Specifically we'll first
 consider AIs which have reduced agency: tool AIs. You may have noticed this
 appears in the deontological approaches section. That's because I claim that
-tool AIs (as typically described) are just _purely deontological_ AIs. [Agency
+tool AIs (as typically described) are just _purely deontological_ AIs.[^someedgecases] [Agency
 is mostly just a set of capabilities coupled with (long-term)
 consequentialism][firstprinagency]. If we wish to remove agency while keeping
 capabilities, we must remove consequentialism yielding a deontological AI. It
@@ -739,9 +739,14 @@ to add a topic or discuss a topic in more detail, say so in the comments.
 **Overrated:**
 
 - Reward modeling/preference learning (discussed above).
-- Multi-agent interaction and agent-human interaction. This seems like a capability
-  which will be developed by default in slow takeoff and which we don't need in
-  fast takeoff.
+- Multi-agent interaction and agent-human interaction. This seems like a
+  capability which will be developed by default in slow takeoff and which we
+  don't need in fast takeoff.
+- Agent foundations. I'm not sure if anyone is even doing agent foundations
+  anymore, but I'll beat the dead horse regardless. My not very confident or
+  well supported intuition is that proving useful things or gaining valuable
+  understanding with this approach is sufficiently unlikely that intellectual
+  resources should be directed elsewhere.
 
 **Underrated:**
 
@@ -868,3 +873,8 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [^superratnot]:
     For details, please see [the previously mentioned post on safety
     issues][myopicissues].
+
+[^someedgecases]:
+   There are some edge cases in which my definition of a purely deontological
+   AI doesn't match typical intuition for tool AIs. These cases will come
+   up below.
