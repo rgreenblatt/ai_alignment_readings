@@ -59,6 +59,8 @@ not sure if I would recommend reading them before or after reading this post):
 
 # 3 Assumptions and focuses
 
+## 3.1 Sufficient usefulness
+
 First of all, what is this _sufficiently useful_ criteria we mentioned earlier?
 The criteria is that the [alignment tax][currentworkinalign] must be
 sufficiently small on the capability dimensions we care about. _(TODO: anything
@@ -79,8 +81,11 @@ dimensions? Well, I don't think we currently have a good understanding of this
    is more relevant in fast takeoff and the acceptable levels of alignment tax
    could depend on the capabilities lead.
 
-For the remainder of this post, we'll abstract over this distinction in views,
-referencing different perspectives as necessarily.
+For the remainder of this post, we'll abstract over these two models as well as
+different views on takeoff speed, referencing different perspectives as
+necessarily.
+
+## 3.2 Assumptions
 
 But abstracting over everything results in a mess, so we'll make the following
 assumptions:
@@ -99,6 +104,9 @@ assumptions:
    convergence][powerseek].
 2. Societal and government competence and coordination aren't very high (this
    informs how hard it is to enforce alignment through governance).
+3. AIs capable of directly causing existential catastrophe (with at least small
+   probability) have to be quite intelligent and capable. There are other
+   threat models worth considering, but we won't talk about them much here.
 
 I won't make a case for why these are good assumptions here (because I'd guess
 most readers at least roughly already buy them). _(TODO: maybe make arguments
@@ -107,6 +115,21 @@ statements, please post your objections in the comments.
 
 We'll also mostly pretend AIs will be deep neural networks trained with SGD,
 but I wouldn't be surprised if this post generalizes.
+
+## 3.3 Capabilities for catastrophe
+
+Note that we'll be focusing on techniques for aligning AIs in the regime where
+capabilities are sufficient for unaligned AIs to directly cause existential
+catastrophe (of course, techniques for less capable AIs could generalize). One
+potential objection to this approach is that in slower takeoff scenarios, the
+crux of alignment could come down to determining how to get AIs which aren't
+existentially dangerous to meaningfully speedup alignment research. This would
+require 'weakly' aligning these 'less' dangerous AIs[^stilldangerous]. Ideally,
+this would be done without this work on weak alignment contributing to the very
+likely ongoing research on how to get AIs to do capabilities research. Perhaps
+this asymmetry could be enacted via the use of secrecy or asymmetrically useful
+weak alignment strategies. Regardless, we won't be considering this type of
+scenario here.[^slowtakeoffmaybeshould]
 
 # 4 Approaches
 
@@ -799,6 +822,17 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     AI with specific intentions or cognition, just that we have no idea how to
     do so. _(TODO: is this needed? Maybe this doesn't clearly get across the
     idea I am intending?)_
+
+[^stilldangerous]:
+    These 'less' dangerous AIs could still plausibly cause
+    disaster (depending on views surrounding takeoff).
+
+[^slowtakeoffmaybeshould]:
+    I haven't seen this actively discussed despite a decent number of people
+    putting quite high probability on slow takeoff. It also doesn't seem like
+    current alignment research is asymmetric in this fashion. Perhaps trying
+    to asymmetrically improve alignment research speed during this
+    period via weak alignment work should receive more attention?
 
 [^tooldiff]: This may differ from how others use the term tool AI.
 [^inteldef]: Note that this depends on how intelligence is defined.
