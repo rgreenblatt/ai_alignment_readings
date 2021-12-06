@@ -59,6 +59,7 @@ not sure if I would recommend reading them before or after reading this post):
 
 If you'd like to read the [late 2021 MIRI conversions][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
+
 - This post
 - [Zvi's gears level analysis of AGI intervention][zvigears]
 - The conversions themselves
@@ -91,7 +92,7 @@ dimensions? Well, I don't think we currently have a good understanding of this
 
 For the remainder of this post, we'll abstract over these two models as well as
 different views on takeoff speed, referencing different perspectives as
-necessarily.
+necessary.
 
 ## 3.2 Assumptions
 
@@ -100,12 +101,12 @@ assumptions:
 
 1. Unrestricted, superintelligent, and capable AGIs which act like long-term,
    outcome expected utility maximizers (aka consequentialists) would cause an
-   existential catastrophe if created with approaches reasonably similar to
+   existential catastrophe if created with approaches similar to
    current ML. _(TODO: could this be made clearer? Possibly remove some
    adjectives?)_ When I say 'outcome expected utility maximizer', I mean that
    the expected utility maximizer cares intrinsically about consequences
    (consequentialism) instead of about actions (deontology). We'll use the term
-   consequentialism for the remainder of these post. We'll also go through this
+   consequentialism for the remainder of this post. We'll also go through this
    distinction in more detail below. This assumption is due to an inability to
    construct a human values utility function, an inability to perfectly inner
    align an agent's utility function, Goodhart's law, and [instrumental
@@ -116,10 +117,8 @@ assumptions:
    probability) have to be quite intelligent and capable. There are other
    [threat models][threatmodel] worth considering, but we won't talk about them much here.
 
-I won't make a case for why these are good assumptions here (because I'd guess
-most readers at least roughly already buy them). _(TODO: maybe make arguments
-in appendix? maybe link something?)_ If you strongly disagree with these
-statements, please post your objections in the comments.
+I won't make a case for why these are good assumptions here, but would be happy
+to chat about them in the comments.
 
 We'll also mostly pretend AIs will be deep neural networks trained with SGD,
 but I wouldn't be surprised if this post generalizes.
@@ -147,10 +146,11 @@ Deontological principles are rules for taking actions which aren't based on the
 consequences of those actions. In other words, deontological principles 'care'
 about actions instead of their consequences. Note that some deontological
 properties can be encoded or modeled using utility functions, but for others
-[this might not be possible due to incoherent decisions][incoherent]. Confused
-or wondering about the implications of AIs having these principles? Hopefully
-the next sections will clarify this, so read on. _(TODO, I'm not a huge fan of
-this paragraph. Lots of room for improvement...)_
+[this might not be possible due to incoherent decisions][incoherent] (it's not
+important to have intuition for why incoherent decisions are required).
+Confused or wondering about the implications of AIs having these principles?
+Hopefully the next sections will clarify this, so read on. _(TODO, I'm not a
+huge fan of this paragraph. Lots of room for improvement...)_
 
 ### 4.1.1 Tool AIs are purely deontological AIs
 
@@ -160,7 +160,7 @@ consider AIs which have reduced agency: tool AIs. You may have noticed this
 appears in the deontological approaches section. That's because I claim that
 tool AIs (as typically described) are just _purely deontological_ AIs. [Agency
 is mostly just a set of capabilities coupled with (long-term)
-consequentialism][firstprinagency]. If wish to remove agency while keeping
+consequentialism][firstprinagency]. If we wish to remove agency while keeping
 capabilities, we must remove consequentialism yielding a deontological AI. It
 may also be possible to reduce agency by removing some capabilities (such as
 self-modeling), this will be discussed in the section on restriction based
@@ -181,8 +181,6 @@ contract the notion of actually achievable purely deontological AIs below)_
 
 ### 4.1.2 Purely Deontological AI, what is it good for
 
-_(TODO, ok maybe use actual title that references that this section is about safety properties...)_
-
 Given that different people use the term 'tool AI' in somewhat different ways,
 I will stick with the verbose purely deontological AI from here on.
 
@@ -192,9 +190,9 @@ means that purely deontological AIs can appear very agentic. For instance,
 consider a purely deontological AI which just cares about imitating the actions
 of a human. For a more absurd example, consider an AI which only cares about
 imitating what its actions would be if it were a consequentialist. For a
-competent imitator, this the _same_ as being a consequentialist. So wait! Why
-have we bothered with defining this class of AIs if it practically includes
-consequentialists anyway!? Well, this come down to why the intentions of AIs
+competent imitator, this is the _same_ as being a consequentialist. So wait!
+Why have we bothered with defining this class of AIs if it practically includes
+consequentialists anyway!? Well, this comes down to why the intentions of AIs
 matter at all. Intentions determine behavior when out-of-distribution for
 intelligent and robustly capable agents. _(TODO: maybe more here about how
 capability robustness probably fails safe instead of failing 'kill us all' so
@@ -213,7 +211,7 @@ in their training environments, but we generally expect them to act less like
 consequentialist agents on out-of-distribution inputs. In general, I would be
 Very Surprised if a purely deontological AI caused existential
 catastrophe in a bid for power without having been trained explicitly to do so.
-It is isn't agency which scares us: it's generalizing agency.
+It isn't agency which scares us: it's generalizing agency.
 
 In summary, purely deontological AIs are not existentially dangerous _by
 default_. They're in the same danger category as a nuclear bomb: they might
@@ -239,7 +237,7 @@ wrong before peeking.
 Just because an AI is trained to imitate or predict doesn't mean it's
 guaranteed to be a purely deontological AI!
 
-For instance, consider an AI trained to imitate a another AI which is
+For instance, consider an AI trained to imitate another AI which is
 a competent consequentialist. It seems quite plausible
 that this imitator would itself just become a consequentialist!
 
@@ -264,10 +262,13 @@ higher intelligence and capability regimes. This is the 'the hard problem of AI
 cognition' which we'll be referencing throughout the post. My current view is
 that this is a difficult crux of alignment and we'll present only one
 (dangerous) way to proceed without resolving these issues.
+As such, I think we should be more actively working on the hard problem of AI
+cognition. I'll describe what this could look like in my strategic
+recommendations below
 
 That said, there are obvious ways to train deep neural networks which ensure
 that they will be purely deontological. For instance, consider training a
-(randomly initialized) model to output the value 1. Clearly such an model isn't
+(randomly initialized) model to output the value 1. Clearly such a model isn't
 going to be a consequentialist or even intelligent (unless you think the
 inductive biases of SGD are _actually_ Magic). But, if the task in question
 might involve modeling consequences, the question of how to use current machine
@@ -345,20 +346,18 @@ deontological properties as a desirable consequence in its utility function and
 achieves full marks. For instance, rewarding honesty could be modeled as 'be
 honest' or as 'appear honest to the overseer'. Note that in some sense this
 'consequence model' is the 'correct' model: by definition, outcome based
-environments reward consequences. So maybe if you setup your deontological
-property encouraged environment and train to convergence you get a super
-intelligent, consequentialist agent which also has the desired deontological
-property. But maybe not.
+environments reward consequences. So maybe if you set up your deontological
+property and train to convergence you get a superintelligent, consequentialist
+agent which also has the desired deontological property. But maybe not.
 
 A further concern is that it might be easier to instill deontological
 properties in less intelligent agents. This could result from full blown
 consequentialism requiring relatively advanced capabilities like self-modeling,
 predication, and reasoning about counterfactuals. For instance, note that for
-life on earth intelligence seems to correlate with consequentialism. While ants
-(and other organisms) can look quite consequentialist from afar, this is really
-an emergent and less generalizable phenomenon than human consequentialism.
-_(TODO: maybe better better justify these claims. Note sure if ant sentence
-good/needed)_ This difference in difficulty could also result from the fact
+life on earth intelligence seems to correlate with consequentialism. While even
+insects can look quite consequentialist from afar, this is really a much less
+generalizable phenomenon than human consequentialism.
+This difference in difficulty could also result from the fact
 that consequentialism is the 'correct' model as discussed earlier. Overall,
 this issue creates the potential for quite a dangerous situation
 in which there is a smooth transition between dumb deontologist AIs and more
@@ -412,7 +411,7 @@ producing an agent which follows [dumb decision theory][dumbdecision]. My
 understanding is that getting an AI to use a specific decision theory is likely
 to be considerably harder than instilling deontological properties. Of course
 this would depend on the specific deontological property. In summary, just
-creating myopic agents might be easer than instilling deontological properties,
+creating myopic agents might be easier than instilling deontological properties,
 but we might need to control the decision theory of myopic agents which could
 make the overall difficulty harder.
 
@@ -421,7 +420,8 @@ limited the time horizon must be to ensure safety. We'll assume that this time
 horizon maps onto real world time and that myopic agents follow dumb decision
 theory. Following dumb decision theory implies that the myopic agent will
 always pick the choice which maximizes utility: superrationality isn't a
-concern. So, the time horizon sufficient for safety depends on how fast the
+concern.[^superratnot] So, the time horizon sufficient for safety depends on
+how fast the
 agent could seize power and the additional utility associated with possessing
 power. For instance, suppose that the time horizon was several years, the AI
 could seize power in a few days, and the AI would be able to achieve much more
@@ -467,7 +467,7 @@ approaches.
 Even though long-term consequentialists would kill us all, there's still value
 in the ability to produce agents with consequentialist utility functions
 reasonably close to the desired one, particularly for complex or hard to
-specify utility functions. This greatly effects the applicability of
+specify utility functions. This greatly affects the applicability of
 deontological and restriction based approaches. Additionally, reward models or
 classifiers for complex or hard to specify behavior could be very useful
 building blocks for instilling deontological properties. This also implies that
@@ -628,7 +628,7 @@ to run experiments which get at the same ideas.
 
 One domain of experimentation I'm particularly interested in is determining how
 decision making is modeled inside of RL agents. I'll go through an outline of
-an example project, but it should be straight forward to think of variants
+an example project, but it should be straightforward to think of variants
 or other experiments which get at the same domain.
 
 Construct a complex and randomly generatable environment which requires trading
@@ -679,9 +679,6 @@ regardless, I think experiments exploring this general idea would be useful.
 It's worth noting that my analysis here is highly speculative. Specifically,
 imagine everything in this section is prefixed with 'I speculatively think'.
 
-_(TODO: should I literally just prefix many sentences with 'I speculatively
-think'? Feels a bit silly but maybe avoids missing mood type issues.)_
-
 There are a large number of issues or factors which are difficult to model when
 reasoning strategically about the focuses of the community (at least without
 spending much more time on analysis). It's somewhat difficult for me to model
@@ -690,10 +687,10 @@ maybe claiming there should be less focus on a specific topic is basically
 irrelevant because individuals working on this topic care about something other
 than existential risk or have very different empirical views. Similarly, I
 don't have a good model of how much effort is going into various topics or the
-difficultly of various topics. Perhaps loads of people are spending lots of
+difficulty of various topics. Perhaps loads of people are spending lots of
 time working on interpretability work, but there doesn't appear to be much work
 here merely because the topic is so challenging. I also don't have a good model
-of the skills of aligned individuals. It's possible that shifting focuses in
+of the skills of aligned individuals. It's possible that shifting focus in
 the way I recommend would result in people working in domains for which they
 have less skill or aptitude which could make shifting net harmful. As such,
 individuals, teams, and organizations should take their comparative advantage
@@ -726,7 +723,7 @@ the hard problem of AI cognition (perhaps indirectly):
 
 _(TODO: more examples?)_
 
-I think effort should be reallocated away from on crafting reward models for
+I think effort should be reallocated away from crafting reward models for
 more complex or harder to write utility functions. For examples of this type of
 research, consider [Learning from human preferences][lprefs]. This includes
 work on [enhancing human feedback][enhancefeedbackrfp], active learning,
@@ -772,7 +769,7 @@ _(TODO: more ratings?)_
 
 After conditioning on timelines, takeoff, and AI emerging from deep learning, I
 think that many of the key cruxes of alignment difficulty are related to the
-hard problem of AI cognition. Specifically, will we actually develop good
+hard problem of AI cognition. Specifically, will we actually develop a good
 understanding of AI cognition? Even if understanding is poor, how difficult is
 instilling desired deontological properties and inner alignment more generally?
 How will this difficulty depend on the intelligence of agents?
@@ -869,3 +866,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     think the approach makes the types of cognition we most care about
     considerably easier to understand and it likely makes implementing useful
     things considerably harder.
+
+[^superratnot]:
+    For details, please see [the previously mentioned post on safety
+    issues][myopicissues].
