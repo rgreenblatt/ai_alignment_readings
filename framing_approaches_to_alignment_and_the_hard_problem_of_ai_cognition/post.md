@@ -5,7 +5,7 @@ difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
 present in the discussion was a clean delineation of possible approaches to
 alignment and what they require. I claim that alignment techniques can be
-useful understood as deontological, consequentialist, or capability restriction
+usefully understood as deontological, consequentialist, or capability restriction
 (or a mixture of these) and we'll be going through the challenges associated
 with constructing _sufficiently useful_ and safe AI using these approaches.
 I'll also be discussing and motivating a set of issues which I'll refer to as
@@ -405,7 +405,7 @@ about the long run of course! These are typically described as myopic
 agents[^myopicnote]. Unfortunately, we currently [don't know how to construct
 myopic agents][myopictraining]: simply training agents with myopic reward is
 insufficient. This is the hard problem of AI cognition once again. However, I'd
-note that it would likely be easier to create myopic agents then to instill
+note that it would likely be easier to create myopic agents than to instill
 complex deontological values. However, even if we know how to construct myopic
 agents, they have [potential safety issues mostly related to decision
 theory][myopicissues]. Resolving these safety issues also likely requires
@@ -862,7 +862,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     consequentialism?
 
 [^proveconsequences]:
-    I'm not claim that theorem proving requires long-term consequentialism,
+    I'm not claiming that theorem proving requires long-term consequentialism,
     just that a long-term consequentialist could prove theorems.
 
 [^myopicnote]:
