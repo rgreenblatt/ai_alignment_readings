@@ -754,7 +754,7 @@ comments.
   but I think it's more effective to figure out this cooperative alignment
   strategy and then determine exactly what agent-human interaction is
   needed. This is as opposed to working on agent-human interaction in
-  general. I would also guess that capable consequentialist generalizes
+  general. I would also guess that capable consequentialism generalizes
   to successful interaction with humans (assuming intentions are aligned).
 - Agent foundations. My not very confident nor well supported intuition is that
   proving useful things or gaining valuable understanding with this approach is
