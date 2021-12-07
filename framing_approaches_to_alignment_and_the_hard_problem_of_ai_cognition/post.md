@@ -670,7 +670,8 @@ worthwhile (depending on results from the base experiment):
    negative. Do this using only one of the types of reward. Then, run the
    out-of-distribution test for passing through the obstacle using the other
    type of reward.
-5. Try to understand where and how the utility function is stored in the model.
+5. Try to understand where and how the utility function is stored in the model
+   as well as build up a human comprehensible understanding of it.
    Part of this work could be done using techniques like the ones used in the
    [Understanding RL vision paper][rlvision]. Ideally it should be possible to
    edit the utility function by changing model weights 'by hand'. Can these
