@@ -231,6 +231,9 @@ Did you catch it?
 The error in the above reasoning? Take a second and think through what's
 wrong before peeking.
 
+_(TODO: better trap example would be nice. This one is too easy and feels
+silly)_
+
 :::spoiler
 
 Just because an AI is trained to imitate or predict doesn't mean it's
@@ -292,10 +295,10 @@ deontological agents, not that you couldn't get _partially_ deontological
 agents which we will discuss later. So, this leaves the tasks which are
 classically associated with tool AIs such as prediction. We'll refer to these
 tasks as _process based_ as opposed to _outcome based_. _(TODO: better name
-than process based, maybe a standard name which exists somewhere?)_ So would
-process based tasks actually result in purely deontological AIs? I will hold
-off on speculating here, though I think the answer to this question would be
-useful. My understanding is that in [this conversation][aligndiff] Eliezer
+than process based? maybe a more standard name which exists somewhere?)_ So
+would process based tasks actually result in purely deontological AIs? I will
+hold off on speculating here, though I think the answer to this question would
+be useful. My understanding is that in [this conversation][aligndiff] Eliezer
 Yudkowsky says that he thinks that current machine learning techniques couldn't
 even produce an intelligent[^inteldef] and purely deontological model. There's
 also some speculation in [this post on safety in predictive
@@ -315,7 +318,7 @@ be to use process based task AI to radically speed up alignment research.
 However, research requires a large amount of consequentialist agency which
 process based task AIs can't do without assistance. So, the use of AI would
 have to radically speed up alignment research while simultaneously still having
-humans do the consequentialist component.  My best guess is that this
+humans do the consequentialist component. My best guess is that this
 bottleneck would result in insufficient research speed improvements
 particularly given that AI would also likely be used for capability research
 (depending on the capabilities lead). The analysis of other pivotal acts
@@ -326,9 +329,7 @@ _note, will be formatted in final post_
 
 If purely deontological AI via process based tasks is the main approach to
 alignment enforced by governance, the benefits of defection would likely seem
-large to actors as [tools want to be agents][toolswant]. _(TODO: Maybe more
-detail here? Or just lean entirely on Gwern? Maybe add statement like 'limiting
-the modeling of consequences greatly reduces usefulness')_
+large to actors as [tools want to be agents][toolswant].
 
 So overall, my belief is that trying to solve alignment for current ML via
 using purely deontological AIs is very unlikely to succeed.
@@ -398,26 +399,25 @@ Sufficiently strong conservatism results in doing nothing at all.
 
 ### 4.2.1 Myopic Agents
 
-Given that we assume that long-term consequentialists would kill us
-all, what consequentialist approaches are left? Well, consequentialists
-which don't care about the long run of course! These are typically described as
-myopic agents[^myopicnote]. Unfortunately, we currently [don't know how to
-construct myopic agents][myopictraining]: simply training agents with myopic
-reward is insufficient. This is the hard problem of AI cognition once again.
-However, I'd note that it would likely be easier _(TODO: maybe clarify what I
-mean by easier: higher success probability given equal resources (or maybe this
-is obvious?))_ to create myopic agents then to instill complex deontological
-values. However, even if we know how to construct myopic agents, they have
-[potential safety issues mostly related to decision theory][myopicissues].
-Resolving these safety issues also likely requires grappling with the hard
-problem of AI cognition. Specifically, many issues could be resolved via
-producing an agent which follows [dumb decision theory][dumbdecision]. My
-understanding is that getting an AI to use a specific decision theory is likely
-to be considerably harder than instilling deontological properties. Of course
-this would depend on the specific deontological property. In summary, just
-creating myopic agents might be easier than instilling deontological properties,
-but we might need to control the decision theory of myopic agents which could
-make the overall difficulty harder.
+Given that we assume that long-term consequentialists would kill us all, what
+consequentialist approaches are left? Well, consequentialists which don't care
+about the long run of course! These are typically described as myopic
+agents[^myopicnote]. Unfortunately, we currently [don't know how to construct
+myopic agents][myopictraining]: simply training agents with myopic reward is
+insufficient. This is the hard problem of AI cognition once again. However, I'd
+note that it would likely be easier to create myopic agents then to instill
+complex deontological values. However, even if we know how to construct myopic
+agents, they have [potential safety issues mostly related to decision
+theory][myopicissues]. Resolving these safety issues also likely requires
+grappling with the hard problem of AI cognition. Specifically, many issues
+could be resolved via producing an agent which follows [dumb decision
+theory][dumbdecision]. My understanding is that getting an AI to use a specific
+decision theory is likely to be considerably harder than instilling
+deontological properties. Of course this would depend on the specific
+deontological property. In summary, just creating myopic agents might be easier
+than instilling deontological properties, but we might need to control the
+decision theory of myopic agents which could make the overall difficulty
+harder.
 
 What about _sufficient usefulness_? The alignment tax will depend on how
 limited the time horizon must be to ensure safety. We'll assume that this time
@@ -831,14 +831,13 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [decepalign]: https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment
 
 [^notnovel]:
-    This isn't a novel set of issues, but I haven't seen a thorough discussion
-    of how these issues interact with various approaches to alignment. _(TODO:
-    maybe this shouldn't be footnote?)_
+    This isn't a novel set of issues, but I haven't seen a thorough
+    discussion of how these issues interact with various approaches to
+    alignment and the strategic implications.
 
-    Also note that I'm not necessarily claiming that it's difficult to craft an
+    Also note that I'm not claiming that it's necessarily difficult to craft an
     AI with specific intentions or cognition, just that we have no idea how to
-    do so. _(TODO: is this needed? Maybe this doesn't clearly get across the
-    idea I am intending?)_
+    do so.
 
 [^stilldangerous]:
     These 'less' dangerous AIs could still plausibly cause
