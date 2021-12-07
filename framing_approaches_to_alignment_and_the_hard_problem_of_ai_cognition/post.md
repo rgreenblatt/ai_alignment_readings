@@ -707,13 +707,13 @@ As stated earlier, the community is spending too little time working on the
 hard problem of AI cognition. This includes instilling deontological
 properties, understanding the decision making likely to result from various
 training methods/environments, and building techniques for transparency and
-interpretability, particularly of decision making itself. It's worth noting
-that developing architectures which make understanding cognition easier could
-also be very useful (for instance, architectures which use factored
-cognition[^factoredcognotgreat]).
-Overall, focus should shift (at the margin) from making models have behavior X
-to gaining insight into what sorts of changes in cognition occur when making
-models do X.
+interpretability, particularly of decision making itself. Trying to improve
+some notion of 'worst case performance' could also be important. It's worth
+noting that developing architectures which make understanding cognition easier
+could also be very useful (for instance, architectures which use factored
+cognition[^factoredcognotgreat]). Overall, focus should shift (at the margin)
+from making models have behavior X to gaining insight into what sorts of
+changes in cognition occur when making models do X.
 
 In addition to the [Redwood Research project][languageinjury] mentioned earlier,
 here are some examples of endorsed research projects/directions which work on
