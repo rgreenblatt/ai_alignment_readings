@@ -67,7 +67,8 @@ read them yet), my weakly suggested reading order is:
 
 ## 3.1 Sufficient usefulness
 
-First of all, what is this _sufficiently useful_ criteria we mentioned earlier?
+I wrote above that we want to make a _sufficiently useful_ and safe AI.
+What is this _sufficiently useful_ criteria?
 The criteria is that the [alignment tax][currentworkinalign] must be
 sufficiently small on the capability dimensions we care about. _(TODO: anything
 to link with better/more focused discussion on alignment tax? Maybe also
@@ -126,7 +127,7 @@ capabilities are sufficient for unaligned AIs to directly cause existential
 catastrophe (of course, techniques for less capable AIs could generalize). One
 potential objection to this approach is that in slower takeoff scenarios, the
 crux of alignment could come down to determining how to get AIs which aren't
-existentially dangerous to meaningfully speedup alignment research. This would
+existentially dangerous to meaningfully speed up alignment research. This would
 require 'weakly' aligning these 'less' dangerous AIs[^stilldangerous]. Ideally,
 this would be done without this work on weak alignment contributing to the very
 likely ongoing research on how to get AIs to do capabilities research. Perhaps
