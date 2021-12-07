@@ -111,8 +111,9 @@ assumptions:
 2. Societal and government competence and coordination aren't very high (this
    informs how hard it is to enforce alignment through governance).
 3. AIs capable of directly causing existential catastrophe (with at least small
-   probability) have to be quite intelligent and capable. There are other
-   [threat models][threatmodel] worth considering, but we won't talk about them much here.
+   probability) have to be quite intelligent and capable on at least some
+   dimensions. There are other [threat models][threatmodel] worth considering,
+   but we won't talk about them much here.
 
 I won't make a case for why these are good assumptions here, but would be happy
 to chat about them in the comments.
