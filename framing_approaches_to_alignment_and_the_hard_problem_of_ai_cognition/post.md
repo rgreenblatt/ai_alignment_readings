@@ -739,24 +739,29 @@ and based on the analysis in [this earlier
 section](#4_2_2_Getting_utility_closer_to_alignment) of the post.
 
 I don't think it's worth spending the time going over a bunch more topics in
-detail (before I know more about the reaction to this post), so
-I'll just do a quick and dirty overrated/underrated in the style of Tyler
-Cowen. This list probably doesn't include many important topics. If you want me
-to add a topic or discuss a topic in more detail, say so in the comments.
+detail (before I know more about the reaction to this post), so I'll just do a
+quick and dirty more/less at the margin in the style of how Tyler Cowen does
+overrated/underrated. This list probably doesn't include many important topics.
+If you want me to add a topic or discuss a topic in more detail, say so in the
+comments.
 
-**Overrated:**
+**Less at the margin:**
 
 - Reward modeling/preference learning (discussed above).
 - Multi-agent interaction and agent-human interaction. This seems like a
-  capability which will be developed by default in slow takeoff and which we
-  don't need in fast takeoff.
-- Agent foundations. I'm not sure if anyone is even doing agent foundations
-  anymore, but I'll beat the dead horse regardless. My not very confident nor
-  well supported intuition is that proving useful things or gaining valuable
-  understanding with this approach is sufficiently unlikely that intellectual
-  resources should be directed elsewhere.
+  capability which will be developed by default in slow takeoff.
+  In fast takeoff scenarios, alignment could require agent-human interaction,
+  but I think it's more effective to figure out this cooperative alignment
+  strategy and then determine exactly what agent-human interaction is
+  needed. This is as opposed to working on agent-human interaction in
+  general. I would also guess that capable consequentialist generalizes
+  to successful interaction with humans (assuming intentions are aligned).
+- Agent foundations. My not very confident nor well supported intuition is that
+  proving useful things or gaining valuable understanding with this approach is
+  sufficiently unlikely that intellectual resources should be directed
+  elsewhere.
 
-**Underrated:**
+**More at the margin:**
 
 - Trying to understand why and how deep learning learns and generalizes. I'm
   sceptical of mathematically rigorous approaches working, but I'd love to be
@@ -767,7 +772,7 @@ to add a topic or discuss a topic in more detail, say so in the comments.
   is probably only slightly underrated, but I don't see much work in this
   space.
 
-**Around correctly rated:**
+**About the right amount:**
 
 - Trying to predict potential issues with various approaches to alignment.
 - Forecasting more generally.
