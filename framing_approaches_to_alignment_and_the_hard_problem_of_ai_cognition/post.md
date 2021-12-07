@@ -881,13 +881,11 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     issues][myopicissues].
 
 [^someedgecases]:
-
-There are some edge cases in which my definition of a purely deontological
-AI doesn't match typical intuition for tool AIs. These cases will come
-up below.
+    There are some edge cases in which my definition of a purely deontological
+    AI doesn't match typical intuition for tool AIs. These cases will come
+    up below.
 
 [^capableexistential]:
-
-If an agent is unable to pursue goals effectively, it's unlikely to be able
-to cause an existential catastrophe, so we won't consider the potential
-safety issue of capability robustness.
+    If an agent is unable to pursue goals effectively, it's unlikely to be able
+    to cause an existential catastrophe, so we won't consider the potential
+    safety issue of capability robustness.
