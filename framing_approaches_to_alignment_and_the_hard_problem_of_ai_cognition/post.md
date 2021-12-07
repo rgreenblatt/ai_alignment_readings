@@ -58,7 +58,7 @@ If you'd like to read the [late 2021 MIRI conversations][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
 
 - This post
-- [Zvi's gears level analysis of AGI intervention][zvigears]
+- [Zvi's gears analysis of AGI intervention][zvigears]
 - The conversations themselves
 
 (Of course, this reflects my biases.)
