@@ -224,7 +224,7 @@ deontological AI can be constructed.
 How could we train a purely deontological AI to do useful things? We could
 train to imitate or predict instead of optimizing for outcomes. Perhaps apply
 some iterative amplification or similar and boom, you've got an tool AI which
-do useful things.
+can do useful things.
 
 Did you catch it?
 
