@@ -5,22 +5,23 @@ difficulty of alignment (don't worry, spending hours reading these isn't
 required for this post). One [shared frame][frames] which wasn't immediately
 present in the discussion was a clean delineation of possible approaches to
 alignment and what they require. I claim that alignment techniques can be
-usefully understood as deontological, consequentialist, or capability restriction
-(or a mixture of these) and we'll be going through the challenges associated
-with constructing _sufficiently useful_ and safe AI using these approaches.
-I'll also be discussing and motivating a set of issues which I'll refer to as
-'the hard problem of AI cognition': we don't have tools for understanding the
-cognition or intention of AIs produced by current machine learning methods or
-understanding of how AI decision making depends on training (c.f. [inner
-alignment][riskslearned]).[^notnovel] After going through deontological,
-consequentialist, and capability restriction approaches at a high level and
-explaining where I think the hard problem of AI cognition is relevant, I'll
-explain my take on the strategic implications of this analysis and briefly
-discuss alignment difficulty. We'll be focussing on X-risk, so we won't
-directly discuss failures which would 'only' result in large losses of life or
-economic damage. This is primarily a 'first principles' sort of analysis,
-though I'll be implicitly (and occasionally explicitly) referencing empirical
-work.
+usefully understood as deontological, consequentialist, or capability
+restriction (or a mixture of these) and we'll be going through the challenges
+associated with constructing _sufficiently useful_ and safe AI using these
+approaches. I'll also be discussing and motivating a set of issues which I'll
+refer to as 'the hard problem of AI cognition': we don't have tools for
+understanding the cognition or intention of AIs produced by current machine
+learning methods or understanding of how AI decision making depends on training
+(c.f. [inner alignment][riskslearned]).[^notnovel] I'll define this problem in
+more detail below, including where this problem does and doesn't show up in
+alignment. After going through deontological, consequentialist, and
+capability restriction approaches at a high level and explaining where I think
+the hard problem of AI cognition is relevant, I'll explain my take on the
+strategic implications of this analysis and briefly discuss alignment
+difficulty. We'll be focussing on X-risk, so we won't directly discuss failures
+which would 'only' result in large losses of life or economic damage. This is
+primarily a 'first principles' sort of analysis, though I'll be implicitly (and
+occasionally explicitly) referencing empirical work.
 
 Epistemic status: exploratory. While many of the ideas stated here appear to be
 widely accepted in the alignment community, I'm a newcomer to the field trying
@@ -172,15 +173,17 @@ Given that different people use the term 'tool AI' in somewhat different ways,
 I will stick with the verbose purely deontological AI from here on.
 
 Note that purely deontological AIs can be capable of modeling consequences, but
-they don't _care_ about the consequences of their actions.[^tooldiff] This
-means that purely deontological AIs can appear very agentic. For instance,
-consider a purely deontological AI which just cares about imitating the actions
-of a human. For a more absurd example, consider an AI which only cares about
-imitating what its actions would be if it were a consequentialist. For a
-competent imitator, this is the _same_ as being a consequentialist. So wait!
-Why have we bothered with defining this class of AIs if it practically includes
-consequentialists anyway!? Well, this comes down to why the intentions of AIs
-matter at all.
+they don't _care_ about the consequences of their actions.[^tooldiff] They
+don't make explicit plans aimed at causing certain outcomes. The fact that
+purely deontological AIs can be capable of modeling consequences means these
+AIs can appear agentic. For instance, chess engines like AlphaZero or
+StockFish are almost certainly purely deontological AIs, but they do appear
+somewhat agentic. For a more absurd example, consider an AI which only cares about
+imitating what its actions would be if it were a consequentialist (e.g. a human
+or some consequentialist AI). For a competent imitator, this is the _same_ as
+being a consequentialist. So wait! Why have we bothered with defining this
+class of AIs if it practically includes consequentialists anyway!? Well, this
+comes down to why the intentions of AIs matter at all.
 
 Intentions determine behavior when out-of-distribution for intelligent and
 robustly capable agents. By definition, robustly capable agents robustly
@@ -254,23 +257,34 @@ on or thinking about alignment. However, it does seem like a potential trap, so
 I thought I would try to push readers away from the trap strongly.
 
 So, there isn't an obvious way to train a purely deontological AI. In fact, we
-don't even know how to check if an AI cares about consequences or
-deontological rules. Inner alignment with current machine learning approaches
-is hard. We have no [physics style models][physics] for understanding the
-eventual intentions of superintelligent AI produced via such a process.
-_(TODO: ecological models?)_ We don't have solid approaches for inspecting the
-decision making of deep agents. Or a decent understanding of what decision
-making will result from a specific training process. We don't know why or how
-deep learning generalizes. And it's unclear if techniques will generalize to
-higher intelligence and capability regimes. This is the 'the hard problem of AI
-cognition' which we'll be referencing throughout the post. My current view is
-that this is a difficult crux of alignment and we'll present only one
-(dangerous) way to proceed without resolving these issues.
-As such, I think we should be more actively working on the hard problem of AI
-cognition. I'll describe what this could look like in my strategic
-recommendations below
+don't even know how to check if an AI cares about consequences or deontological
+rules. Inner alignment with current machine learning approaches is hard. We
+have no [physics style models][physics] for understanding the eventual
+intentions of superintelligent AI produced via such a process. _(TODO:
+ecological models?)_ We don't have solid approaches for inspecting the decision
+making of deep agents. Or a decent understanding of what decision making will
+result from a specific training process. We don't know why or how deep learning
+generalizes. And it's unclear if techniques will generalize to higher
+intelligence and capability regimes. This is the 'the hard problem of AI
+cognition' which we'll be referencing throughout the post. 
 
-That said, there are obvious ways to train deep neural networks which ensure
+Is this just the entire alignment problem? Well no, it doesn't include outer
+alignment and it's possible that we could solve alignment without solving this
+issue either via the rather dangerous approach discussed in [the upcoming
+section on restrained AI][#4_3_Restrained_AIs] or if it simply happens to be
+easy to get certain cognitive properties regardless of a lack of understanding.
+Things could happen to work without us understanding why they work. I claim
+that relying on this is a very dangerous approach due to difficulties
+evaluating alignment, for instance, consider deceptiveness. So, my view is that
+the ways around the hard problem of AI cognition are dangerous (though perhaps
+I am missing some approaches) and that it is a difficult crux of alignment. I
+also think that a decent amount of alignment research isn't sufficiently
+focused on this problem and that we should be more actively working on it. I'll
+explain my reasoning and what this could look like in my strategic
+recommendations below.
+
+Now let's transitioning back to the subject of purely deontological AI. Despite
+these issues, there are obvious ways to train deep neural networks which ensure
 that they will be purely deontological. For instance, consider training a
 (randomly initialized) model to output the value 1. Clearly such a model isn't
 going to be a consequentialist or even intelligent (unless you think the
@@ -287,24 +301,24 @@ produce a superintelligent, highly capable AI (and I wouldn't publish it if I
 knew). However, I would be Very Surprised if training agents based on the
 consequences of their actions (outcomes) in even modestly complex environments
 with something resembling modern machine learning (e.g. reinforcement learning)
-resulted in purely deontological AIs. This is putting aside edge cases or the
-application of some not currently known technique. I'd also make a similar
-claim about AIs trained to imitate another consequentialist AI. Note that
-constructing plans also falls into the category of outcome based training
-(assuming you care about whether or not those plans work!). Also be careful not
-to over-generalize my statement: I'm just saying that you wouldn't get _purely_
-deontological agents, not that you couldn't get _partially_ deontological
-agents which we will discuss later. So, this leaves the tasks which are
-classically associated with tool AIs such as prediction. We'll refer to these
-tasks as _process based_ as opposed to _outcome based_. _(TODO: better name
-than process based? maybe a more standard name which exists somewhere?)_ So
-would process based tasks actually result in purely deontological AIs? I will
-hold off on speculating here, though I think the answer to this question would
-be useful. My understanding is that in [this conversation][aligndiff] Eliezer
-Yudkowsky says that he thinks that current machine learning techniques couldn't
-even produce an intelligent[^inteldef] and purely deontological model. There's
-also some speculation in [this post on safety in predictive
-learning][predsafe].
+could produce capable, superintelligent, and purely deontological AIs. This
+is putting aside edge cases or the application of some not currently known
+technique. I'd also make a similar claim about AIs trained to imitate another
+consequentialist AI. Note that constructing plans also falls into the category
+of outcome based training (assuming you care about whether or not those plans
+work!). Also be careful not to over-generalize my statement: I'm just saying
+that you wouldn't get _purely_ deontological agents, not that you couldn't get
+_partially_ deontological agents which we will discuss later. So, this leaves
+the tasks which are classically associated with tool AIs such as prediction.
+We'll refer to these tasks as _process based_ as opposed to _outcome based_.
+_(TODO: better name than process based? maybe a more standard name which exists
+somewhere?)_ So would process based tasks actually result in purely
+deontological AIs? I will hold off on speculating here, though I think the
+answer to this question would be useful. My understanding is that in [this
+conversation][aligndiff] Eliezer Yudkowsky says that he thinks that current
+machine learning techniques couldn't even produce an intelligent[^inteldef] and
+purely deontological model. There's also some speculation in [this post on
+safety in predictive learning][predsafe].
 
 Elicit Prediction ([forecast.elicit.org/binary/questions/8SV58Eq2d](forecast.elicit.org/binary/questions/8SV58Eq2d)) _note, will be formatted in final post_
 
