@@ -271,7 +271,7 @@ cognition' which we'll be referencing throughout the post.
 Is this just the entire alignment problem? Well no, it doesn't include outer
 alignment and it's possible that we could solve alignment without solving this
 issue either via the rather dangerous approach discussed in [the upcoming
-section on restrained AI][#4_3_Restrained_AIs] or if it simply happens to be
+section on restrained AI](#4_3_Restrained_AIs) or if it simply happens to be
 easy to get certain cognitive properties regardless of a lack of understanding.
 Things could happen to work without us understanding why they work. I claim
 that relying on this is a very dangerous approach due to difficulties
