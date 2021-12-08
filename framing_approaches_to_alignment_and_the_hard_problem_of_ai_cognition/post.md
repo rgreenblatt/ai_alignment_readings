@@ -283,7 +283,7 @@ focused on this problem and that we should be more actively working on it. I'll
 explain my reasoning and what this could look like in my strategic
 recommendations below.
 
-Now let's transitioning back to the subject of purely deontological AI. Despite
+Now let's transition back to the subject of purely deontological AI. Despite
 these issues, there are obvious ways to train deep neural networks which ensure
 that they will be purely deontological. For instance, consider training a
 (randomly initialized) model to output the value 1. Clearly such a model isn't
