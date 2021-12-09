@@ -862,8 +862,8 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     do so.
 
 [^stilldangerous]:
-    These 'less' dangerous AIs could still plausibly cause
-    disaster (depending on views surrounding takeoff).
+    These 'less' dangerous AIs could still plausibly precipitate disasters of
+    various magnitudes, just not existential catastrophes.
 
 [^slowtakeoffmaybeshould]:
     I haven't seen this actively discussed despite a decent number of people
