@@ -177,7 +177,7 @@ they don't _care_ about the consequences of their actions.[^tooldiff] They
 don't make explicit plans aimed at causing certain outcomes. The fact that
 purely deontological AIs can be capable of modeling consequences means these
 AIs can appear agentic. For instance, chess engines like AlphaZero or
-StockFish are almost certainly purely deontological AIs, but they do appear
+StockFish are almost certainly purely deontological, but they do appear
 somewhat agentic. For a more absurd example, consider an AI which only cares about
 imitating what its actions would be if it were a consequentialist (e.g. a human
 or some consequentialist AI). For a competent imitator, this is the _same_ as
