@@ -43,17 +43,21 @@ We'll refer in more detail to:
 - [Power seeking/instrumental convergence][powerseek]
 - The current lack of understanding around deep learning generalization and
   transparency
+- The idea of goal directed behavior and some of the surrounding discussion in
+  the goals vs utility section of the [value learning
+  sequence][valuelearning].[^rohinshawtoogod]
 
 Really, nothing else?
 
 Well, other knowledge or ideas will hopefully be linked as
-necessary. Also, here are some posts which could be helpful to read (though I'm
+necessary. Also, here are some things which could be helpful to read (though I'm
 not sure if I would recommend reading them before or after reading this post):
 
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
 - [Model splintering: out-of-distribution behavior][splintering]
 - [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
+- The entire [value learning sequence][valuelearning] by Rohin
 
 If you'd like to read the [late 2021 MIRI conversations][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
@@ -97,18 +101,32 @@ necessary.
 But abstracting over everything results in a mess, so we'll make the following
 assumptions:
 
-1. Unrestricted, superintelligent, and capable AGIs which act like long-term,
-   outcome expected utility maximizers (aka consequentialists) would cause an
-   existential catastrophe if created with approaches similar to
-   current ML. _(TODO: could this be made clearer? Possibly remove some
-   adjectives?)_ When I say 'outcome expected utility maximizer', I mean that
-   the expected utility maximizer cares intrinsically about consequences
-   (consequentialism) instead of about actions (deontology). We'll use the term
-   consequentialism for the remainder of this post. We'll also go through this
-   distinction in more detail below. This assumption is due to an inability to
-   construct a human values utility function, an inability to perfectly inner
-   align an agent's utility function, Goodhart's law, and [instrumental
-   convergence][powerseek].
+1. Unrestricted, superintelligent, and capable AIs which act like long-term,
+   expected utility maximizers with purely outcome based goals (aka
+   consequentialists) would cause an existential catastrophe if created (mostly
+   by humans) with approaches similar to current ML. When I say 'expected
+   utility maximizers with purely outcome based goals', I mean that the
+   expected utility maximizer cares intrinsically about consequences
+   (consequentialism) instead of about actions (deontology). This is the same
+   (or at least a very similar) idea as goal-directed AI from [this
+   post][goaldirected] by Rohin. We'll use the term consequentialism for the
+   remainder of this post. I prefer this term over goal-directed as the word
+   goal is too vague and I'm likely to use this concept somewhat differently
+   from how Rohin intended. We'll also go through the distinction between
+   consequentialism and deontology for AI in more detail below. This
+   assumption is due to an inability to construct a human values utility
+   function, an inability to perfectly inner align an agent's utility function,
+   Goodhart's law, and [instrumental convergence][powerseek].
+
+   But what about [ambitious value learning][ambitiousvalue]? Well, my view is
+   that full ambitious value learning is deeply infeasible for reasons
+   discussed in the ambitious value learning part of [that same value learning
+   sequence][valuelearning]. If partial or slightly less ambitious value
+   learning resulted in purely consequentialist agents, than just this approach
+   won't be sufficient for avoiding existential catastrophe. Of course, it
+   might not result in such agents, for instance the right
+   [meta-preferences][metaprefs] could avoid catastrophe.
+
 2. Societal and government competence and coordination aren't very high (this
    informs how hard it is to enforce alignment through governance).
 3. AIs capable of directly causing existential catastrophe (with at least small
@@ -116,8 +134,8 @@ assumptions:
    dimensions. There are other [threat models][threatmodel] worth considering,
    but we won't talk about them much here.
 
-I won't make a case for why these are good assumptions here, but would be happy
-to chat about them in the comments.
+I won't make a case for why these are good assumptions here beyond what I've
+already said, but would be happy to chat in the comments.
 
 We'll also mostly pretend AIs will be deep neural networks trained with SGD,
 but I wouldn't be surprised if this post generalizes.
@@ -143,12 +161,15 @@ scenario here.[^slowtakeoffmaybeshould]
 
 Deontological principles are rules for taking actions which aren't based on the
 consequences of those actions. In other words, deontological principles 'care'
-about actions instead of their consequences. Note that some deontological
-properties can be encoded or modeled using utility functions, but for others
-[this might not be possible due to incoherent decisions][incoherent] (it's not
-important for this post to have intuition about why incoherent decisions are
-sometimes required). Confused or wondering about the implications of AIs having
-these principles? Hopefully the next sections will clarify this, so read on.
+about actions instead of their consequences. Under this definition, deontology
+is the exact complement of consequentialism. Note that some deontological
+properties can be encoded or modeled using non-pathological utility functions,
+but for others [this might not be possible due to incoherent
+decisions][incoherent] (it's not important for this post to have intuition
+about why incoherent decisions are sometimes required). This is because [all
+behavior can be rationalized as expected utility maximization][ratutils].
+Confused or wondering about the implications of AIs having these principles?
+Hopefully the next sections will clarify this, so read on.
 
 ### 4.1.1 Tool AIs are purely deontological AIs
 
@@ -171,6 +192,15 @@ with constructing them.
 
 Given that different people use the term 'tool AI' in somewhat different ways,
 I will stick with the verbose purely deontological AI from here on.
+
+_(TODO: maybe indicate next two paragraphs are mostly background covered in
+value learning sequence. Specifically, maybe sentence like: 'The context of the
+next 2 paragraphs is basically covered by the goals vs utility section of the
+[value learning sequence][valuelearning], but, ...'
+
+Not sure what to put in the ..., but I think I like the topics I cover a bit more
+than the ones Rohin covers for this context and this is valuable
+review regardless. Also plausible this is premature optimization.)_
 
 Note that purely deontological AIs can be capable of modeling consequences, but
 they don't _care_ about the consequences of their actions.[^tooldiff] They
@@ -259,14 +289,15 @@ I thought I would try to push readers away from the trap strongly.
 So, there isn't an obvious way to train a purely deontological AI. In fact, we
 don't even know how to check if an AI cares about consequences or deontological
 rules. Inner alignment with current machine learning approaches is hard. We
-have no [physics style models][physics] for understanding the eventual
-intentions of superintelligent AI produced via such a process. _(TODO:
-ecological models?)_ We don't have solid approaches for inspecting the decision
+have no [physics][physics] or even biological style models for understanding
+the eventual
+intentions of superintelligent AI produced via such a process.
+We don't have solid approaches for inspecting the decision
 making of deep agents. Or a decent understanding of what decision making will
 result from a specific training process. We don't know why or how deep learning
 generalizes. And it's unclear if techniques will generalize to higher
 intelligence and capability regimes. This is the 'the hard problem of AI
-cognition' which we'll be referencing throughout the post. 
+cognition' which we'll be referencing throughout the post.
 
 Is this just the entire alignment problem? Well no, it doesn't include outer
 alignment and it's possible that we could solve alignment without solving this
@@ -721,16 +752,18 @@ analysis has a chance of being worthwhile. If it actually does prove to be
 decently helpful, I might spend more time doing a more detailed analysis later.
 
 As stated earlier, the community is spending too little time working on the
-hard problem of AI cognition. This includes instilling deontological
-properties, understanding the decision making likely to result from various
-training methods/environments, and building techniques for transparency and
-interpretability, particularly of decision making itself. Trying to improve
-some notion of 'worst case performance' could also be important. It's worth
-noting that developing architectures which make understanding cognition easier
-could also be very useful (for instance, architectures which use factored
-cognition[^factoredcognotgreat]). Overall, focus should shift (at the margin)
-from making models have behavior X to gaining insight into what sorts of
-changes in cognition occur when making models do X.
+hard problem of AI cognition for deep learning. This includes instilling
+deontological properties, understanding the decision making likely to result
+from various training methods/environments, and building techniques for
+transparency and interpretability, particularly of decision making itself. In
+practice this understand may look like biological or ecological models: complex
+and with known exceptions, but (hopefully) still useful enough. Trying to
+improve some notion of 'worst case performance' could also be important. It's
+worth noting that developing architectures which make understanding cognition
+easier could also be very useful (for instance, architectures which use
+factored cognition[^factoredcognotgreat]). Overall, focus should shift (at the
+margin) from making models have behavior X to gaining insight into what sorts
+of changes in cognition occur when making models do X.
 
 In addition to the [Redwood Research project][languageinjury] mentioned earlier,
 here are some examples of endorsed research projects/directions which work on
@@ -774,7 +807,13 @@ comments.
 - Agent foundations. My not very confident nor well supported intuition is that
   proving useful things or gaining valuable understanding with this approach is
   sufficiently unlikely that intellectual resources should be directed
-  elsewhere.
+  elsewhere. This depends on the exact work in question, particularly because
+  agent foundations is used to refer to wide diversity of research.
+  For instance, I think that the conceptual work of [Stuart
+  Armstrong][armstrongagenda] and [John Wentworth][wentworthagenda] is decently
+  likely to be valuable (despite disagreeing with each of their overall
+  strategies). I'm not really sure how much their work counts as agent
+  foundations. I'll discuss this more below in the list on research agendas.
 
 **More at the margin:**
 
@@ -794,7 +833,33 @@ comments.
 - Factored cognition.
 - [Truthfulness/honesty][honestrfp].
 
-_(TODO: more ratings?)_
+In the same spirit, here are some quick summaries of my thoughts on some
+recently discussed research strategies/agendas.
+
+- [Technique focused approaches][techniquefocused]. Endorsed, though it's
+  critical that we build the underlying intuition needed to understand when and
+  where techniques will generalize.
+- [John Wentworth's Research Agenda][wentworthagenda]. Vaguely endorsed. I
+  agree that better frames and abstractions around agency are important and I
+  endorse many of key questions he seems to be interested in addressing.
+  However, I think there are critical steps between deconfusing agency and
+  being able to do tasks like 'Back out the learned objective of a trained
+  neural net, and compare it to the training objective'. I think that messy,
+  deep learning specific models will need to be built for this type of task,
+  and my vague sense is that this would be the bulk of the work. Additionally,
+  I think building the right abstractions around agency for alignment will
+  require applied work with current machine learning aimed at these exact
+  topics (as opposed to purely conceptual work or depending on already
+  conducted empirical work). It's not entirely clear with me if John would
+  disagree about this previous point based on this post.
+
+  Of course, I also disagree about aiming for ambitious value learning as the
+  approach for aligning initial superintelligent AIs, but this isn't very
+  important for the agenda.
+- [Stuart Armstrong's Research Agenda][armstrongagenda]. I think the overall strategy is
+  completely intractable (once again, I'd love to be proven wrong), but that
+  work on many components of this strategy is likely to be useful for more
+  practical approaches.
 
 # 7 Alignment difficulty
 
@@ -851,6 +916,12 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [threatmodel]: https://www.lesswrong.com/tag/threat-models
 [zvigears]: https://www.lesswrong.com/posts/xHnuX42WNZ9hq53bz/attempted-gears-analysis-of-agi-intervention-discussion-with-1
 [decepalign]: https://www.lesswrong.com/posts/zthDPAjh9w6Ytbeks/deceptive-alignment
+[armstrongagenda]: https://www.lesswrong.com/posts/CSEdLLEkap2pubjof/research-agenda-v0-9-synthesising-a-human-s-preferences-into
+[wentworthagenda]: https://www.lesswrong.com/posts/3L46WGauGpr7nYubu/the-plan
+[valuelearning]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc
+[goaldirected]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/DfcywmqRSkBaCB6Ma
+[techniquefocused]: https://www.lesswrong.com/posts/2xrBxhRhde7Xddt38/redwood-s-technique-focused-epistemic-strategy
+[ratutils]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/NxF5G6CJiof6cemTw#All_behavior_can_be_rationalized_as_EU_maximization
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
@@ -911,3 +982,9 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     If an agent is unable to pursue goals effectively, it's unlikely to be able
     to cause an existential catastrophe, so we won't consider the potential
     safety issue of capability robustness.
+
+[^rohinshawtoogod]:
+    When I initially wrote this post, I hadn't read this
+    sequence yet, but it turned out to be quite relevant and addresses many of
+    the same concerns as in this post, but from a somewhat different perspective
+    and approach (it's also probably better written).
