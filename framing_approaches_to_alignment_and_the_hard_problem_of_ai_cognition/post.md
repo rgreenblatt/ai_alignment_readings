@@ -1013,9 +1013,10 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     Rohin proposes and none of the discussion in the deconfusing
     goal-directedness sequence resulted in changing my broad strokes views
     about the idea. Perhaps this indicates that I'm quite good at using
-    motivated reasoning to be lazy, that I'm a stuborn fool, or that my
+    motivated reasoning to be lazy, that I'm a stubborn fool, or that my
     reasoning on these issues was able to convergence to a reasonable state
-    after some indirect exposure from other writings and discussion.
+    after some less direct exposure from other writings and discussion
+    (such as AGI safety from first principles).
 
 [^deontgoals]:
     For instance, the idea of an AI having a 'deontological goal' of predicting
