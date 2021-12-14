@@ -49,9 +49,6 @@ We'll refer in more detail to:
   I'd tentatively recommend reading this post first before reading those sequences as
   we'll go through the background and (hopefully) motivate these concepts
   in a reasonably concise way.[^failedlitreview]
-  _(TODO: should I require parts of this as prereq to skip background? Have a
-  background section, but make it more skippable? I've already written the
-  background due to my ineptitude...)_
 
 Really, nothing else?
 
@@ -870,7 +867,8 @@ recently discussed research strategies/agendas.
 - [Stuart Armstrong's Research Agenda][armstrongagenda]. I think the overall strategy is
   completely intractable (once again, I'd love to be proven wrong), but that
   work on many components of this strategy is likely to be useful for more
-  practical approaches.
+  practical approaches. For instance, [the projects on this list][armstronglist]
+  seem quite worthwhile to me.
 
 # 7 Alignment difficulty
 
@@ -934,6 +932,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [techniquefocused]: https://www.lesswrong.com/posts/2xrBxhRhde7Xddt38/redwood-s-technique-focused-epistemic-strategy
 [ratutils]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/NxF5G6CJiof6cemTw#All_behavior_can_be_rationalized_as_EU_maximization
 [deconfusegoals]: https://www.lesswrong.com/s/o58ZMNaovdztbLfvN
+[armstronglist]: https://www.lesswrong.com/s/xujLGRKFLKsPCTimd
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
