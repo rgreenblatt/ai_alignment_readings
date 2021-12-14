@@ -43,9 +43,15 @@ We'll refer in more detail to:
 - [Power seeking/instrumental convergence][powerseek]
 - The current lack of understanding around deep learning generalization and
   transparency
-- The idea of goal directed behavior and some of the surrounding discussion in
+- The idea of goal-directed behavior and some of the surrounding discussion in
   the goals vs utility section of the [value learning
-  sequence][valuelearning].[^rohinshawtoogod]
+  sequence][valuelearning] and the [deconfusing goal-directedness sequence][deconfusegoals].
+  I'd tentatively recommend reading this post first before reading those sequences as
+  we'll go through the background and (hopefully) motivate these concepts
+  in a reasonably concise way.[^failedlitreview]
+  _(TODO: should I require parts of this as prereq to skip background? Have a
+  background section, but make it more skippable? I've already written the
+  background due to my ineptitude...)_
 
 Really, nothing else?
 
@@ -57,7 +63,8 @@ not sure if I would recommend reading them before or after reading this post):
   alignment][framinginner]
 - [Model splintering: out-of-distribution behavior][splintering]
 - [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
-- The entire [value learning sequence][valuelearning] by Rohin
+- As mentioned above, the entire [value learning sequence][valuelearning] (the first two
+  parts seem more important to me) and the [deconfusing goal-directedness sequence][deconfusegoals]
 
 If you'd like to read the [late 2021 MIRI conversations][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
@@ -109,10 +116,14 @@ assumptions:
    expected utility maximizer cares intrinsically about consequences
    (consequentialism) instead of about actions (deontology). This is the same
    (or at least a very similar) idea as goal-directed AI from [this
-   post][goaldirected] by Rohin. We'll use the term consequentialism for the
-   remainder of this post. I prefer this term over goal-directed as the word
-   goal is too vague and I'm likely to use this concept somewhat differently
-   from how Rohin intended. We'll also go through the distinction between
+   post][goaldirected] by Rohin (from [the value learning
+   sequence][valuelearning] discussed above).
+   We'll use the term
+   consequentialism for the remainder of this post. I prefer this term over
+   goal-directed because the word goal isn't quite what we intend[^deontgoals], I'm likely to use this concept
+   somewhat differently from how Rohin intended, and the word more nicely
+   sets up the dichotomy with deontology.
+   We'll also go through the distinction between
    consequentialism and deontology for AI in more detail below. This
    assumption is due to an inability to construct a human values utility
    function, an inability to perfectly inner align an agent's utility function,
@@ -522,12 +533,12 @@ specify utility functions. This greatly affects the applicability of
 deontological and restriction based approaches. Additionally, reward models or
 classifiers for complex or hard to specify behavior could be very useful
 building blocks for instilling deontological properties. This also implies that
-knowing how to construct these components would be useful for researching how
-to instill complex deontological properties in general.
+knowing how to construct these components (value learning) would be useful for
+researching how to instill complex deontological properties in general.
 
 I think that (unaligned) corporate and academic research might end up
-meaningfully contributing to this topic which reduces the marginal benefit of
-aligned work in this space. This reasoning is less applicable in scenarios
+meaningfully contributing to value learning which reduces the marginal benefit
+of aligned work in this space. This reasoning is less applicable in scenarios
 where commercial timelines and/or takeoff are much faster than corporate
 leadership expects.
 
@@ -922,6 +933,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [goaldirected]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/DfcywmqRSkBaCB6Ma
 [techniquefocused]: https://www.lesswrong.com/posts/2xrBxhRhde7Xddt38/redwood-s-technique-focused-epistemic-strategy
 [ratutils]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/NxF5G6CJiof6cemTw#All_behavior_can_be_rationalized_as_EU_maximization
+[deconfusegoals]: https://www.lesswrong.com/s/o58ZMNaovdztbLfvN
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
@@ -983,8 +995,30 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     to cause an existential catastrophe, so we won't consider the potential
     safety issue of capability robustness.
 
-[^rohinshawtoogod]:
-    When I initially wrote this post, I hadn't read this
-    sequence yet, but it turned out to be quite relevant and addresses many of
-    the same concerns as in this post, but from a somewhat different perspective
-    and approach (it's also probably better written).
+[^failedlitreview]:
+    When I initially wrote this post, I didn't reference these very relevant
+    sequences which is a pretty big literature review fail on my part.
+    I think I might have lightly read the value learning sequence considerably
+    earlier (I had it on my reading list at some point, but I think I might have
+    skipped it instead of reading it due to reading the first post of the
+    sequence, determining that ambitious value learning was obviously a doomed approach
+    and then moving on despite most of the value in the sequence being in the 2nd part).
+
+    These sequences go into more detail than I will here on the exact
+    details of goal-directedness and I'm inclined to steer the
+    definitions/abstractions in a slightly different direction.
+
+    Strangely, despite these sequences being relevant, I didn't find that
+    reading them resulted in a much rewriting of this post. I believe that my
+    model and understanding of goal-directedness mostly agrees with the outline
+    Rohin proposes and none of the discussion in the deconfusing
+    goal-directedness sequence resulted in changing my broad strokes views
+    about the idea. Perhaps this indicates that I'm quite good at using
+    motivated reasoning to be lazy, that I'm a stuborn fool, or that my
+    reasoning on these issues was able to convergence to a reasonable state
+    after some indirect exposure from other writings and discussion.
+
+[^deontgoals]:
+    For instance, the idea of an AI having a 'deontological goal' of predicting
+    something seems well specified to me, but isn't what we intend when
+    discussing goal-directedness.
