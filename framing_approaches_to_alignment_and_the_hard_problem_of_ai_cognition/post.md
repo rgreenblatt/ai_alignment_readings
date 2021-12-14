@@ -204,9 +204,9 @@ I will stick with the verbose purely deontological AI from here on.
 _(TODO: maybe indicate next two paragraphs are mostly background covered in
 value learning sequence. Specifically, maybe sentence like: 'The context of the
 next 2 paragraphs is basically covered by the goals vs utility section of the
-[value learning sequence][valuelearning], but, ...'
+[value learning sequence][valuelearning], but, ...'_
 
-Not sure what to put in the ..., but I think I like the topics I cover a bit more
+_Not sure what to put in the ..., but I think I like the topics I cover a bit more
 than the ones Rohin covers for this context and this is valuable
 review regardless. Also plausible this is premature optimization.)_
 
