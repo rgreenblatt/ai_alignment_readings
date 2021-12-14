@@ -130,7 +130,7 @@ assumptions:
    that full ambitious value learning is deeply infeasible for reasons
    discussed in the ambitious value learning part of [that same value learning
    sequence][valuelearning]. If partial or slightly less ambitious value
-   learning resulted in purely consequentialist agents, than just this approach
+   learning resulted in purely consequentialist agents, then just this approach
    won't be sufficient for avoiding existential catastrophe. Of course, it
    might not result in such agents, for instance the right
    [meta-preferences][metaprefs] could avoid catastrophe.
@@ -933,6 +933,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [ratutils]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/NxF5G6CJiof6cemTw#All_behavior_can_be_rationalized_as_EU_maximization
 [deconfusegoals]: https://www.lesswrong.com/s/o58ZMNaovdztbLfvN
 [armstronglist]: https://www.lesswrong.com/s/xujLGRKFLKsPCTimd
+[ambitiousvalue]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/5eX8ko7GCxwR5N9mN
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
