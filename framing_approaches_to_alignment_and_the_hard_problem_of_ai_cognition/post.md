@@ -821,7 +821,7 @@ comments.
   Armstrong][armstrongagenda] and [John Wentworth][wentworthagenda] is decently
   likely to be valuable (despite disagreeing with each of their overall
   strategies). I'm not really sure how much their work counts as agent
-  foundations. I'll discuss this more below in the list on research agendas.
+  foundations. I'll discuss this more below in a list of my thoughts about some research agendas
 
 **More at the margin:**
 
