@@ -68,6 +68,7 @@ read them yet), my weakly suggested reading order is:
 
 - This post
 - [Zvi's gears analysis of AGI intervention][zvigears]
+- [Interpreting Yudkowsky on Deep vs Shallow Knowledge][deepvshallow]
 - The conversations themselves
 
 (Of course, this reflects my biases.)
@@ -934,6 +935,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [deconfusegoals]: https://www.lesswrong.com/s/o58ZMNaovdztbLfvN
 [armstronglist]: https://www.lesswrong.com/s/xujLGRKFLKsPCTimd
 [ambitiousvalue]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/5eX8ko7GCxwR5N9mN
+[deepvshallow]: https://www.lesswrong.com/posts/GSBCw94DsxLgDat6r/interpreting-yudkowsky-on-deep-vs-shallow-knowledge
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
