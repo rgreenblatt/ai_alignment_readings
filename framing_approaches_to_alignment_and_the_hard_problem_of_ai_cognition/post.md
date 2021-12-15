@@ -294,8 +294,9 @@ More generally, inner alignment is not guaranteed by all training procedures.
 :::
 
 To be clear, I don't think this is a common misconception among people working
-on or thinking about alignment. However, it does seem like a potential trap, so
-I thought I would try to push readers away from the trap strongly.
+on or thinking about alignment. This was also a very weak trap example.
+Regardless, it does seem like a potential pitfall, so I thought I would try to
+strongly push readers away from this mistake.
 
 So, there isn't an obvious way to train a purely deontological AI. In fact, we
 don't even know how to check if an AI cares about consequences or deontological
