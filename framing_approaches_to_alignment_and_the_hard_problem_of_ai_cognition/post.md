@@ -1,3 +1,5 @@
+_(Thanks to Adam Shimi and Steven Byrnes for feedback.)_
+
 # 1 Background
 
 The [late 2021 MIRI conversations][miriconv] include discussion about the
@@ -52,9 +54,9 @@ We'll refer in more detail to:
 
 Really, nothing else?
 
-Well, other knowledge or ideas will hopefully be linked as
-necessary. Also, here are some things which could be helpful to read (though I'm
-not sure if I would recommend reading them before or after reading this post):
+Well, other knowledge or ideas will hopefully be linked as necessary. Also,
+here are some things which could be helpful to read (though I'd probably
+recommend reading them after this post):
 
 - [A discussion of using an objective framing or a generalization framing of inner
   alignment][framinginner]
@@ -62,6 +64,8 @@ not sure if I would recommend reading them before or after reading this post):
 - [Reward splintering: model splintering on reward][rewardsplintering] (really utility)
 - As mentioned above, the entire [value learning sequence][valuelearning] (the first two
   parts seem more important to me) and the [deconfusing goal-directedness sequence][deconfusegoals]
+- This recent post on [consequentialism &
+  corrigibility][consequentialismcorrigibility].
 
 If you'd like to read the [late 2021 MIRI conversations][miriconv] (and haven't
 read them yet), my weakly suggested reading order is:
@@ -82,7 +86,7 @@ read them yet), my weakly suggested reading order is:
 I wrote above that we want to make a _sufficiently useful_ and safe AI.
 What is this _sufficiently useful_ criteria?
 The criteria is that the [alignment tax][currentworkinalign] must be
-sufficiently small on the capability dimensions we care about. 
+sufficiently small on the capability dimensions we care about.
 And what is sufficiently small? And which
 dimensions? Well, I don't think we currently have a good understanding of this
 (as it requires predicting the future), but 2 typical models are:
@@ -810,8 +814,8 @@ comments.
   For instance, I think that the conceptual work of [Stuart
   Armstrong][armstrongagenda] and [John Wentworth][wentworthagenda] is decently
   likely to be valuable (despite disagreeing with each of their overall
-  strategies).  I'll discuss this more below in a list of my thoughts about some research
-  agendas.  I'm not really sure how much their work actually counts as agent foundations. 
+  strategies). I'll discuss this more below in a list of my thoughts about some research
+  agendas. I'm not really sure how much their work actually counts as agent foundations.
 
 **More at the margin:**
 
@@ -854,6 +858,7 @@ recently discussed research strategies/agendas.
   Of course, I also disagree about aiming for ambitious value learning as the
   approach for aligning initial superintelligent AIs, but this isn't very
   important for the agenda.
+
 - [Stuart Armstrong's Research Agenda][armstrongagenda]. I think the overall strategy is
   completely intractable (once again, I'd love to be proven wrong), but that
   work on many components of this strategy is likely to be useful for more
@@ -925,6 +930,8 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
 [armstronglist]: https://www.lesswrong.com/s/xujLGRKFLKsPCTimd
 [ambitiousvalue]: https://www.lesswrong.com/s/4dHMdK5TLN6xcqtyc/p/5eX8ko7GCxwR5N9mN
 [deepvshallow]: https://www.lesswrong.com/posts/GSBCw94DsxLgDat6r/interpreting-yudkowsky-on-deep-vs-shallow-knowledge
+
+[consequentialismcorrigibility]: https://www.lesswrong.com/posts/KDMLJEXTWtkZWheXt/consequentialism-and-corrigibility]
 
 [^notnovel]:
     This isn't a novel set of issues, but I haven't seen a thorough
