@@ -82,9 +82,8 @@ read them yet), my weakly suggested reading order is:
 I wrote above that we want to make a _sufficiently useful_ and safe AI.
 What is this _sufficiently useful_ criteria?
 The criteria is that the [alignment tax][currentworkinalign] must be
-sufficiently small on the capability dimensions we care about. _(TODO: anything
-to link with better/more focused discussion on alignment tax? Maybe also
-link/discuss theory practice gap?)_ And what is sufficiently small? And which
+sufficiently small on the capability dimensions we care about. 
+And what is sufficiently small? And which
 dimensions? Well, I don't think we currently have a good understanding of this
 (as it requires predicting the future), but 2 typical models are:
 
@@ -204,15 +203,6 @@ with constructing them.
 Given that different people use the term 'tool AI' in somewhat different ways,
 I will stick with the verbose purely deontological AI from here on.
 
-_(TODO: maybe indicate next two paragraphs are mostly background covered in
-value learning sequence. Specifically, maybe sentence like: 'The context of the
-next 2 paragraphs is basically covered by the goals vs utility section of the
-[value learning sequence][valuelearning], but, ...'_
-
-_Not sure what to put in the ..., but I think I like the topics I cover a bit more
-than the ones Rohin covers for this context and this is valuable
-review regardless. Also plausible this is premature optimization.)_
-
 Note that purely deontological AIs can be capable of modeling consequences, but
 they don't _care_ about the consequences of their actions.[^tooldiff] They
 don't make explicit plans aimed at causing certain outcomes. The fact that
@@ -276,9 +266,6 @@ Did you catch it?
 
 The error in the above reasoning? Take a second and think through what's
 wrong before peeking.
-
-_(TODO: better trap example would be nice. This one is too easy and feels
-silly)_
 
 :::spoiler
 
@@ -355,8 +342,7 @@ _partially_ deontological agents which we will discuss later. So, this leaves
 the tasks which are classically associated with tool AIs such as prediction
 (for instance, language models).
 We'll refer to these tasks as _process based_ as opposed to _outcome based_.
-_(TODO: better name than process based? maybe a more standard name which exists
-somewhere?)_ So which process based tasks actually result in purely
+So which process based tasks actually result in purely
 deontological AIs? I will hold off on speculating here, though I think the
 answer to this question would be useful. My understanding is that in [this
 conversation][aligndiff] Eliezer Yudkowsky says that he thinks that current
@@ -788,8 +774,6 @@ the hard problem of AI cognition (perhaps indirectly):
   progress in understanding)
 - [Visible Thoughts][visiblethoughts]
 - [Understanding RL Vision][rlvision]
-
-_(TODO: more examples?)_
 
 I think effort should be reallocated away from crafting reward models for
 more complex or harder to write utility functions. For examples of this type of
