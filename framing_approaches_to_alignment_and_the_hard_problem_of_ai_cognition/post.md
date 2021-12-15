@@ -354,7 +354,7 @@ _partially_ deontological agents which we will discuss later. So, this leaves
 the tasks which are classically associated with tool AIs such as prediction.
 We'll refer to these tasks as _process based_ as opposed to _outcome based_.
 _(TODO: better name than process based? maybe a more standard name which exists
-somewhere?)_ So would process based tasks actually result in purely
+somewhere?)_ So which process based tasks actually result in purely
 deontological AIs? I will hold off on speculating here, though I think the
 answer to this question would be useful. My understanding is that in [this
 conversation][aligndiff] Eliezer Yudkowsky says that he thinks that current
