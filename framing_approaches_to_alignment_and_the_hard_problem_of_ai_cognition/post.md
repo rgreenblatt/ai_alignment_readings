@@ -351,7 +351,8 @@ of outcome based training (assuming you care about whether or not those plans
 work!). Also be careful not to over-generalize my statement: I'm just saying
 that you wouldn't get _purely_ deontological agents, not that you couldn't get
 _partially_ deontological agents which we will discuss later. So, this leaves
-the tasks which are classically associated with tool AIs such as prediction.
+the tasks which are classically associated with tool AIs such as prediction
+(for instance, language models).
 We'll refer to these tasks as _process based_ as opposed to _outcome based_.
 _(TODO: better name than process based? maybe a more standard name which exists
 somewhere?)_ So which process based tasks actually result in purely
@@ -653,7 +654,8 @@ getting injured][languageinjury]. It's probably a good idea to be
 familiar with this project before reading the rest of this section.
 
 _(Disclaimer: I'm TAing for [the bootcamp Redwood Research is running][mlab]
-and also interested in working there)_
+and also interested in working there. That said, I think that my inside view
+differs considerably from the consensus/typical view at Redwood Research.)_
 
 As of the time when this post was written, this project has just involved
 training a classifier for the predicate 'the completion describes injury'. But,
