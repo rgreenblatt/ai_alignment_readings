@@ -70,8 +70,8 @@ read them yet), my weakly suggested reading order is:
 - [Zvi's gears analysis of AGI intervention][zvigears]
 - The conversations themselves
 - [Interpreting Yudkowsky on Deep vs Shallow Knowledge][deepvshallow]. Also
-  consider referencing this when the concept of deep knowledge comes up as
-  opposed to reading it afterwards.
+  consider referencing this when the concept of deep knowledge comes up instead
+  of reading it afterwards.
 
 (Of course, this reflects my biases.)
 
