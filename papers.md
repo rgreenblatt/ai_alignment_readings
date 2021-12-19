@@ -815,10 +815,6 @@ BIG TODO on more of these posts (and maybe better notes)
 - michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
 - cartesian frames (maybe start with 'chu are you'), I now kinda think this is
   useless nerd bait, field is pretty dead
-- [late 2021 MIRI convs](https://www.lesswrong.com/s/n945eovrA3oDueqtq)
 - [readings/notes on research](https://forum.effectivealtruism.org/posts/qnF4rozLunaQz85zg/some-readings-and-notes-on-how-to-do-high-quality-efficient)
-- [assistance via empowerment](https://arxiv.org/abs/2006.14796)
-- maybe read some of [ai governance fundamentals material](https://forum.effectivealtruism.org/posts/68ANc8KhEn6sbQ3P9/ai-governance-fundamentals-curriculum-and-application)
-- maybe read: [agency stuff](https://www.lesswrong.com/posts/qJBkcGW4GitfQ4BBy/agency-what-it-is-and-why-it-matters)
 - [Against evolution as an analogy for how humans will create AGI](https://www.lesswrong.com/posts/pz7Mxyr7Ac43tWMaC/against-evolution-as-an-analogy-for-how-humans-will-create)
 - [modeling transformative AI risk](https://www.lesswrong.com/s/aERZoriyHfCqvWkzg)
