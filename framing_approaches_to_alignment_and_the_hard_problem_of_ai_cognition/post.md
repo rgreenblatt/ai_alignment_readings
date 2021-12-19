@@ -354,9 +354,7 @@ machine learning techniques couldn't even produce an intelligent[^inteldef] and
 purely deontological model. There's also some speculation in [this post on
 safety in predictive learning][predsafe].
 
-Elicit Prediction ([forecast.elicit.org/binary/questions/8SV58Eq2d](forecast.elicit.org/binary/questions/8SV58Eq2d)) _note, will be formatted in final post_
-
-Elicit Prediction ([forecast.elicit.org/binary/questions/Wgff0HgNf](forecast.elicit.org/binary/questions/Wgff0HgNf)) _note, will be formatted in final post_
+See comment for related Elicit predictions.[^footnotesorpredictions]
 
 Now let's suppose that all process based tasks do in fact result in purely
 deontological agents and consider if such agents can be _sufficiently useful_.
@@ -374,8 +372,7 @@ particularly given that AI would also likely be used for capability research
 (depending on the capabilities lead). The analysis of other pivotal acts
 proceeds similarly.
 
-Elicit Prediction ([https://forecast.elicit.org/binary/questions/MhpdWy-A-](https://forecast.elicit.org/binary/questions/MhpdWy-A-))
-_note, will be formatted in final post_
+See comment for a related eLicit prediction.
 
 If purely deontological AI via process based tasks is the main approach to
 alignment enforced by governance, the benefits of defection would likely seem
@@ -1021,3 +1018,7 @@ consequentialism, agency, and intelligence leads to Yudkowskization (similar to
     For instance, the idea of an AI having a 'deontological goal' of predicting
     something seems well specified to me, but isn't what we intend when
     discussing goal-directedness.
+
+[^footnotesorpredictions]:
+    There isn't any way to embed prediction widgets in markdown mode and the
+    LessWrong markdown to custom editor converter butchers footnotes.
