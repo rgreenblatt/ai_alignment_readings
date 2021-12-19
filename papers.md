@@ -804,4 +804,3 @@ BIG TODO on more of these posts (and maybe better notes)
 - maybe read: [agency stuff](https://www.lesswrong.com/posts/qJBkcGW4GitfQ4BBy/agency-what-it-is-and-why-it-matters)
 - [Against evolution as an analogy for how humans will create AGI](https://www.lesswrong.com/posts/pz7Mxyr7Ac43tWMaC/against-evolution-as-an-analogy-for-how-humans-will-create)
 - [modeling transformative AI risk](https://www.lesswrong.com/s/aERZoriyHfCqvWkzg)
-- value learning sequence
