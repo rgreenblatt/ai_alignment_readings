@@ -780,6 +780,24 @@ My thoughts on some papers.
   
 BIG TODO on more of these posts (and maybe better notes)
 
+## Imitative Generalisation (AKA 'Learning the Prior')
+
+- [https://www.alignmentforum.org/posts/JKj5Krff5oKMb8TjT/imitative-generalisation-aka-learning-the-prior-1](https://www.alignmentforum.org/posts/JKj5Krff5oKMb8TjT/imitative-generalisation-aka-learning-the-prior-1)
+- learn labeling 'instructions'
+- learn prior over labeling instructions
+- learn classifier on labels in original dataset
+- use instructions to have humans label new dataset
+- Profit?
+- instructions need to capture everything AI could learn and be human readable
+- like microscope AI, but with specific procedure
+- does human (or amplified human) understandable thing exist?
+
+## ELK
+
+- [https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit](https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit)
+- attaching a head to answer questions is insufficient because could use wrong
+  model
+- various regularization approaches fail in worst case, but might still help.
 
 
 ## TODO
@@ -789,9 +807,9 @@ BIG TODO on more of these posts (and maybe better notes)
   some notes on all sections)
 - more stuff from ambassadors at EAG
 - some new architectures/language models in general:
-  - maybe read more about [T5 (google)](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) (read blog post, haven't read paper)
   - maybe read more about clip?
   - ? (haven't spent much time looking into what to read...)
+  - now think this doesn't matter as much
 - reread open phil rfps 
 - invariant predication and causal inference
 - michael cohen: [https://www.michael-k-cohen.com/](https://www.michael-k-cohen.com/)
