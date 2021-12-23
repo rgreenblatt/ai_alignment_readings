@@ -60,3 +60,19 @@
 - need to immerse in intellectual community even though you don't have much to
   add
 - don't get depressed
+
+# How to generate research proposals
+- [https://forum.effectivealtruism.org/posts/8R2NffQiCsn3F7hpv/how-to-generate-research-proposals](https://forum.effectivealtruism.org/posts/8R2NffQiCsn3F7hpv/how-to-generate-research-proposals)
+- note down interesting research questions and get (fast) feedback
+- read agendas and talk to people to find disagreements
+- think about attributes of good project to build taste
+- fail fast, don't be afraid to quit, stochastic process approach to research
+- don't spend too long on meta choices (fixed max time)
+- just pick meta choice and try to fail fast
+
+
+# Shulman advice
+
+- [https://docs.google.com/document/d/1_yuuheVqp1quDfkuRcpoW_HO7jPaI7QnRjF1zl_VovU/edit][https://docs.google.com/document/d/1_yuuheVqp1quDfkuRcpoW_HO7jPaI7QnRjF1zl_VovU/edit]
+- emphasis on convenience  
+- some thinking habits and mindset stuff of note.
