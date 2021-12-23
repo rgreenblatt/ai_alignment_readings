@@ -1,3 +1,5 @@
+Meta resource: [https://docs.google.com/document/d/1BKNoW3IBGnCWZFW08P_ivMRZjtuwublGDUd1toemRn0/edit#](https://docs.google.com/document/d/1BKNoW3IBGnCWZFW08P_ivMRZjtuwublGDUd1toemRn0/edit#)
+
 # Research as a Stochastic Decision Process
 
 - [https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html](https://cs.stanford.edu/~jsteinhardt/ResearchasaStochasticDecisionProcess.html)
