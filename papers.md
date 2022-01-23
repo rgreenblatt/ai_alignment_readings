@@ -799,6 +799,21 @@ BIG TODO on more of these posts (and maybe better notes)
   model
 - various regularization approaches fail in worst case, but might still help.
 
+## Enabling certification of verification-agnostic networks via memory-efficient semidefinite programming
+- [https://arxiv.org/abs/2010.11645](https://arxiv.org/abs/2010.11645)
+- Considering L\_inf norm adversarial example case
+- SDP better than LP due to verification of arbitrary nets
+- very expensive runtime
+- ? on dual with technique. need to understand better, and see algo
+- maximum eigenvalue prob?
+- formalization applies to any quadratically constrained quadratic program
+- SMT and MIP solvers for verification can be relevant, but NP-complete in general
+- first order SDP solvers
+- Lagrangian from relu (understand later)
+
+- Ok, this actually doesn't help us with RAT. Lagrangian just used for bound in
+  direction we don't care about.
+
 
 ## TODO
 
